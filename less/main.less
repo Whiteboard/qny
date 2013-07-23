@@ -1,0 +1,299 @@
+/*
+
+All site-specific styles go here.
+
+Some rules and guidelines:
+	classes are better than IDs
+	don't specify font-sizes more than once
+	avoid making classes for one rule
+	avoid using pixels for font-sizes except on body
+	don't abuse less nesting
+
+*/
+
+/*Typefaces*/
+@serif: 'Adelle', serif;
+@sans: 'Helvetica', sans-serif;
+
+/*Color Pallete*/
+@qblack: #040808;
+@blue: #0095cb;
+
+body {
+	font-family: @sans;
+	font-size: 14px;
+	background-color: @qblack;
+	color: #fff;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: @serif;
+}
+
+p {
+	line-height: 1.8em;
+}
+
+.italic {
+	font-style: italic;
+}
+
+/*Base Structure Styles*/
+.container {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.inner-wrap {
+	width: 90%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.full-width {
+	width: 100%;
+	height: 65px;
+	background-color: @blue;
+	color: #fff;
+}
+
+.q-cities {
+	width: 60px;
+	min-height: 90px;
+	margin: 0 auto;
+	img {
+		width: 60px;
+		height: auto;
+	}
+}
+
+
+/*Nav Styles*/
+.navigation {
+	width: 100%;
+	min-height: 50px;
+	background-color: @qblack;
+	overflow: hidden;
+	ul {
+		list-style: none;
+	}
+	li {
+		float: left;
+		a {
+			text-transform: uppercase;
+			text-decoration: none;
+			font-family: @sans;
+			color: darken(#fff, 10%);
+			transition: all .13s ease-in-out;
+		}
+		a:hover {
+			color: #fff;
+			text-shadow: 0 3px 15px #fff;
+		}
+	}
+	.left {
+		float: left;
+		width: 40%;
+		li {
+			margin-left: 15px;
+		}
+	}
+	.right{
+		float: right;
+		width: 40%;
+		li {
+			margin-right: 15px;
+		}
+	}
+	.brand {
+		float: left;
+		width: 20%;
+		.cities {
+			background-image: url('../img/qcities.png');
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	}
+}
+
+		#nav-static {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+		
+		#nav-sticky {
+			display: none;
+			position: fixed;
+		}
+
+
+
+
+
+/*First Section*/
+	.center {
+		width: 80%;
+		padding-top: 200px;
+		margin: 0 auto;
+		max-width: 380px;
+		min-width: 360px;
+		.ny {
+			width: 100%;
+			h1 {
+				text-align: center;
+				font-size: 4em;
+				letter-spacing: .01em;
+				text-transform: uppercase;
+				font-weight: 600;
+				border: 4px solid #fff;
+				padding: 0;
+				padding-top: 10px;
+				}
+		}
+		p {
+			text-align: center;
+			line-height: 1.8em;
+		}
+	}
+#one {
+	min-height: 700px;
+	background-image: url('../img/bg_empire.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	#reviewslider {
+		.inner-wrap {
+		overflow: hidden;
+		max-height: 300px;
+		}
+	}
+	.bottom-half {
+		margin-top: 80px;
+		height: 400px;
+		.linear-gradient( @dir: bottom, @start-color: rgba(0, 0, 0, 1), @end-color: rgba(0, 0, 0, 0) );
+		h2 {
+			font-weight: 300;
+			font-size: 2em;
+			color: @blue;
+			text-align: center;
+		}
+		#image-grid {
+			background-image: url('../img/img-grid.jpg');
+			background-repeat: no-repeat;
+			min-width: 270px;
+			min-height: 240px;
+		}
+		p {
+			margin-top: 0;
+			line-height: 1.7em;
+		}
+	}
+}
+/*End First Section*/
+
+
+
+
+
+
+/*First and a Half. Slider time.*/
+.border {
+	height: .5px;
+	overflow: hidden;
+	//background-color: @blue;
+	border-top: 1px solid @blue;
+	width: 100%;
+	position: relative;
+}
+#onehalf {
+	height: 250px;
+	#reviews {
+		max-width: 1000px;
+		margin: 0 auto;
+		h4 {
+			text-transform: uppercase;
+			font-size: .8em;
+			letter-spacing: .3em;
+			color: @blue;
+			text-align: center;
+			margin-top: 0;
+		}
+		.bgblk {
+			background-color: @qblack;
+			padding: 10px;
+			z-index: 999;
+			margin-top: -17px;
+		}
+	}
+	#reviewslider {
+		.inner-wrap {
+			height: 200px;
+			overflow: hidden;
+		}
+	}
+}
+
+
+
+/*Second Section*/
+#two {
+	background-color: #fff;
+	color: @qblack;
+	padding-top: 50px;
+	#gabe {
+		width: 100%;
+		height: auto;
+		min-height: 200px;
+		background-image: url('../img/gabe.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;	
+	}
+	.italic {
+		font-size: .9em;
+	}
+	.eleven.columns {
+		h3 {
+			font-size: 1.3em;
+			margin-top: 0;
+			color: @blue;
+		}
+	}
+	p.five.columns {
+		float: left;
+	}
+	#photo-ribbon {
+		background-image: url('../img/ribbon.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: scroll;
+		height: 120px;
+		overflow: hidden;
+		margin-bottom: 0;
+	}
+	.full-width {
+		margin-top: 0;
+		overflow: hidden;
+		h4 {
+			font-size: 1.2em;
+			font-weight: 600;
+			text-align: center;
+		}
+	}
+}
+
+
+
+
+
+/*Long New York Background image*/
+#newyork {
+	background-image: url('../img/bg_ny.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	min-height: 1500px;
+	margin-top: -10px;
+}
