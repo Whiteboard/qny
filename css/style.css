@@ -1309,7 +1309,7 @@ p {
   background-size: cover;
 }
 
-/*Section 3. Hey now.*/
+/*Section 3. Crazy interactions start here.*/
 
 #three .center {
   padding-top: 80px;
@@ -1325,6 +1325,101 @@ p {
 #three .center .q-cities img {
   width: 70px;
   height: auto;
+}
+
+/*Section 4. Speakers.*/
+
+#four {
+  margin-top: 50px;
+}
+
+#four .inner-wrap {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#four .inner-wrap h2 {
+  margin-bottom: 40px;
+  font-size: 1.8em;
+  font-weight: 300;
+  color: #0095cb;
+  text-align: center;
+}
+
+#presenter-grid {
+  min-height: 700px;
+}
+
+#presenter-grid .tagline {
+  float: left;
+  width: 25%;
+  height: 100%;
+  max-width: 300px;
+  min-height: 400px;
+}
+
+#presenter-grid .tagline h5 {
+  padding-top: 150px;
+  padding-right: 20px;
+  font-size: 1.6em;
+  font-weight: 400;
+}
+
+#presenter-grid .grid-wrap {
+  float: left;
+  width: 75%;
+  height: 100%;
+  max-width: 1000px;
+  min-height: 600px;
+}
+
+#presenter-grid .grid-wrap .speaker-row {
+  height: 200px;
+}
+
+.grid {
+  display: inline-block;
+  float: left;
+  width: 20%;
+  height: 180px;
+  max-width: 150px;
+  margin-bottom: 0;
+}
+
+.grid.blank {
+  padding: .1px;
+}
+
+.grid.speaker {
+  height: 200px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.grid.speaker img {
+  width: 87%;
+  max-width: 140px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.grid.speaker a {
+  float: left;
+  margin: 0;
+  margin-left: 10px;
+  font-family: 'Helvetica', sans-serif;
+  color: #0095cb;
+  text-decoration: none;
+}
+
+.grid.speaker p {
+  margin: 0;
+  margin-left: 10px;
+  font-family: 'Adelle', serif;
+  font-size: 1em;
+  color: #040808;
+  text-align: left;
 }
 
 /*
