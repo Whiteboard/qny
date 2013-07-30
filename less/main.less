@@ -83,7 +83,7 @@ p {
 	.inner-wrap {
 		min-height: 50px;
 		position: relative;
-		width: 85%;
+		width: 100%;
 	}
 	ul {
 		list-style: none;
@@ -108,6 +108,7 @@ p {
 		position: absolute;
 		left: 30px;
 		width: 40%;
+		z-index: 999;
 		li {
 			float: left;
 			margin-right: 25px;
@@ -119,6 +120,7 @@ p {
 		right: 40px;
 		top: 0px;
 		width: 40%;
+		z-index: 999;
 		li {
 			float: right;
 			margin-left: 25px;
@@ -658,7 +660,6 @@ p {
 		.inner-wrap {
 			width: 100%;
 			.left {
-				position: absolute;
 				left: 20px;
 			}
 			.right {
@@ -696,6 +697,46 @@ p {
 		}
 	}
 
+	#signup-form {
+		h4 {
+			padding-left: 0;
+		}
+	}
+
+}
+
+@media @large {
+	#four {
+		#presenter-grid {
+			max-width: 755px;
+			min-height: 800px;
+			margin: 0 auto;
+			.tagline {
+				float: none;
+				width: 100%;
+				min-height: 100px;
+				max-width: 700px;
+				h5 {
+					padding-top: 20px;
+					padding-right: 0px;
+					text-align: center;
+				}
+			}
+			.grid-wrap {
+				width: 100%;
+				height: auto;
+				min-height: 600px;
+				max-width: 755px;
+			}
+		}
+	}
+	#signup-form {
+		h4 {
+			font-size: 1.1em;
+			padding-left: 6px;
+			margin-left: 0;
+		}
+	}
 }
 
 /*Fixing .five.columns issues*/

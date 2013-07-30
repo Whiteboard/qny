@@ -1077,7 +1077,7 @@ p {
 
 .navigation .inner-wrap {
   position: relative;
-  width: 85%;
+  width: 100%;
   min-height: 50px;
 }
 
@@ -1103,6 +1103,7 @@ p {
 .navigation .left {
   position: absolute;
   left: 30px;
+  z-index: 999;
   width: 40%;
   margin: 0;
 }
@@ -1116,6 +1117,7 @@ p {
   position: absolute;
   top: 0;
   right: 40px;
+  z-index: 999;
   width: 40%;
   margin: 0;
 }
@@ -1694,7 +1696,6 @@ p {
     width: 100%;
   }
   .navigation .inner-wrap .left {
-    position: absolute;
     left: 20px;
   }
   .navigation .inner-wrap .right {
@@ -1723,6 +1724,39 @@ p {
   }
   #faq-wrap .row .offset-by-one {
     padding-left: 0 !important;
+  }
+  #signup-form h4 {
+    padding-left: 0;
+  }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 960px) {
+  #four #presenter-grid {
+    max-width: 755px;
+    min-height: 800px;
+    margin: 0 auto;
+  }
+  #four #presenter-grid .tagline {
+    float: none;
+    width: 100%;
+    max-width: 700px;
+    min-height: 100px;
+  }
+  #four #presenter-grid .tagline h5 {
+    padding-top: 20px;
+    padding-right: 0;
+    text-align: center;
+  }
+  #four #presenter-grid .grid-wrap {
+    width: 100%;
+    height: auto;
+    max-width: 755px;
+    min-height: 600px;
+  }
+  #signup-form h4 {
+    padding-left: 6px;
+    margin-left: 0;
+    font-size: 1.1em;
   }
 }
 
