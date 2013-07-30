@@ -983,6 +983,8 @@ hr {
 
 */
 
+/*Shape Mixin addition*/
+
 /*
 
 All site-specific styles go here.
@@ -1041,10 +1043,14 @@ p {
 
 .full-width.row {
   width: 100%;
-  height: 65px;
+  min-height: 65px;
   margin-bottom: 0;
   color: #fff;
   background-color: #0095cb;
+}
+
+.full-width.row h4 {
+  line-height: 1.8em;
 }
 
 .q-cities {
@@ -1062,21 +1068,25 @@ p {
 
 .navigation {
   width: 100%;
-  min-height: 50px;
-  overflow: hidden;
+  height: 130px;
+  overflow: visible;
   background-color: #040808;
 }
 
+.navigation .inner-wrap {
+  position: relative;
+  width: 85%;
+  min-height: 50px;
+}
+
 .navigation ul {
+  padding: 0;
+  margin-top: 90px;
   list-style: none;
 }
 
-.navigation li {
-  float: left;
-}
-
 .navigation li a {
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'Copperplate';
   color: #e6e6e6;
   text-decoration: none;
   text-transform: uppercase;
@@ -1089,32 +1099,75 @@ p {
 }
 
 .navigation .left {
-  float: left;
+  position: absolute;
+  left: 30px;
   width: 40%;
+  margin: 0;
 }
 
 .navigation .left li {
-  margin-left: 15px;
+  float: left;
+  margin-right: 25px;
 }
 
 .navigation .right {
-  float: right;
+  position: absolute;
+  top: 0;
+  right: 40px;
   width: 40%;
+  margin: 0;
 }
 
 .navigation .right li {
-  margin-right: 15px;
+  float: right;
+  margin-left: 25px;
 }
 
 .navigation .brand {
-  float: left;
-  width: 20%;
+  position: relative;
+  height: 50px;
+  max-width: 200px;
+  margin: 0 auto;
+  overflow: visible;
+  background-color: none;
 }
 
-.navigation .brand .cities {
-  background-image: url('../img/qcities.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+.navigation .brand .oval {
+  position: absolute;
+  width: 350px;
+  height: 150px;
+  margin-top: 10px;
+  margin-left: -70px;
+  background-color: #040808;
+  border-radius: 50%;
+}
+
+.navigation .brand .q-cities {
+  position: relative;
+  bottom: -10px;
+  width: 40px;
+}
+
+.navigation .brand .q-cities img {
+  width: 40px;
+  height: auto;
+}
+
+.navigation .brand .ny {
+  margin-left: -31px;
+}
+
+.navigation .brand .ny h3 {
+  width: 100px;
+  padding: 0;
+  padding-top: 5px;
+  font-size: 1.1em;
+  font-weight: 600;
+  letter-spacing: .01em;
+  color: #e6e6e6;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid #fff;
 }
 
 #nav-static {
@@ -1167,12 +1220,12 @@ p {
 }
 
 #one #reviewslider .inner-wrap {
-  max-height: 300px;
+  height: 300px;
   overflow: hidden;
 }
 
 #one .bottom-half {
-  height: 400px;
+  min-height: 400px;
   margin-top: 80px;
   background: -webkit-linear-gradient(bottom, #000000 0%, rgba(0, 0, 0, 0) 100%);
   background: -moz-linear-gradient(bottom, #000000 0%, rgba(0, 0, 0, 0) 100%);
@@ -1219,29 +1272,68 @@ p {
 }
 
 #onehalf #reviews {
+  z-index: 999;
   max-width: 1000px;
   margin: 0 auto;
 }
 
 #onehalf #reviews h4 {
+  position: absolute;
+  padding-left: 4px;
   margin-top: 0;
   font-size: .8em;
   letter-spacing: .3em;
   color: #0095cb;
   text-align: center;
   text-transform: uppercase;
+  background-color: #040808;
 }
 
 #onehalf #reviews .bgblk {
-  z-index: 999;
+  width: 100px;
   padding: 10px;
+  margin: 0 auto;
   margin-top: -17px;
-  background-color: #040808;
+}
+
+#onehalf #reviewslider {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#onehalf #reviewslider i {
+  margin: 0;
+  margin-top: .5em;
+  color: #0095cb;
+  transition: all 0.3s ease-in-out;
+}
+
+#onehalf #reviewslider i:hover {
+  color: #65d6ff;
+  text-shadow: 0 3px 15px #0095cb;
 }
 
 #onehalf #reviewslider .inner-wrap {
   height: 200px;
+  margin-top: 20px;
   overflow: hidden;
+}
+
+#onehalf #reviewslider .inner-wrap .five.columns {
+  height: 200px;
+}
+
+#onehalf #reviewslider .inner-wrap p {
+  font-size: .8em;
+  font-style: italic;
+  text-align: center;
+}
+
+#onehalf #reviewslider .inner-wrap h5 {
+  margin: 6px;
+  color: #0095cb;
+  text-align: center;
 }
 
 /*Second Section*/
@@ -1420,6 +1512,150 @@ p {
   font-size: 1em;
   color: #040808;
   text-align: left;
+}
+
+#signup-form {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 50px;
+  padding: 6px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid #0095cb;
+}
+
+#signup-form .form-wrap {
+  position: absolute;
+  top: 6px;
+  right: 5px;
+  width: 80%;
+  min-height: 50px;
+  margin-left: 10px;
+}
+
+#signup-form h4,
+#signup-form input {
+  padding: 0;
+  margin: 0;
+}
+
+#signup-form h4 {
+  width: 17%;
+  padding-left: 22px;
+  margin-top: 14px;
+  margin-left: 10px;
+  font-size: 1.3em;
+}
+
+#signup-form .email {
+  width: 80%;
+  min-height: 47px;
+}
+
+#signup-form .submit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 19.25%;
+  min-height: 51px;
+  margin: 0;
+  color: #fff;
+  background-color: #0095cb;
+  border: none;
+  border-left: 3px solid #040808;
+  transition: background-color 0.13s ease-in-out;
+}
+
+#signup-form .submit:hover {
+  background-color: #004a65;
+}
+
+/*Section 5*/
+
+#five h2 {
+  margin-top: 70px;
+  font-size: 2.3em;
+  font-weight: 300;
+  color: #0095cb;
+  text-align: center;
+}
+
+#five .center {
+  padding-top: 0;
+  margin-top: 50px;
+  line-height: 1.8em;
+  text-align: center;
+}
+
+#five #eventbrite {
+  width: 60%;
+  max-width: 600px;
+  min-height: 350px;
+  padding: 1px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  background-color: #cccccc;
+}
+
+#five #eventbrite p.center {
+  min-width: 0;
+  color: #0095cb;
+}
+
+/*Section 6*/
+
+#six {
+  min-height: 700px;
+  color: #040808;
+  background-color: #fff;
+}
+
+#six .inner-wrap {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#six h3 {
+  font-size: 2em;
+  color: #0095cb;
+}
+
+#six #faq-wrap {
+  max-width: 1000px;
+}
+
+#six #faq-wrap h3 {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+/*Section 7*/
+
+#seven {
+  color: #5e6e66;
+}
+
+#seven .imageborder {
+  width: 100%;
+  height: 100px;
+  background-image: url('../img/footer.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#seven h3 {
+  text-transform: uppercase;
+}
+
+#seven #sponsors {
+  padding-bottom: 100px;
+}
+
+#seven #sponsors img {
+  height: auto;
+  max-width: 140px;
 }
 
 /*
