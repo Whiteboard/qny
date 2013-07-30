@@ -983,7 +983,9 @@ hr {
 
 */
 
-/*Shape Mixin addition*/
+/****************************************
+************ Media Queries **************
+****************************************/
 
 /*
 
@@ -1154,7 +1156,7 @@ p {
 }
 
 .navigation .brand .ny {
-  margin-left: -31px;
+  margin-left: -30px;
 }
 
 .navigation .brand .ny h3 {
@@ -1321,6 +1323,7 @@ p {
 }
 
 #onehalf #reviewslider .inner-wrap .five.columns {
+  float: left;
   height: 200px;
 }
 
@@ -1334,6 +1337,10 @@ p {
   margin: 6px;
   color: #0095cb;
   text-align: center;
+}
+
+#onehalf #reviewslider .slide {
+  width: 30% !important;
 }
 
 /*Second Section*/
@@ -1656,6 +1663,75 @@ p {
 #seven #sponsors img {
   height: auto;
   max-width: 140px;
+}
+
+/*********** Media Queries ****************/
+
+@media only screen and (min-width: 961px) and (max-width: 1130px) {
+  #four #presenter-grid {
+    max-width: 755px;
+    min-height: 800px;
+    margin: 0 auto;
+  }
+  #four #presenter-grid .tagline {
+    float: none;
+    width: 100%;
+    max-width: 700px;
+    min-height: 100px;
+  }
+  #four #presenter-grid .tagline h5 {
+    padding-top: 20px;
+    padding-right: 0;
+    text-align: center;
+  }
+  #four #presenter-grid .grid-wrap {
+    width: 100%;
+    height: auto;
+    max-width: 755px;
+    min-height: 600px;
+  }
+  .navigation .inner-wrap {
+    width: 100%;
+  }
+  .navigation .inner-wrap .left {
+    position: absolute;
+    left: 20px;
+  }
+  .navigation .inner-wrap .right {
+    right: 20px;
+  }
+}
+
+@media only screen and (min-width: 961px) and (max-width: 1069px) {
+  #two .columns.eleven.offset-by-one,
+  #two .columns.five.offset-by-one {
+    padding-left: 0;
+  }
+  #two .columns.eleven {
+    width: 70% !important;
+  }
+  #two .columns.five {
+    width: 30% !important;
+  }
+  .slidewrap-inner {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #faq-wrap .row {
+    width: 85%;
+    margin: 0 auto;
+  }
+  #faq-wrap .row .offset-by-one {
+    padding-left: 0 !important;
+  }
+}
+
+/*Fixing .five.columns issues*/
+
+@media only screen and (min-width: 960px) and (max-width: 999px) {
+  #one .five.columns {
+    width: 250px !important;
+  }
 }
 
 /*

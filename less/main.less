@@ -150,7 +150,7 @@ p {
 			}
 		}
 		.ny {
-			margin-left: -31px;
+			margin-left: -30px;
 			h3 {
 				color: darken(#fff, 10%);
 				width: 100px;
@@ -300,6 +300,7 @@ p {
 			margin-top: 20px;
 			.five.columns {
 				height: 200px;
+				float: left;
 			}
 			p {
 				font-style: italic;
@@ -311,6 +312,9 @@ p {
 				color: @blue;
 				margin: 6px;
 			}
+		}
+		.slide {
+			width: 30% !important;
 		}
 	}
 }
@@ -619,3 +623,87 @@ p {
 		}
 	}
 }
+
+
+
+
+/*********** Media Queries ****************/
+@media @huge {
+	#four {
+		#presenter-grid {
+			max-width: 755px;
+			min-height: 800px;
+			margin: 0 auto;
+			.tagline {
+				float: none;
+				width: 100%;
+				min-height: 100px;
+				max-width: 700px;
+				h5 {
+					padding-top: 20px;
+					padding-right: 0px;
+					text-align: center;
+				}
+			}
+			.grid-wrap {
+				width: 100%;
+				height: auto;
+				min-height: 600px;
+				max-width: 755px;
+			}
+		}
+	}
+
+	.navigation {
+		.inner-wrap {
+			width: 100%;
+			.left {
+				position: absolute;
+				left: 20px;
+			}
+			.right {
+				right: 20px;
+			}
+		}
+	}
+}
+
+@media @fixgrid {
+	#two {
+		.columns.eleven.offset-by-one, .columns.five.offset-by-one {
+			padding-left: 0px;
+		}
+		.columns.eleven {
+			width: 70% !important;
+		}
+		.columns.five {
+			width: 30% !important;
+		}
+	}
+
+	.slidewrap-inner{
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	#faq-wrap {
+		.row {
+			width: 85%;
+			margin: 0 auto;
+			.offset-by-one {
+				padding-left: 0 !important;
+			}
+		}
+	}
+
+}
+
+/*Fixing .five.columns issues*/
+@media only screen and (min-width:960px) and (max-width:999px) {
+	#one {
+		.five.columns {
+		width: 250px !important;
+		}
+	}
+}
+

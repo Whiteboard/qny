@@ -5,3 +5,16 @@
 (function($,w,undefined){
 
 }(jQuery, window));
+
+			
+
+/*Quote slider*/
+
+
+
+
+
+
+
+
+
