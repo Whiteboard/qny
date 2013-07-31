@@ -61,6 +61,10 @@ p {
 	margin-bottom: 0;
 	h4 {
 		line-height: 1.8em;
+		width: 90%;
+		margin:0 auto;
+		padding-top: 20px;
+		padding-bottom: 10px;
 	}
 }
 
@@ -902,11 +906,19 @@ p {
 	}
 }
 
-/*Hide conventional nav*/
+/*Hide conventional nav, fix some bugs*/
 @media only screen and (max-width:768px) {
 	.navigation {
 		.right, .left {
 			display: none;
+		}
+	}
+	#two {
+		.columns.four {
+			width: 30% !important;
+		}
+		.columns.five {
+			margin-left: 2% !important;
 		}
 	}
 }
@@ -938,8 +950,55 @@ p {
 	#onehalf {
 		height: 250px;
 	}
+
+	#two {
+		.columns.four {
+			min-width: 185px !important;
+		}
+		.columns.five {
+			width: 60% !important;
+		}
+	}
 }
 
+/*Fix that photo of Gabe*/
+@media only screen and (max-width:585px) {
+	#two {
+	.columns.four {
+		width: 40% !important;
+	}
+	.columns.five {
+		width: 50% !important;
+	}
+	}
+}
+
+@media only screen and (max-width:428px) {
+	#onehalf {
+		height: 200px;
+	}
+	#two {
+		.columns.four {
+			width: 100% !important;
+		}
+		#gabe {
+			min-height: 300px;
+		}
+		.columns.five {
+			width: 100% !important;
+			margin-left: 0 !important;
+		}
+	}
+
+	#four {
+		.speaker-row {
+			height: auto;
+			.speaker.grid {
+				width: 100%;
+			}
+		}
+	}
+}
 
 /* <400px */
 @media @tiny {
