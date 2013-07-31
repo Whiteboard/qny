@@ -1010,6 +1010,7 @@ body {
   font-size: 14px;
   color: #fff;
   background-color: #040808;
+  transition: all 0.2s ease-in-out;
 }
 
 h1,
@@ -1248,10 +1249,8 @@ p {
 }
 
 #one .bottom-half #image-grid {
-  min-width: 270px;
-  min-height: 240px;
-  background-image: url('../img/img-grid.jpg');
-  background-repeat: no-repeat;
+  height: auto;
+  max-width: 270px;
 }
 
 #one .bottom-half p {
@@ -1353,6 +1352,13 @@ p {
   background-color: #fff;
 }
 
+#two .row h3 {
+  display: none;
+  margin-top: 0;
+  font-size: 1.3em;
+  color: #0095cb;
+}
+
 #two #gabe {
   width: 100%;
   height: auto;
@@ -1367,6 +1373,7 @@ p {
 }
 
 #two .eleven.columns h3 {
+  display: block;
   margin-top: 0;
   font-size: 1.3em;
   color: #0095cb;
@@ -1526,6 +1533,7 @@ p {
 #signup-form {
   position: relative;
   width: 100%;
+  height: 50px;
   max-width: 1000px;
   min-height: 50px;
   padding: 6px;
@@ -1538,7 +1546,7 @@ p {
   position: absolute;
   top: 6px;
   right: 5px;
-  width: 80%;
+  width: 98.5%;
   min-height: 50px;
   margin-left: 10px;
 }
@@ -1550,16 +1558,23 @@ p {
 }
 
 #signup-form h4 {
-  width: 17%;
-  padding-left: 22px;
+  width: 40%;
+  padding-left: 12px;
   margin-top: 14px;
   margin-left: 10px;
-  font-size: 1.3em;
+  font-size: 1.2em;
+  color: #fff;
 }
 
 #signup-form .email {
   width: 80%;
   min-height: 47px;
+  opacity: 0.7;
+  transition: all 0.2s ease-in-out;
+}
+
+#signup-form .email:focus {
+  opacity: 1;
 }
 
 #signup-form .submit {
@@ -1669,7 +1684,20 @@ p {
 
 /*********** Media Queries ****************/
 
-@media only screen and (min-width: 961px) and (max-width: 1130px) {
+/* >1130px */
+
+@media only screen and (min-width: 1130px) {
+  #photo-ribbon {
+    display: none;
+  }
+}
+
+/* <1130px */
+
+@media only screen and (max-width: 1130px) {
+  #two {
+    margin-top: 0;
+  }
   #four #presenter-grid {
     max-width: 755px;
     min-height: 800px;
@@ -1703,7 +1731,16 @@ p {
   }
 }
 
-@media only screen and (min-width: 961px) and (max-width: 1069px) {
+/* <1069px */
+
+@media only screen and (max-width: 1069px) {
+  #one .columns.five {
+    width: 30% !important;
+    margin-left: 1% !important;
+  }
+  #one .columns.five p {
+    width: 100%;
+  }
   #two .columns.eleven.offset-by-one,
   #two .columns.five.offset-by-one {
     padding-left: 0;
@@ -1730,7 +1767,30 @@ p {
   }
 }
 
-@media only screen and (min-width: 801px) and (max-width: 960px) {
+/* <960px */
+
+@media only screen and (max-width: 960px) {
+  #one #image-grid {
+    display: none;
+  }
+  #one .columns.five {
+    width: 47% !important;
+    margin-left: 1% !important;
+  }
+  #one .columns.five p {
+    width: 100%;
+  }
+  #onehalf .slidecontrol {
+    position: absolute;
+    width: 32px;
+    height: 67px;
+  }
+  #onehalf .slidecontrol.left {
+    left: 20px;
+  }
+  #onehalf .slidecontrol.right {
+    right: 20px;
+  }
   #four #presenter-grid {
     max-width: 755px;
     min-height: 800px;
@@ -1760,11 +1820,129 @@ p {
   }
 }
 
-/*Fixing .five.columns issues*/
+/* <800px */
 
-@media only screen and (min-width: 960px) and (max-width: 999px) {
-  #one .five.columns {
-    width: 250px !important;
+@media only screen and (max-width: 800px) {
+  #onehalf {
+    height: 250px;
+  }
+  #two {
+    margin-top: 50px;
+  }
+  #two .row h3 {
+    display: block;
+  }
+  #two .row .offset-by-one {
+    padding-left: 0 !important;
+  }
+  #two .columns.eleven h3 {
+    display: none;
+  }
+  #four #presenter-grid {
+    max-width: 768px;
+    min-height: 800px;
+    margin: 0 auto;
+  }
+  #four #presenter-grid .tagline {
+    float: none;
+    width: 100%;
+    max-width: 700px;
+    min-height: 100px;
+  }
+  #four #presenter-grid .tagline h5 {
+    padding-top: 20px;
+    padding-right: 0;
+    text-align: center;
+  }
+  #four #presenter-grid .grid-wrap {
+    width: 100%;
+    height: auto;
+    max-width: 768px;
+    min-height: 600px;
+  }
+  #four .speaker-row {
+    margin-top: 20px;
+  }
+  #four .grid {
+    width: 25%;
+    margin-left: 5%;
+  }
+  #four .blank {
+    display: none;
+  }
+  #four .grid.speaker p {
+    margin-left: 8px;
+  }
+  #four .grid.speaker a {
+    margin-left: 8px;
+  }
+  #four .speaker-row.two {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  #four .speaker-row.two .grid {
+    width: 40%;
+    margin-left: 5%;
+  }
+}
+
+/*Fix reviewslider breakpoint mixup*/
+
+@media only screen and (max-width: 822px) {
+  #onehalf #reviewslider .slide {
+    width: 97% !important;
+    margin-top: 30px;
+  }
+}
+
+/*Fix .five.columns problems in #two*/
+
+@media only screen and (max-width: 785px) {
+  #two .columns.eleven {
+    display: none;
+  }
+}
+
+/*Hide conventional nav*/
+
+@media only screen and (max-width: 768px) {
+  .navigation .right,
+  .navigation .left {
+    display: none;
+  }
+}
+
+/*Hide slide controls*/
+
+@media only screen and (max-width: 610px) {
+  .slidecontrol {
+    display: none;
+  }
+}
+
+/* <600px */
+
+@media only screen and (max-width: 600px) {
+  #one .inner-wrap .five.columns {
+    width: 100% !important;
+  }
+  #one .inner-wrap #image-grid {
+    width: 100% !important;
+  }
+  #one .inner-wrap #image-grid img {
+    margin: 0 auto;
+  }
+  #onehalf {
+    height: 250px;
+  }
+}
+
+/* <400px */
+
+@media only screen and (max-width: 400px) {
+  #onehalf #reviewslider .slide {
+    width: 97% !important;
   }
 }
 

@@ -25,6 +25,7 @@ body {
 	background-color: @qblack;
 	color: #fff;
 	margin: 0;
+	transition: all .2s ease-in-out;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -232,10 +233,8 @@ p {
 			text-align: center;
 		}
 		#image-grid {
-			background-image: url('../img/img-grid.jpg');
-			background-repeat: no-repeat;
-			min-width: 270px;
-			min-height: 240px;
+			max-width: 270px;
+			height: auto;
 		}
 		p {
 			margin-top: 0;
@@ -328,6 +327,14 @@ p {
 	background-color: #fff;
 	color: @qblack;
 	padding-top: 50px;
+	.row {
+		h3 {
+			display: none;
+			font-size: 1.3em;
+			margin-top: 0;
+			color: @blue;
+		}
+	}
 	#gabe {
 		width: 100%;
 		height: auto;
@@ -344,6 +351,7 @@ p {
 			font-size: 1.3em;
 			margin-top: 0;
 			color: @blue;
+			display: block;
 		}
 	}
 	p.five.columns {
@@ -498,6 +506,7 @@ p {
 #signup-form {
 	width: 100%;
 	max-width: 1000px;
+	height: 50px;
 	margin: 0 auto;
 	padding: 6px;
 	border: 1px solid @blue;
@@ -506,7 +515,7 @@ p {
 	position: relative;
 	.form-wrap {
 		min-height: 50px;
-		width: 80%;
+		width: 98.5%;
 		position: absolute;
 		right: 5px;
 		top: 6px;
@@ -517,15 +526,21 @@ p {
 		padding: 0;
 	}
 	h4 {
-		width: 17%;
-		font-size: 1.3em;
+		width: 40%;
+		font-size: 1.2em;
 		margin-left: 10px;
 		margin-top: 14px;
-		padding-left: 22px;
+		padding-left: 12px;
+		color: #fff;
 	}
 	.email {
 		width: 80%;
 		min-height: 47px;
+		opacity: 0.7;
+		transition: all .2s ease-in-out;
+	}
+	.email:focus {
+		opacity: 1;
 	}
 	.submit {
 		background-color: @blue;
@@ -630,7 +645,18 @@ p {
 
 
 /*********** Media Queries ****************/
+/* >1130px */
+@media @gigantic {
+	#photo-ribbon {
+		display: none;
+	}
+}
+
+/* <1130px */
 @media @huge {
+	#two {
+		margin-top: 0px;
+	}
 	#four {
 		#presenter-grid {
 			max-width: 755px;
@@ -669,7 +695,18 @@ p {
 	}
 }
 
+/* <1069px */
 @media @fixgrid {
+	#one {
+		.columns.five {
+			width: 30% !important;
+			margin-left: 1% !important;
+			p {
+				width: 100%;
+			}
+		}
+	}
+
 	#two {
 		.columns.eleven.offset-by-one, .columns.five.offset-by-one {
 			padding-left: 0px;
@@ -705,7 +742,37 @@ p {
 
 }
 
+/* <960px */
 @media @large {
+	#one {
+		#image-grid {
+			display: none;
+		}
+		.columns.five {
+			width: 47% !important;
+			margin-left: 1% !important;
+			p {
+				width: 100%;
+			}
+		}
+	}
+
+
+	#onehalf {
+		.slidecontrol {
+			position: absolute;
+			width: 32px;
+			height: 67px;
+		}
+		.slidecontrol.left {
+			left: 20px;
+		}
+		.slidecontrol.right {
+			right: 20px;
+		}
+	}
+
+
 	#four {
 		#presenter-grid {
 			max-width: 755px;
@@ -739,12 +806,149 @@ p {
 	}
 }
 
-/*Fixing .five.columns issues*/
-@media only screen and (min-width:960px) and (max-width:999px) {
-	#one {
-		.five.columns {
-		width: 250px !important;
+/* <800px */
+@media @medium {
+	#onehalf {
+		height: 250px;
+	}
+	#two {
+		margin-top: 50px;
+		.row {
+			h3 {
+				display: block;
+			}
+			.offset-by-one {
+				padding-left: 0 !important;
+			}
+		}
+		.columns.eleven {
+			h3 {
+				display: none;
+			}
+		}
+	}
+
+	#four {
+		#presenter-grid {
+			max-width: 768px;
+			min-height: 800px;
+			margin: 0 auto;
+			.tagline {
+				float: none;
+				width: 100%;
+				min-height: 100px;
+				max-width: 700px;
+				h5 {
+					padding-top: 20px;
+					padding-right: 0px;
+					text-align: center;
+				}
+			}
+			.grid-wrap {
+				width: 100%;
+				height: auto;
+				min-height: 600px;
+				max-width: 768px;
+			}
+		}
+		.speaker-row {
+			margin-top: 20px;
+		}
+		.grid {
+			margin-left: 5%;
+			width: 25%;
+		}
+		.blank {
+			display: none;
+		}
+		.grid.speaker {
+			p {
+				margin-left: 8px;
+			}
+			a {
+				margin-left: 8px;
+			}
+		}
+		.speaker-row.two {
+			width: 60%;
+			margin: 0 auto;
+			margin-top: 20px;
+			.grid {
+				width: 40%;
+				margin-left: 5%;
+			}
 		}
 	}
 }
 
+/*Fix reviewslider breakpoint mixup*/
+@media only screen and (max-width:822px) {
+	#onehalf {
+		#reviewslider {
+			.slide {
+				width: 97% !important;
+				margin-top: 30px;
+			}
+		}
+	}
+}
+
+/*Fix .five.columns problems in #two*/
+@media only screen and (max-width:785px) {
+	#two {
+		.columns.eleven {
+			display: none;
+		}
+	}
+}
+
+/*Hide conventional nav*/
+@media only screen and (max-width:768px) {
+	.navigation {
+		.right, .left {
+			display: none;
+		}
+	}
+}
+
+/*Hide slide controls*/
+@media only screen and (max-width:610px) {
+	.slidecontrol {
+		display: none;
+	}
+}
+
+
+/* <600px */
+@media @small {
+	#one {
+		.inner-wrap {
+			.five.columns {
+				width: 100% !important;
+			}
+			#image-grid {
+				width: 100% !important;
+				img {
+					margin: 0 auto;
+				}
+			}
+		}
+	}
+
+	#onehalf {
+		height: 250px;
+	}
+}
+
+
+/* <400px */
+@media @tiny {
+	#onehalf {
+		#reviewslider {
+			.slide {
+				width: 97% !important;
+			}
+		}
+	}
+	
+}
