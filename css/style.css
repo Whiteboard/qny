@@ -1524,6 +1524,12 @@ p {
   font-family: 'Helvetica', sans-serif;
   color: #0095cb;
   text-decoration: none;
+  transition: all 0.13s ease-in-out;
+}
+
+.grid.speaker a:hover {
+  margin-left: 13px;
+  color: #32c8ff;
 }
 
 .grid.speaker p {
@@ -1533,6 +1539,39 @@ p {
   font-size: 1em;
   color: #040808;
   text-align: left;
+}
+
+/*Speaker Bios*/
+
+.box {
+  position: relative;
+  z-index: 999;
+  display: none;
+  width: 70%;
+  max-width: 500px;
+  min-height: 200px;
+  padding: 10px;
+  text-align: left;
+  background-color: #fff;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.box .description {
+  font-size: 1em;
+  color: #040808;
+}
+
+.box .close {
+  position: relative;
+  top: 0;
+  right: 0;
+  background-color: red;
+}
+
+.box.visible {
+  display: block;
+  opacity: 1;
 }
 
 #signup-form {

@@ -497,6 +497,11 @@ p {
 		margin: 0;
 		margin-left: 10px;
 		float: left;
+		transition: all .13s ease-in-out;
+	}
+	a:hover {
+		margin-left: 13px;
+		color: lighten(@blue, 20%);
 	}
 	p {
 		font-family: @serif;
@@ -507,6 +512,39 @@ p {
 		text-align: left;
 	}
 }
+
+/*Speaker Bios*/
+.box {
+	position: relative;
+	width: 70%;
+	max-width: 500px;
+	min-height: 200px;
+	z-index: 999;
+	background-color: #fff;
+	display: none;
+	text-align: left;
+	padding: 10px;
+	opacity: 0;
+	transition: all .3s ease-in-out;
+	display: none;
+	.description {
+		font-size: 1em;
+		color: @qblack;
+	}
+	.close {
+		position: relative;
+		top: 0;
+		right: 0;
+		background-color: red;
+	}
+}
+.box.visible {
+	opacity: 1;
+	display: block;
+}
+
+
+
 
 #signup-form {
 	width: 100%;
