@@ -1442,6 +1442,7 @@ p {
 /*Section 4. Speakers.*/
 
 #four {
+  padding-bottom: 50px;
   margin-top: 50px;
 }
 
@@ -1869,10 +1870,13 @@ p {
   }
   #four .grid {
     width: 25%;
-    margin-left: 5%;
+    margin-left: 6%;
   }
   #four .blank {
     display: none;
+  }
+  #four .grid.speaker {
+    margin-left: 6%;
   }
   #four .grid.speaker p {
     margin-left: 8px;
@@ -1897,6 +1901,9 @@ p {
   #onehalf #reviewslider .slide {
     width: 97% !important;
     margin-top: 30px;
+  }
+  #four #signup-form {
+    margin-top: 50px;
   }
 }
 
@@ -1952,6 +1959,12 @@ p {
   #two .columns.five {
     width: 60% !important;
   }
+  #four .speaker.grid p,
+  #four .speaker.grid a {
+    width: 87%;
+    font-size: .9em;
+    text-align: left;
+  }
 }
 
 /*Fix that photo of Gabe*/
@@ -1979,11 +1992,36 @@ p {
     width: 100% !important;
     margin-left: 0 !important;
   }
+  #four {
+    padding-bottom: 20px;
+  }
   #four .speaker-row {
-    height: auto;
+    width: 70%;
+    margin: 0 auto;
   }
   #four .speaker-row .speaker.grid {
-    width: 100%;
+    width: 100% !important;
+    height: 300px;
+    min-width: 250px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  #four .speaker-row .speaker.grid .profile img {
+    max-width: 240px;
+    padding-top: 7px;
+  }
+  #four .speaker-row .speaker.grid p,
+  #four .speaker-row .speaker.grid a {
+    margin-left: 15px;
+  }
+  #four .speaker-row.two {
+    width: 70%;
+  }
+  #signup-form .form-wrap {
+    width: 97%;
+  }
+  #signup-form h4 {
+    width: 70%;
   }
 }
 
