@@ -1190,6 +1190,46 @@ p {
   display: none;
 }
 
+/*Mobile Nav*/
+
+#nav-mobile .mobile {
+  display: none;
+  background-color: #040808;
+  transition: height 1s ease-in-out;
+}
+
+#nav-mobile .mobile ul {
+  margin-top: 130px;
+}
+
+#nav-mobile .nav-button {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  display: none;
+  padding: 10px;
+  background-color: #333333;
+  transition: all 0.2s ease-in-out;
+}
+
+#nav-mobile .nav-button i {
+  color: #fff;
+}
+
+#nav-mobile .nav-button:hover {
+  top: 14px;
+  right: 9px;
+  padding: 11px;
+  background-color: #404040;
+}
+
+#nav-mobile .nav-button:active {
+  top: 13px;
+  right: 8px;
+  padding: 12px;
+  background-color: #595959;
+}
+
 /*First Section*/
 
 .center {
@@ -1543,6 +1583,36 @@ p {
 
 /*Speaker Bios*/
 
+.box-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.box-wrap.visible {
+  display: block;
+  height: 100%;
+  opacity: 1;
+}
+
+.box-wrap.visible .box {
+  display: block;
+}
+
+.box-wrap.visible .box .description {
+  display: block;
+}
+
+.box-wrap.visible .box .close {
+  display: block;
+}
+
 .box {
   position: relative;
   z-index: 999;
@@ -1550,10 +1620,12 @@ p {
   width: 70%;
   max-width: 500px;
   min-height: 200px;
-  padding: 10px;
+  padding: 30px;
+  margin: 0 auto;
+  margin-top: 60px;
   text-align: left;
   background-color: #fff;
-  opacity: 0;
+  opacity: 0.8;
   transition: all 0.3s ease-in-out;
 }
 
@@ -1563,15 +1635,26 @@ p {
 }
 
 .box .close {
-  position: relative;
+  position: absolute;
   top: 0;
   right: 0;
-  background-color: red;
+  width: 30px;
+  height: 24px;
+  padding: 1px;
+  padding-top: 7px;
+  text-align: center;
+  background-color: #c63954;
+  transition: all 0.2s ease-in-out;
 }
 
-.box.visible {
-  display: block;
-  opacity: 1;
+.box .close:hover {
+  top: -3px;
+  right: -3px;
+  width: 33px;
+  height: 27px;
+  padding-top: 10px;
+  cursor: pointer;
+  background-color: #d77487;
 }
 
 #signup-form {
@@ -1686,6 +1769,7 @@ p {
 }
 
 #six h3 {
+  font-family: 'Adelle', serif;
   font-size: 2em;
   color: #0095cb;
 }
@@ -1957,9 +2041,36 @@ p {
 /*Hide conventional nav, fix some bugs*/
 
 @media only screen and (max-width: 768px) {
+  {
+    /*Mobile Nav*/
+  
+  }
+  .navigation {
+    height: 80px;
+  }
+  .navigation .brand .oval {
+    margin-top: -30px;
+    margin-left: -75px;
+  }
+  .navigation .brand .q-cities {
+    bottom: -55px;
+  }
+  .navigation .ny {
+    display: none;
+  }
   .navigation .right,
   .navigation .left {
     display: none;
+  }
+  #nav-mobile .mobile.active {
+    z-index: 999;
+    display: block;
+    height: 600px;
+    margin-top: 100px;
+    text-align: center;
+  }
+  #nav-mobile .nav-button {
+    display: block;
   }
   #two .columns.four {
     width: 30% !important;

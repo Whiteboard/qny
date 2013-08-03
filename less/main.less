@@ -185,6 +185,42 @@ p {
 			position: fixed;
 		}
 
+	/*Mobile Nav*/
+	#nav-mobile {
+		.mobile {
+			display: none;
+			transition: height 1s ease-in-out;
+			background-color: @qblack;
+			ul {
+				margin-top: 130px;
+			}
+		}
+		.nav-button {
+			position: absolute;
+			top: 15px;
+			right: 10px;
+			padding: 10px;
+			background-color: lighten(#000, 20%);
+			transition: all .2s ease-in-out;
+			display: none;
+			i {
+				color: #fff;
+			}
+		}
+		.nav-button:hover {
+			top: 14px;
+			right: 9px;
+			padding: 11px;
+			background-color: lighten(#000, 25%);
+		}
+		.nav-button:active {
+			top: 13px;
+			right: 8px;
+			padding: 12px;
+			background-color: lighten(#000, 35%);
+		}
+	}
+
 
 
 
@@ -514,17 +550,44 @@ p {
 }
 
 /*Speaker Bios*/
+.box-wrap {
+	position: fixed;
+	opacity: 0;
+	transition: all .2s ease-in-out;
+	top: 0;
+	left: 0;
+	display: none;
+	width: 100%;
+	overflow: hidden;
+	background-color: rgba(0,0,0,0.1);
+}
+.box-wrap.visible {
+	opacity: 1;
+	height: 100%;
+	display: block;
+	.box {
+		display: block;
+		.description {
+			display: block;
+		}
+		.close {
+			display: block;
+		}
+	}
+
+}
 .box {
 	position: relative;
 	width: 70%;
 	max-width: 500px;
 	min-height: 200px;
+	margin: 0 auto;
+	margin-top: 60px;
 	z-index: 999;
 	background-color: #fff;
-	display: none;
+	opacity: 0.8;
 	text-align: left;
-	padding: 10px;
-	opacity: 0;
+	padding: 30px;
 	transition: all .3s ease-in-out;
 	display: none;
 	.description {
@@ -532,16 +595,28 @@ p {
 		color: @qblack;
 	}
 	.close {
-		position: relative;
+		position: absolute;
 		top: 0;
 		right: 0;
-		background-color: red;
+		height: 24px;
+		width: 30px;
+		background-color: #c63954;
+		transition: all .2s ease-in-out;
+		padding: 1px;
+		padding-top: 7px;
+		text-align: center;
+	}
+	.close:hover {
+		background-color: lighten(#c63954, 15%);
+		height: 27px;
+		width: 33px;
+		padding-top: 10px;
+		top: -3px;
+		right: -3px;
+		cursor: pointer;
 	}
 }
-.box.visible {
-	opacity: 1;
-	display: block;
-}
+
 
 
 
@@ -650,6 +725,7 @@ p {
 	h3 {
 		color: @blue;
 		font-size: 2em;
+		font-family: @serif;
 	}
 	#faq-wrap {
 		max-width: 1000px;
@@ -954,8 +1030,34 @@ p {
 /*Hide conventional nav, fix some bugs*/
 @media only screen and (max-width:768px) {
 	.navigation {
+		height: 80px;
+		.brand{
+			.oval {
+				margin-top: -30px;
+				margin-left: -75px;
+			}
+			.q-cities {
+				bottom: -55px;
+			}
+		}
+		.ny {
+			display: none;
+		}
 		.right, .left {
 			display: none;
+		}
+	}
+	/*Mobile Nav*/
+	#nav-mobile {
+		.mobile.active {
+			display: block;
+			height: 600px;
+			text-align: center;
+			z-index: 999;
+			margin-top: 100px;
+		}
+		.nav-button {
+			display: block;
 		}
 	}
 	#two {

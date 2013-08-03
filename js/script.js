@@ -13,10 +13,17 @@ $('.more').on('click',function(event){
 
 	$('.box').find('.description').html(desc);
 
-	$('.box').addClass('.visible');
+	$('.box-wrap').addClass('visible');
 });
 
-4('.close')on('click',function(event){
-	event.preventDefault();
-	$('.box').removeClass('.visible');
+$('.close').click(function (event) {
+    if ($('.box-wrap').hasClass('visible'))
+        $('.box-wrap').removeClass("visible");
+   event.stopPropagation();
+});
+
+$('.box-wrap').click(function (event) {
+	if ($('.box-wrap').hasClass('visible'))
+		$('.box-wrap').removeClass("visible");
+	event.stopPropagation();
 });
