@@ -1055,7 +1055,7 @@ p {
 .full-width.row h4 {
   width: 90%;
   padding-top: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   margin: 0 auto;
   line-height: 1.8em;
 }
@@ -1337,7 +1337,7 @@ p {
 }
 
 #onehalf #reviews .bgblk {
-  width: 100px;
+  width: 80px;
   padding: 10px;
   margin: 0 auto;
   margin-top: -17px;
@@ -1967,6 +1967,21 @@ p {
   #two .columns.eleven h3 {
     display: none;
   }
+}
+
+/*Fix reviewslider breakpoint mixup*/
+
+@media only screen and (max-width: 822px) {
+  #onehalf #reviewslider .slide {
+    width: 97% !important;
+    margin-top: 30px;
+  }
+  #four #signup-form {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 834px) {
   #four #presenter-grid {
     max-width: 768px;
     min-height: 800px;
@@ -2016,18 +2031,6 @@ p {
   #four .speaker-row.two .grid {
     width: 40%;
     margin-left: 5%;
-  }
-}
-
-/*Fix reviewslider breakpoint mixup*/
-
-@media only screen and (max-width: 822px) {
-  #onehalf #reviewslider .slide {
-    width: 97% !important;
-    margin-top: 30px;
-  }
-  #four #signup-form {
-    margin-top: 50px;
   }
 }
 
@@ -2130,8 +2133,14 @@ p {
 }
 
 @media only screen and (max-width: 428px) {
+  .center {
+    min-width: 280px;
+  }
   #onehalf {
-    height: 200px;
+    height: 300px;
+  }
+  #onehalf #reviewslider {
+    height: 300px;
   }
   #two .columns.four {
     width: 100% !important;

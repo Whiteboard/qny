@@ -64,7 +64,7 @@ p {
 		width: 90%;
 		margin:0 auto;
 		padding-top: 20px;
-		padding-bottom: 10px;
+		padding-bottom: 20px;
 	}
 }
 
@@ -318,7 +318,7 @@ p {
 			padding: 10px;
 			margin: 0 auto;
 			margin-top: -17px;
-			width: 100px;
+			width: 80px;
 		}
 	}
 	#reviewslider {
@@ -947,7 +947,26 @@ p {
 			}
 		}
 	}
+}
 
+/*Fix reviewslider breakpoint mixup*/
+@media only screen and (max-width:822px) {
+	#onehalf {
+		#reviewslider {
+			.slide {
+				width: 97% !important;
+				margin-top: 30px;
+			}
+		}
+	}
+	#four {
+		#signup-form {
+			margin-top: 50px;
+		}
+	}
+}
+
+@media only screen and (max-width:834px) {
 	#four {
 		#presenter-grid {
 			max-width: 768px;
@@ -998,23 +1017,6 @@ p {
 				width: 40%;
 				margin-left: 5%;
 			}
-		}
-	}
-}
-
-/*Fix reviewslider breakpoint mixup*/
-@media only screen and (max-width:822px) {
-	#onehalf {
-		#reviewslider {
-			.slide {
-				width: 97% !important;
-				margin-top: 30px;
-			}
-		}
-	}
-	#four {
-		#signup-form {
-			margin-top: 50px;
 		}
 	}
 }
@@ -1132,8 +1134,14 @@ p {
 }
 
 @media only screen and (max-width:428px) {
+	.center {
+		min-width: 280px;
+	}
 	#onehalf {
-		height: 200px;
+		height: 300px;
+		#reviewslider {
+			height: 300px;
+		}
 	}
 	#two {
 		.columns.four {
