@@ -1631,6 +1631,7 @@ p {
 
 .box .description {
   font-size: 1em;
+  line-height: 1.6em;
   color: #040808;
 }
 
@@ -2166,6 +2167,11 @@ p {
   }
   #four .speaker-row.two {
     width: 70%;
+  }
+  #four .box {
+    width: 80%;
+    max-height: 500px;
+    overflow: scroll;
   }
   #signup-form .form-wrap {
     width: 97%;
