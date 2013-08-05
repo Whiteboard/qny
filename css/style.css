@@ -1479,6 +1479,11 @@ p {
   height: auto;
 }
 
+#three .center .accordion-wrap {
+  width: 100%;
+  height: auto;
+}
+
 /*Section 4. Speakers.*/
 
 #four {
@@ -1819,6 +1824,9 @@ p {
   #photo-ribbon {
     display: none;
   }
+  .accordion-wrap {
+    display: none;
+  }
 }
 
 /* <1130px */
@@ -1826,6 +1834,9 @@ p {
 @media only screen and (max-width: 1130px) {
   #two {
     margin-top: 0;
+  }
+  #three .accordion-wrap {
+    display: none;
   }
   #four #presenter-grid {
     max-width: 755px;
@@ -2151,6 +2162,38 @@ p {
   #two .columns.five {
     width: 100% !important;
     margin-left: 0 !important;
+  }
+  #three .accordion-wrap {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  #three .accordion-wrap .accordion {
+    padding: 20px;
+    padding-left: 10px;
+    color: #040808;
+  }
+  #three .accordion-wrap .accordion dt {
+    padding: 20px;
+    padding-top: 24px;
+    transition: all 0.2s ease-in-out;
+  }
+  #three .accordion-wrap .accordion dt:hover {
+    color: #264c4c;
+    background-color: #ffffff;
+  }
+  #three .accordion-wrap .accordion dt a {
+    display: block;
+    font-family: 'Adelle', serif;
+    font-size: 1.3em;
+    color: #040808;
+    text-decoration: none;
+  }
+  #three .accordion-wrap .accordion dd {
+    padding-bottom: 20px;
+    line-height: 1.6em;
+  }
+  #three .accordion-wrap .accordion dd h4 {
+    color: #0095cb;
   }
   #four {
     padding-bottom: 20px;

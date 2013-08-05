@@ -13,6 +13,26 @@ $('#mobile').click(function (event) {
 });
 
 
+/*Details Interaction*/
+    
+  var allPanels = $('.accordion > dd').hide();
+    
+  $('.accordion > dt > a').click(function() {
+      $this = $(this);
+      $target =  $this.parent().next();
+
+      if(!$target.hasClass('active')){
+         allPanels.removeClass('active').slideUp();
+         $target.addClass('active').slideDown();
+      }
+      
+    return false;
+  });
+
+
+
+
+/*Speaker Bios*/
 $('.more').on('click',function(event){
 	event.preventDefault();
 	var desc = $(this).attr('data-description');
@@ -34,3 +54,5 @@ $('.box-wrap').click(function (event) {
 		$('.box-wrap').removeClass("visible");
 	event.stopPropagation();
 });
+
+
