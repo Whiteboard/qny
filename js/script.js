@@ -6,6 +6,13 @@
 
 }(jQuery, window));
 
+$('#mobile').click(function (event) {
+	if($('.mobile').hasClass('.active'))
+	   $('.mobile').removeClass('.active');
+	else($('.mobile')).addClass('.active');
+});
+
+
 $('.more').on('click',function(event){
 	event.preventDefault();
 	var desc = $(this).attr('data-description');
