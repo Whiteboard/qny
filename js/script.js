@@ -11,10 +11,10 @@
 }(jQuery, window));
 
 //mobile menu
-$('#mobile').click(function (event) {
-	if($('.mobile').hasClass('active'))
-	   $('.mobile').removeClass('active');
-	else($('.mobile')).addClass('active');
+$('.nav-button').click(function (event) {
+	if($('#nav-mobile').hasClass('active'))
+	   $('#nav-mobile').removeClass('active');
+	else($('#nav-mobile')).addClass('active');
 });
 
 

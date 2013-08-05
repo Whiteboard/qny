@@ -1094,6 +1094,7 @@ p {
 
 .navigation li a {
   font-family: 'Copperplate';
+  font-weight: 300;
   color: #e6e6e6;
   text-decoration: none;
   text-transform: uppercase;
@@ -1102,7 +1103,7 @@ p {
 
 .navigation li a:hover {
   color: #fff;
-  text-shadow: 0 3px 15px #fff;
+  text-shadow: 0 3px 15px #fff, 0 0 0.2em #fff, 0 0 0.2em #fff;
 }
 
 .navigation .left {
@@ -1153,7 +1154,7 @@ p {
 
 .navigation .brand .q-cities {
   position: relative;
-  bottom: -10px;
+  bottom: -3px;
   width: 40px;
 }
 
@@ -1163,20 +1164,35 @@ p {
 }
 
 .navigation .brand .ny {
-  margin-left: -30px;
+  width: 117px;
+  margin: 0 auto;
+  margin-top: -25px;
 }
 
 .navigation .brand .ny h3 {
-  width: 100px;
+  width: 115px;
   padding: 0;
-  padding-top: 5px;
-  font-size: 1.1em;
+  padding-top: 4px;
+  font-size: 1.4em;
   font-weight: 600;
+  line-height: 1em;
   letter-spacing: .01em;
   color: #e6e6e6;
   text-align: center;
   text-transform: uppercase;
   border: 1px solid #fff;
+}
+
+.navigation .brand .date {
+  margin: 0 auto;
+  margin-top: -10px;
+  text-align: center;
+}
+
+.navigation .brand .date h3 {
+  font-size: 1.3em;
+  letter-spacing: .01em;
+  color: #0095cb;
 }
 
 #nav-static {
@@ -1192,6 +1208,11 @@ p {
 
 /*Mobile Nav*/
 
+#nav-mobile {
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
 #nav-mobile .mobile {
   display: none;
   background-color: #040808;
@@ -1199,7 +1220,15 @@ p {
 }
 
 #nav-mobile .mobile ul {
+  height: 20px;
+  padding: 10px;
   margin-top: 130px;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+#nav-mobile .mobile ul li {
+  padding: 10px;
 }
 
 #nav-mobile .nav-button {
@@ -1228,6 +1257,14 @@ p {
   right: 8px;
   padding: 12px;
   background-color: #595959;
+}
+
+#nav-mobile.active {
+  height: 400px;
+}
+
+#nav-mobile.active .mobile {
+  display: block;
 }
 
 /*First Section*/
@@ -2129,12 +2166,40 @@ p {
   #onehalf .slidecontrol.right {
     right: 20px;
   }
-  #three .detail {
+  #three #event-details {
     display: none;
-    color: #040808;
-    background-color: rgba(255, 255, 255, 0.9);
   }
-  #three .detail h4 {
+  #three .accordion-wrap {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  #three .accordion-wrap .accordion {
+    padding: 20px;
+    padding-left: 10px;
+    color: #040808;
+  }
+  #three .accordion-wrap .accordion dt {
+    padding: 20px;
+    padding-top: 24px;
+    transition: all 0.2s ease-in-out;
+  }
+  #three .accordion-wrap .accordion dt:hover {
+    color: #0095cb;
+    background-color: #ffffff;
+  }
+  #three .accordion-wrap .accordion dt a {
+    display: block;
+    font-family: 'Adelle', serif;
+    font-size: 1.3em;
+    color: #040808;
+    text-decoration: none;
+  }
+  #three .accordion-wrap .accordion dd {
+    padding-bottom: 20px;
+    margin-left: 32px;
+    line-height: 1.6em;
+  }
+  #three .accordion-wrap .accordion dd h4 {
     color: #0095cb;
   }
   #four #presenter-grid {
@@ -2276,7 +2341,8 @@ p {
   .navigation .brand .q-cities {
     bottom: -55px;
   }
-  .navigation .ny {
+  .navigation .ny,
+  .navigation .date {
     display: none;
   }
   .navigation .right,
@@ -2329,42 +2395,6 @@ p {
   }
   #two .columns.five {
     width: 60% !important;
-  }
-  #three #event-details {
-    display: none;
-  }
-  #three .accordion-wrap {
-    display: block;
-    background-color: rgba(255, 255, 255, 0.7);
-  }
-  #three .accordion-wrap .accordion {
-    padding: 20px;
-    padding-left: 10px;
-    color: #040808;
-  }
-  #three .accordion-wrap .accordion dt {
-    padding: 20px;
-    padding-top: 24px;
-    transition: all 0.2s ease-in-out;
-  }
-  #three .accordion-wrap .accordion dt:hover {
-    color: #0095cb;
-    background-color: #ffffff;
-  }
-  #three .accordion-wrap .accordion dt a {
-    display: block;
-    font-family: 'Adelle', serif;
-    font-size: 1.3em;
-    color: #040808;
-    text-decoration: none;
-  }
-  #three .accordion-wrap .accordion dd {
-    padding-bottom: 20px;
-    margin-left: 32px;
-    line-height: 1.6em;
-  }
-  #three .accordion-wrap .accordion dd h4 {
-    color: #0095cb;
   }
   #four .speaker.grid p,
   #four .speaker.grid a {
