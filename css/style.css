@@ -1482,6 +1482,18 @@ p {
   transition: all 0.2s ease-in-out;
 }
 
+#three .circle .detail {
+  display: none;
+  background-color: #ffffff;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+#three .circle .detail h4 {
+  margin-top: 0;
+  font-size: 1.3em;
+}
+
 #three .circle:hover {
   background-color: #ffffff;
   box-shadow: 0 0 15px #fff;
@@ -1490,6 +1502,26 @@ p {
 #three .circle:hover .title {
   font-size: 1.2em;
   color: #ffffff;
+}
+
+#three .circle.open {
+  overflow: visible;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#three .circle.open .title {
+  display: none;
+}
+
+#three .circle.open .detail {
+  z-index: 999;
+  display: block;
+  width: 70%;
+  min-width: 300px;
+  padding: 20px;
+  margin-left: -80px;
+  border-top: 8px solid #0095cb;
+  opacity: 1;
 }
 
 #three #city {

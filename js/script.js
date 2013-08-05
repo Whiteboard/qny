@@ -1,6 +1,10 @@
 /*
 	depends on:
 		jQuery
+
+		if($('.circle').hasClass('.open'))
+		$('.circle').removeclass('.open');
+	else($('circle')).addClass('.open');
 */
 (function($,w,undefined){
 
@@ -8,13 +12,21 @@
 
 //mobile menu
 $('#mobile').click(function (event) {
-	if($('.mobile').hasClass('.active'))
-	   $('.mobile').removeClass('.active');
-	else($('.mobile')).addClass('.active');
+	if($('.mobile').hasClass('active'))
+	   $('.mobile').removeClass('active');
+	else($('.mobile')).addClass('active');
 });
 
 
+
+
 //Desktop event details interaction
+$('.circle').click(function (event) {
+	if($('.circle').hasClass('open'))
+	   $('.circle').removeClass('open');
+	else($(this)).addClass('open');
+});
+
 
 
 //Mobile event details accordion
