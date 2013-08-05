@@ -1463,6 +1463,148 @@ p {
 
 /*Section 3. Crazy interactions start here.*/
 
+#three .circle {
+  position: absolute;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+
+#three .circle .title {
+  position: absolute;
+  font-family: 'Adelle', serif;
+  font-size: .7em;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.4);
+  transition: all 0.2s ease-in-out;
+}
+
+#three .circle:hover {
+  background-color: #ffffff;
+  box-shadow: 0 0 15px #fff;
+}
+
+#three .circle:hover .title {
+  font-size: 1.2em;
+  color: #ffffff;
+}
+
+#three #city {
+  top: 2100px;
+  left: 250px;
+  width: 60px;
+  height: 60px;
+}
+
+#three #city .title {
+  top: 10px;
+  right: -35px;
+}
+
+#three #thought {
+  top: 2000px;
+  right: 200px;
+  width: 80px;
+  height: 80px;
+}
+
+#three #thought .title {
+  top: 70px;
+  left: 10px;
+  width: 140px;
+}
+
+#three #thought:hover .title {
+  top: 75px;
+}
+
+#three #expert {
+  top: 2250px;
+  left: 200px;
+}
+
+#three #expert .title {
+  top: 0;
+  left: 50px;
+}
+
+#three #expert:hover .title {
+  top: -30px;
+}
+
+#three #influencers {
+  top: 2180px;
+  right: 260px;
+}
+
+#three #influencers .title {
+  left: -70px;
+  width: 60px;
+  text-align: right;
+}
+
+#three #influencers:hover .title {
+  left: -220px;
+  width: 220px;
+}
+
+#three #venue {
+  top: 2000px;
+  left: 150px;
+}
+
+#three #venue .title {
+  top: 28px;
+}
+
+#three #venue:hover .title {
+  top: 30px;
+}
+
+#three #fill1 {
+  top: 2350px;
+  right: 190px;
+  width: 50px;
+  height: 50px;
+}
+
+#three #fill1:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: none;
+}
+
+#three #fill2 {
+  top: 2220px;
+  right: 140px;
+  width: 30px;
+  height: 30px;
+}
+
+#three #fill2:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: none;
+}
+
+#three #fill3 {
+  top: 1950px;
+  left: 270px;
+  width: 40px;
+  height: 40px;
+}
+
+#three #fill3:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: none;
+}
+
+#three .detail.open {
+  position: absolute;
+  display: block;
+}
+
 #three .center {
   padding-top: 80px;
   margin-top: 0;
@@ -1827,6 +1969,14 @@ p {
   .accordion-wrap {
     display: none;
   }
+  #three .detail {
+    display: none;
+    color: #040808;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  #three .detail h4 {
+    color: #0095cb;
+  }
 }
 
 /* <1130px */
@@ -1837,6 +1987,14 @@ p {
   }
   #three .accordion-wrap {
     display: none;
+  }
+  #three .detail {
+    display: none;
+    color: #040808;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  #three .detail h4 {
+    color: #0095cb;
   }
   #four #presenter-grid {
     max-width: 755px;
@@ -1895,6 +2053,14 @@ p {
     width: 90%;
     margin: 0 auto;
   }
+  #three .detail {
+    display: none;
+    color: #040808;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  #three .detail h4 {
+    color: #0095cb;
+  }
   #faq-wrap .row {
     width: 85%;
     margin: 0 auto;
@@ -1930,6 +2096,14 @@ p {
   }
   #onehalf .slidecontrol.right {
     right: 20px;
+  }
+  #three .detail {
+    display: none;
+    color: #040808;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  #three .detail h4 {
+    color: #0095cb;
   }
   #four #presenter-grid {
     max-width: 755px;
@@ -2020,7 +2194,7 @@ p {
   }
   #four .grid {
     width: 25%;
-    margin-left: 6%;
+    margin-left: 8%;
   }
   #four .blank {
     display: none;
@@ -2124,6 +2298,42 @@ p {
   #two .columns.five {
     width: 60% !important;
   }
+  #three #event-details {
+    display: none;
+  }
+  #three .accordion-wrap {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  #three .accordion-wrap .accordion {
+    padding: 20px;
+    padding-left: 10px;
+    color: #040808;
+  }
+  #three .accordion-wrap .accordion dt {
+    padding: 20px;
+    padding-top: 24px;
+    transition: all 0.2s ease-in-out;
+  }
+  #three .accordion-wrap .accordion dt:hover {
+    color: #0095cb;
+    background-color: #ffffff;
+  }
+  #three .accordion-wrap .accordion dt a {
+    display: block;
+    font-family: 'Adelle', serif;
+    font-size: 1.3em;
+    color: #040808;
+    text-decoration: none;
+  }
+  #three .accordion-wrap .accordion dd {
+    padding-bottom: 20px;
+    margin-left: 32px;
+    line-height: 1.6em;
+  }
+  #three .accordion-wrap .accordion dd h4 {
+    color: #0095cb;
+  }
   #four .speaker.grid p,
   #four .speaker.grid a {
     width: 87%;
@@ -2162,38 +2372,6 @@ p {
   #two .columns.five {
     width: 100% !important;
     margin-left: 0 !important;
-  }
-  #three .accordion-wrap {
-    display: block;
-    background-color: rgba(255, 255, 255, 0.7);
-  }
-  #three .accordion-wrap .accordion {
-    padding: 20px;
-    padding-left: 10px;
-    color: #040808;
-  }
-  #three .accordion-wrap .accordion dt {
-    padding: 20px;
-    padding-top: 24px;
-    transition: all 0.2s ease-in-out;
-  }
-  #three .accordion-wrap .accordion dt:hover {
-    color: #264c4c;
-    background-color: #ffffff;
-  }
-  #three .accordion-wrap .accordion dt a {
-    display: block;
-    font-family: 'Adelle', serif;
-    font-size: 1.3em;
-    color: #040808;
-    text-decoration: none;
-  }
-  #three .accordion-wrap .accordion dd {
-    padding-bottom: 20px;
-    line-height: 1.6em;
-  }
-  #three .accordion-wrap .accordion dd h4 {
-    color: #0095cb;
   }
   #four {
     padding-bottom: 20px;

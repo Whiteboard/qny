@@ -431,13 +431,140 @@ p {
 	background-attachment: fixed;
 	min-height: 1500px;
 	margin-top: -10px;
-
 }
 
 
 
 /*Section 3. Crazy interactions start here.*/
 #three {
+	.circle {
+		position: absolute;
+		z-index: 1;
+		height: 40px;
+		width: 40px;
+		background-color: rgba(255,255,255,0.7);
+		border-radius: 50%;
+		transition: all .2s ease-in-out;
+		.title {
+			color: rgba(255,255,255,0.4);
+			font-size: .7em;
+			font-family: @serif;
+			font-weight: 300;
+			transition: all .2s ease-in-out;
+			position: absolute;
+		}
+	}
+	.circle:hover {
+		background-color: rgba(255,255,255,1);
+		box-shadow: 0 0 15px #fff;
+		.title {
+			color: rgba(255,255,255,1);
+			font-size: 1.2em;
+		}
+	}
+	#city {
+			width: 60px;
+			height: 60px;
+			top: 2100px;
+			left: 250px;
+			.title {
+				right: -35px;
+				top: 10px;
+			}
+		}
+	#thought {
+		width: 80px;
+		height: 80px;
+		top: 2000px;
+		right: 200px;
+		.title {
+			left: 10px;
+			top: 70px;
+			width: 140px;
+		}
+	}
+	#thought:hover {
+		.title {
+			top: 75px;
+		}
+	}
+	#expert {
+		top: 2250px;
+		left: 200px;
+		.title {
+			left: 50px;
+			top: 0px;
+		}
+	}
+	#expert:hover {
+		.title {
+			top: -30px;
+		}
+	}
+	#influencers {
+		top: 2180px;
+		right: 260px;
+		.title {
+			width: 60px;
+			left: -70px;
+			text-align: right
+		}
+	}
+	#influencers:hover {
+		.title {
+			left: -220px;
+			width: 220px;
+		}
+	}
+	#venue {
+		top: 2000px;
+		left: 150px;
+		.title {
+			top: 28px;
+		}
+	}
+	#venue:hover {
+		.title {
+			top: 30px;
+		}
+	}
+	#fill1 {
+		width: 50px;
+		height: 50px;
+		top: 2350px;
+		right: 190px;	
+	}
+	#fill1:hover {
+		box-shadow: none;
+		background-color: rgba(255,255,255,0.7);
+	}
+	#fill2 {
+		width: 30px;
+		height: 30px;
+		top: 2220px;
+		right: 140px;
+	}
+	#fill2:hover {
+		box-shadow: none;
+		background-color: rgba(255,255,255,0.7);
+	}
+	#fill3 {
+		width: 40px;
+		height: 40px;
+		top: 1950px;
+		left: 270px;
+	}
+	#fill3:hover {
+		box-shadow: none;
+		background-color: rgba(255,255,255,0.7);
+	}
+
+	.detail.open {
+		position: absolute;
+		display: block;
+	}
+
+
 	.center {
 		margin-top: 0px;
 		padding-top: 80px;
@@ -777,6 +904,16 @@ p {
 	.accordion-wrap {
 		display: none;
 	}
+	#three {
+		.detail {
+			display: none;
+			background-color: rgba(255,255,255,0.9);
+			color: @qblack;
+			h4 {
+				color: @blue;
+			}
+		}
+	}
 }
 
 /* <1130px */
@@ -787,6 +924,14 @@ p {
 	#three {
 		.accordion-wrap {
 			display: none;
+		}
+		.detail {
+			display: none;
+			background-color: rgba(255,255,255,0.9);
+			color: @qblack;
+			h4 {
+				color: @blue;
+			}
 		}
 	}
 	#four {
@@ -856,6 +1001,17 @@ p {
 		margin: 0 auto;
 	}
 
+	#three {
+		.detail {
+			display: none;
+			background-color: rgba(255,255,255,0.9);
+			color: @qblack;
+			h4 {
+				color: @blue;
+			}
+		}
+	}
+
 	#faq-wrap {
 		.row {
 			width: 85%;
@@ -901,6 +1057,17 @@ p {
 		}
 		.slidecontrol.right {
 			right: 20px;
+		}
+	}
+
+	#three {
+		.detail {
+			display: none;
+			background-color: rgba(255,255,255,0.9);
+			color: @qblack;
+			h4 {
+				color: @blue;
+			}
 		}
 	}
 
@@ -1006,7 +1173,7 @@ p {
 			margin-top: 20px;
 		}
 		.grid {
-			margin-left: 6%;
+			margin-left: 8%;
 			width: 25%;
 		}
 		.blank {
@@ -1122,6 +1289,45 @@ p {
 		}
 	}
 
+	#three {
+		#event-details {
+			display: none;
+		}
+		.accordion-wrap {
+			display: block;
+			background-color: rgba(255,255,255,0.7);
+			.accordion {
+				padding: 20px;
+				padding-left: 10px;
+				color: @qblack;
+				dt {
+					padding: 20px;
+					padding-top: 24px;
+					transition: all .2s ease-in-out;
+				}
+				dt:hover {
+					color: @blue;
+					background-color: rgba(255,255,255,1);
+				}
+				dt a{
+					font-family: @serif;
+					color: @qblack;
+					font-size: 1.3em;
+					text-decoration: none;
+					display: block;
+				}
+				dd {
+					padding-bottom: 20px;
+					margin-left: 32px;
+					line-height: 1.6em;
+					h4 {
+						color: @blue;
+					}
+				}
+			}
+			}
+		}
+
 	#four {
 		.speaker.grid {
 			p, a {
@@ -1167,41 +1373,6 @@ p {
 			margin-left: 0 !important;
 		}
 	}
-
-	#three {
-		.accordion-wrap {
-			display: block;
-			background-color: rgba(255,255,255,0.7);
-			.accordion {
-				padding: 20px;
-				padding-left: 10px;
-				color: @qblack;
-				dt {
-					padding: 20px;
-					padding-top: 24px;
-					transition: all .2s ease-in-out;
-				}
-				dt:hover {
-					color: lighten(@qblack, 20%);
-					background-color: rgba(255,255,255,1);
-				}
-				dt a{
-					font-family: @serif;
-					color: @qblack;
-					font-size: 1.3em;
-					text-decoration: none;
-					display: block;
-				}
-				dd {
-						padding-bottom: 20px;
-						line-height: 1.6em;
-						h4 {
-							color: @blue;
-						}
-				}
-			}
-			}
-		}
 
 	#four {
 		padding-bottom: 20px;

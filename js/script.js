@@ -6,6 +6,7 @@
 
 }(jQuery, window));
 
+//mobile menu
 $('#mobile').click(function (event) {
 	if($('.mobile').hasClass('.active'))
 	   $('.mobile').removeClass('.active');
@@ -13,7 +14,20 @@ $('#mobile').click(function (event) {
 });
 
 
-/*Details Interaction*/
+//Desktop event details interaction
+   	var detail = $(".detail"),
+        circle = $(".circle");
+    
+    //Event trigger
+    triggers.on("click", ".circle", function(e){
+        var i = $(this).addClass("open").index();
+        $(this).siblings().removeClass("open");
+        detail.find(".detail").eq(i).addClass("open").siblings().removeClass("open");
+    });
+
+
+
+//Mobile event details accordion
     
   var allPanels = $('.accordion > dd').hide();
     
@@ -31,8 +45,7 @@ $('#mobile').click(function (event) {
 
 
 
-
-/*Speaker Bios*/
+//speaker bios
 $('.more').on('click',function(event){
 	event.preventDefault();
 	var desc = $(this).attr('data-description');
