@@ -17,8 +17,13 @@ $('.nav-button').click(function (event) {
 	else($('#nav-mobile')).addClass('active');
 });
 
-//sticky nav
-$('#nav-static').scrollToFixed();
+//scrollTo animation
+$(".navigation div a:not(.out)").on("click", function(e) {
+	e.preventDefault();
+	var target_id = $(this).attr("href");
+	var new_scroll = $(target_id).offset();
+	$("body,html").animate({scrollTop: new_scroll.top+"px"}, 1000);
+});
 
 
 //Desktop event details interaction
