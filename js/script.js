@@ -15,16 +15,6 @@ $('#mobile').click(function (event) {
 
 
 //Desktop event details interaction
-   	var detail = $(".detail"),
-        circle = $(".circle");
-    
-    //Event trigger
-    triggers.on("click", ".circle", function(e){
-        var i = $(this).addClass("open").index();
-        $(this).siblings().removeClass("open");
-        detail.find(".detail").eq(i).addClass("open").siblings().removeClass("open");
-    });
-
 
 
 //Mobile event details accordion

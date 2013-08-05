@@ -1121,7 +1121,7 @@ p {
 .navigation .right {
   position: absolute;
   top: 0;
-  right: 40px;
+  right: 10px;
   z-index: 999;
   width: 40%;
   margin: 0;
@@ -1493,7 +1493,7 @@ p {
 }
 
 #three #city {
-  top: 2100px;
+  top: 2220px;
   left: 250px;
   width: 60px;
   height: 60px;
@@ -1505,7 +1505,7 @@ p {
 }
 
 #three #thought {
-  top: 2000px;
+  top: 2120px;
   right: 200px;
   width: 80px;
   height: 80px;
@@ -1522,7 +1522,7 @@ p {
 }
 
 #three #expert {
-  top: 2250px;
+  top: 2370px;
   left: 200px;
 }
 
@@ -1536,7 +1536,7 @@ p {
 }
 
 #three #influencers {
-  top: 2180px;
+  top: 2300px;
   right: 260px;
 }
 
@@ -1552,7 +1552,7 @@ p {
 }
 
 #three #venue {
-  top: 2000px;
+  top: 2120px;
   left: 150px;
 }
 
@@ -1565,7 +1565,7 @@ p {
 }
 
 #three #fill1 {
-  top: 2350px;
+  top: 2470px;
   right: 190px;
   width: 50px;
   height: 50px;
@@ -1577,7 +1577,7 @@ p {
 }
 
 #three #fill2 {
-  top: 2220px;
+  top: 2340px;
   right: 140px;
   width: 30px;
   height: 30px;
@@ -1589,7 +1589,7 @@ p {
 }
 
 #three #fill3 {
-  top: 1950px;
+  top: 2070px;
   left: 270px;
   width: 40px;
   height: 40px;
@@ -1918,8 +1918,9 @@ p {
 
 #six h3 {
   font-family: 'Adelle', serif;
-  font-size: 2em;
-  color: #0095cb;
+  font-size: 1.7em;
+  color: #5e6e67;
+  text-transform: uppercase;
 }
 
 #six #faq-wrap {
@@ -1929,6 +1930,8 @@ p {
 #six #faq-wrap h3 {
   font-size: 1.2em;
   font-weight: 600;
+  color: #0095cb;
+  text-transform: none;
 }
 
 /*Section 7*/
@@ -1963,9 +1966,6 @@ p {
 /* >1130px */
 
 @media only screen and (min-width: 1130px) {
-  #photo-ribbon {
-    display: none;
-  }
   .accordion-wrap {
     display: none;
   }
