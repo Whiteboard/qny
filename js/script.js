@@ -17,7 +17,8 @@ $('.nav-button').click(function (event) {
 	else($('#nav-mobile')).addClass('active');
 });
 
-
+//sticky nav
+$('#nav-static').scrollToFixed();
 
 
 //Desktop event details interaction
