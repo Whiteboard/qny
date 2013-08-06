@@ -25,7 +25,6 @@ $(".navigation div a:not(.out)").on("click", function(e) {
 	$("body,html").animate({scrollTop: new_scroll.top+"px"}, 1000);
 });
 
-
 //Desktop event details interaction
 $('.circle').click(function (event) {
 	if($('.circle').hasClass('open'))
@@ -34,9 +33,7 @@ $('.circle').click(function (event) {
 });
 
 
-
 //Mobile event details accordion
-    
   var allPanels = $('.accordion > dd').hide();
     
   $('.accordion > dt > a').click(function() {
@@ -56,9 +53,13 @@ $('.circle').click(function (event) {
 //speaker bios
 $('.more').on('click',function(event){
 	event.preventDefault();
+	var title = $(this).attr('data-title');
+	var topic = $(this).attr('data-topic');
 	var desc = $(this).attr('data-description');
 	//var speaker = $(this).attr('data-title');
 
+	$('.box').find('.speaker-title').html(title);
+	$('.box').find('.speaker-topic').html(topic);
 	$('.box').find('.description').html(desc);
 
 	$('.box-wrap').addClass('visible');

@@ -1842,9 +1842,25 @@ p {
   overflow: scroll;
   text-align: left;
   background-color: #fff;
-  opacity: 0.8;
+  opacity: 0.95;
   transition: all 0.3s ease-in-out;
   -webkit-overflow-scrolling: touch;
+}
+
+.box .speaker-title {
+  padding-bottom: 5px;
+  font-family: 'Adelle', serif;
+  font-size: 1.4em;
+  font-weight: 600;
+  color: #0095cb;
+}
+
+.box .speaker-topic {
+  padding-bottom: 10px;
+  font-family: 'Adelle', serif;
+  font-style: italic;
+  font-weight: 500;
+  color: #5e6e67;
 }
 
 .box .description {
@@ -2582,6 +2598,7 @@ p {
   }
   #four .speaker-row {
     width: 70%;
+    max-width: 300px;
     margin: 0 auto;
   }
   #four .speaker-row .speaker.grid {
