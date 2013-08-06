@@ -25,7 +25,7 @@ $(".navigation div a:not(.out)").on("click", function(e) {
 	$("body,html").animate({scrollTop: new_scroll.top+"px"}, 1000);
 });
 
-//Desktop event details interaction
+//desktop event details interaction
 $('.circle').click(function (event) {
 	if($('.circle').hasClass('open'))
 	   $('.circle').removeClass('open');
@@ -33,7 +33,73 @@ $('.circle').click(function (event) {
 });
 
 
-//Mobile event details accordion
+//review slider
+    var delay = 4000, // delay in ms
+        tO; // timeout
+    
+    function startSlider(){
+        clearTimeout(tO);
+        tO = setTimeout(goToSlide, delay);
+    }
+    
+    function setupControls(){
+        
+        $(".slidecontrol").on("click", ".slide-control", function(e){
+            e.preventDefault();
+            
+            // You may want to do this as well, although you could do this in the actual goToSlide function for portability.
+            $(this).addClass("current").siblings().removeClass("current");
+
+            goToSlide(theIndex);
+        });
+        
+    }
+    
+    function goToSlide(i){
+        var allslides = $(".slide"),
+            currslide = allslides.filter(".current");        
+        if (i){
+            // if you pass in an i to goToSlide(), go to that slide. Useful for slide button controls.
+            var nextslide = allslides.eq(i);
+        } else {
+            // let's go to the next slide by default
+            var nextslideIndex = (function(){
+            
+                if (currslide.index() == allslides.length -3){
+                    // we are at the last slide, so let's loop back around
+                    return 0;
+                } else {
+                    return currslide.index()+1;
+                }
+            
+            }()); // this is called a self invoking anonymous function (or siaf for a really hard acronym to remember)
+            var nextslide = allslides.eq(nextslideIndex);
+        }
+        
+        // now, go.
+        $(".slider-control").eq(nextslideIndex).addClass("current").siblings().removeClass("current");
+        nextslide.addClass("current").siblings().removeClass("current");
+
+        animateSlides(nextslide);
+        startSlider();
+    }
+    function animateSlides(toslide){
+        // toslide is the slide we are animating to... of course
+        var strip = $(".slidewrap-inner");
+        var dist = $('.slide').width();
+        // here is where you could do some Modernizr magic to see if CSS transitions are available, but eff that for now.
+        strip.css({
+          marginLeft : toslide.index() * - dist + "px"
+        });
+    }
+
+    // let's kick this pig
+    startSlider();
+
+
+
+
+//mobile event details accordion
   var allPanels = $('.accordion > dd').hide();
     
   $('.accordion > dt > a').click(function() {

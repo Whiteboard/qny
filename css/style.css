@@ -1305,11 +1305,6 @@ p {
   background-size: cover;
 }
 
-#one #reviewslider .inner-wrap {
-  height: 300px;
-  overflow: hidden;
-}
-
 #one .bottom-half {
   min-height: 400px;
   margin-top: 80px;
@@ -1352,7 +1347,8 @@ p {
 }
 
 #onehalf {
-  height: 250px;
+  height: 350px;
+  margin-top: 30px;
 }
 
 #onehalf #reviews {
@@ -1382,7 +1378,7 @@ p {
 
 #onehalf #reviewslider {
   width: 90%;
-  max-width: 1100px;
+  max-width: 940px;
   margin: 0 auto;
 }
 
@@ -1400,7 +1396,10 @@ p {
 
 #onehalf #reviewslider .inner-wrap {
   height: 200px;
+  max-width: 940px;
+  margin: 0;
   margin-top: 20px;
+  margin-left: 35px;
   overflow: hidden;
 }
 
@@ -1422,7 +1421,40 @@ p {
 }
 
 #onehalf #reviewslider .slide {
-  width: 30% !important;
+  width: 32% !important;
+  max-width: 260px;
+  margin-left: 15px;
+}
+
+#onehalf #reviewslider .slide p {
+  max-width: 230px;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin: 0 auto;
+}
+
+#onehalf #reviewslider .slide h5 {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+#onehalf #reviewslider .slide.first {
+  margin-left: 0;
+}
+
+#onehalf #reviewslider .slide.first p {
+  padding-left: 10px;
+}
+
+#onehalf #reviewslider .slide.first h5 {
+  padding-left: 10px;
+}
+
+#onehalf #reviewslider .slidewrap-inner {
+  width: 400%;
+  height: 200px;
+  margin-top: 20px;
+  transition: all 1s ease-in-out;
 }
 
 /*Second Section*/

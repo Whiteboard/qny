@@ -284,12 +284,6 @@ p {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	#reviewslider {
-		.inner-wrap {
-		overflow: hidden;
-		height: 300px;
-		}
-	}
 	.bottom-half {
 		margin-top: 80px;
 		min-height: 400px;
@@ -326,7 +320,8 @@ p {
 	position: relative;
 }
 #onehalf {
-	height: 250px;
+	margin-top: 30px;
+	height: 350px;
 	#reviews {
 		max-width: 1000px;
 		margin: 0 auto;
@@ -350,7 +345,7 @@ p {
 		}
 	}
 	#reviewslider {
-		max-width: 1100px;
+		max-width: 940px;
 		width: 90%;
 		margin: 0 auto;
 		i {
@@ -365,7 +360,10 @@ p {
 		}
 		.inner-wrap {
 			height: 200px;
+			max-width: 940px;
 			overflow: hidden;
+			margin: 0;
+			margin-left: 35px;
 			margin-top: 20px;
 			.five.columns {
 				height: 200px;
@@ -383,7 +381,35 @@ p {
 			}
 		}
 		.slide {
-			width: 30% !important;
+			width: 32% !important;
+			max-width: 260px;
+			margin-left: 15px;
+			p {
+        	max-width: 230px;
+        	margin: 0 auto;
+        	padding-left: 30px;
+        	padding-right: 30px;
+      		}
+      		h5 {
+      			padding-left: 20px;
+      			padding-right: 20px;
+      		}
+		}
+    	.slide.first {
+      		margin-left:0px;
+      		p {
+      			padding-left: 10px;
+      		}
+      		h5 {
+      			padding-left: 10px;
+      		}
+    	}
+
+    	.slidewrap-inner {
+    		margin-top: 20px;
+    		height: 200px;
+  			transition: all 1s ease-in-out;
+ 			width: 400%;
 		}
 	}
 }
