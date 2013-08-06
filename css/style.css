@@ -1839,10 +1839,12 @@ p {
   padding: 30px;
   margin: 0 auto;
   margin-top: 60px;
+  overflow: scroll;
   text-align: left;
   background-color: #fff;
   opacity: 0.8;
   transition: all 0.3s ease-in-out;
+  -webkit-overflow-scrolling: touch;
 }
 
 .box .description {
