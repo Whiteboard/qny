@@ -1210,44 +1210,52 @@ p {
 		padding-left: 2px;
 		color: #fff;
 		position: absolute;
-		left: 0;
-		top: 0;
+		left: 13px;
+		top: 6px;
 	}
 	h5 {
-		display: none;
+		display: block;
 		font-family: @sans;
 		font-style: italic;
 		font-size: 1em;
 		font-weight: 300;
 		color: #000;
 		position: absolute;
-		top: 6px;
-		left: 80px;
-		width: 80%;
+		top: -17px;
+		right: 19.25%;
+		width: 60%;
+		min-height: 33px;
 		background-color: #fff;
+		padding-left: 10px;
+		padding-top: 14px;
 	}
 	.email {
-		width: 80%;
-		min-height: 47px;
-		background-color: transparent !important;
+		width: 61%;
+		min-height: 44px;
+		background-color: transparent;
+		opacity: 0.3;
 		transition: all .2s ease-in-out;
 		position: absolute;
+		right: 19.25%;
+		top: 6px;
+		transition: all .2s ease-in-out;
 	}
 	.email:focus {
 		opacity: 1;
+		background-color: #fff;
 	}
 	.submit {
 		background-color: @blue;
 		transition: background-color .13s ease-in-out;
-		min-height: 51px;
+		min-height: 48px;
 		width: 19.25%;
 		color: #fff;
 		border: none;
 		border-left: 3px solid @qblack;
 		margin: 0;
 		position: absolute;
-		right: 0;
-		top: 0;
+		right: 4px;
+		top: 6px;
 	}
 	.submit:hover {
 		background-color: darken(@blue, 20%);
@@ -1287,7 +1295,7 @@ p {
 	min-height: 50px;
 	position: relative;
 	.form-wrap {
-		min-height: 50px;
+		height: 50px;
 		width: 98.5%;
 		position: absolute;
 		right: 5px;
@@ -1306,11 +1314,16 @@ p {
 		padding-left: 12px;
 		color: #fff;
 	}
+	h5 {
+		display: none;
+	}
 	.email {
 		width: 80%;
 		min-height: 47px;
 		opacity: 0.7;
 		transition: all .2s ease-in-out;
+		position: absolute;
+		top: 0;
 	}
 	.email:focus {
 		opacity: 1;
@@ -1357,6 +1370,7 @@ p {
 			max-width: 768px;
 			min-height: 800px;
 			margin: 0 auto;
+			padding-bottom: 80px;
 			.tagline {
 				float: none;
 				width: 100%;

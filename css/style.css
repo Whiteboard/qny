@@ -2251,8 +2251,8 @@ p {
   }
   #signup-form h4 {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 6px;
+    left: 13px;
     width: 20%;
     padding-left: 2px;
     margin-top: 14px;
@@ -2262,10 +2262,13 @@ p {
   }
   #signup-form h5 {
     position: absolute;
-    top: 6px;
-    left: 80px;
-    display: none;
-    width: 80%;
+    top: -17px;
+    right: 19.25%;
+    display: block;
+    width: 60%;
+    min-height: 33px;
+    padding-top: 14px;
+    padding-left: 10px;
     font-family: 'Helvetica', sans-serif;
     font-size: 1em;
     font-style: italic;
@@ -2275,20 +2278,24 @@ p {
   }
   #signup-form .email {
     position: absolute;
-    width: 80%;
-    min-height: 47px;
-    background-color: transparent !important;
+    top: 6px;
+    right: 19.25%;
+    width: 61%;
+    min-height: 44px;
+    background-color: transparent;
+    opacity: 0.3;
     transition: all 0.2s ease-in-out;
   }
   #signup-form .email:focus {
+    background-color: #fff;
     opacity: 1;
   }
   #signup-form .submit {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 6px;
+    right: 4px;
     width: 19.25%;
-    min-height: 51px;
+    min-height: 48px;
     margin: 0;
     color: #fff;
     background-color: #0095cb;
@@ -2335,7 +2342,7 @@ p {
     top: 6px;
     right: 5px;
     width: 98.5%;
-    min-height: 50px;
+    height: 50px;
     margin-left: 10px;
   }
   #signup-form h4,
@@ -2351,7 +2358,12 @@ p {
     font-size: 1.2em;
     color: #fff;
   }
+  #signup-form h5 {
+    display: none;
+  }
   #signup-form .email {
+    position: absolute;
+    top: 0;
     width: 80%;
     min-height: 47px;
     opacity: 0.7;
@@ -2394,6 +2406,7 @@ p {
   #four #presenter-grid {
     max-width: 768px;
     min-height: 800px;
+    padding-bottom: 80px;
     margin: 0 auto;
   }
   #four #presenter-grid .tagline {
