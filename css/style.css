@@ -1592,6 +1592,17 @@ p {
   opacity: 1;
 }
 
+#three .circle.open .detail img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+#three .circle.open .detail h4 {
+  margin-bottom: 5px;
+}
+
 #three #city {
   top: 2320px;
   left: 250px;
