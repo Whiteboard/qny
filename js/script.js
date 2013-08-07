@@ -34,7 +34,7 @@ $('.circle').click(function (event) {
 
 
 //review slider
-    var delay = 4000, // delay in ms
+    var delay = 4000,
         tO; // timeout
     
     function startSlider(){
@@ -66,25 +66,25 @@ $('.circle').click(function (event) {
             var nextslideIndex = (function(){
             
                 if (currslide.index() == allslides.length -3){
-                    // we are at the last slide, so let's loop back around
+                    // loop the loop the loop the loop
                     return 0;
                 } else {
                     return currslide.index()+1;
                 }
             
-            }()); // this is called a self invoking anonymous function (or siaf for a really hard acronym to remember)
+            }());
             var nextslide = allslides.eq(nextslideIndex);
         }
         
         // now, go.
-        $(".slider-control").eq(nextslideIndex).addClass("current").siblings().removeClass("current");
+        $(".slidecontrol").eq(nextslideIndex).addClass("current").siblings().removeClass("current");
         nextslide.addClass("current").siblings().removeClass("current");
 
         animateSlides(nextslide);
         startSlider();
     }
     function animateSlides(toslide){
-        // toslide is the slide we are animating to... of course
+        // animate to that guy.
         var strip = $(".slidewrap-inner");
         var dist = $('.slide').width();
         // here is where you could do some Modernizr magic to see if CSS transitions are available, but eff that for now.
