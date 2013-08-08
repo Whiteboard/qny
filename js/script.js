@@ -96,26 +96,6 @@ $('.circle').click(function (event) {
     // let's kick this pig
     startSlider();
 
-//Disable some slides below width:653px
-function doneResizing() {
-        if(Modernizr.mq('screen and (min-width:768px)')) {
-            // action for screen widths including and above 768 pixels 
-            $('#reviewslider .wrap')addClass('.slidewrap-inner');
-        }
-        else if(Modernizr.mq('screen and (max-width:767px)')) {
-            // action for screen widths below 768 pixels 
-            $('#reviewslider .wrap .slidewrap-inner')removeClass('.slidewrap-inner');
-        }
-    }
-
-    var id;
-    $(window).resize(function() {
-        clearTimeout(id);
-        id = setTimeout(doneResizing, 0);
-    });
-
-    doneResizing();
-
 
 //mobile event details accordion
   var allPanels = $('.accordion > dd').hide();
