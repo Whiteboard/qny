@@ -1092,6 +1092,23 @@ p {
 		}
 	}
 
+	#onehalf {
+		#reviewslider {
+		.inner-wrap {
+			.five.columns.slide {
+				p {
+					padding-right: 10px;
+					padding-left: 10px;
+				}
+				h5 {
+					padding-right: 10px;
+					padding-left: 10px;
+				}
+				}
+			}
+		}
+	}
+
 	#two {
 		.columns.eleven.offset-by-one, .columns.five.offset-by-one {
 			padding-left: 0px;
@@ -1131,6 +1148,48 @@ p {
 	}
 
 
+}
+
+/*Review Slider 1000-1030*/
+@media only screen and (min-width:1000px) and (max-width: 1030px) {
+	#reviewslider {
+		.inner-wrap {
+			.five.columns.slide {
+				margin-right: .01% !important;
+				p {
+					padding-right: 10px;
+					padding-left: 10px;
+				}
+				h5 {
+					padding-right: 10px;
+					padding-left: 10px;
+				}
+			}
+		}
+	}
+}
+
+//more review slider things.
+@media only screen and(max-width:1000px) {
+	#onehalf {
+		#reviewslider {
+			.inner-wrap {
+				max-width: 560px;
+				.slide {
+					transition: all .13s ease-in-out;
+				}
+				.slide.first, .slide.current {
+					margin-left: 0px !important;
+					padding-left: 0px !important;
+					max-width: 280px;
+					padding-right: 0 !important;
+					p, h5 {
+						padding-left: 0px !important;
+					}
+				}
+			}
+		}
+	}
 }
 
 /* <960px */
@@ -1518,6 +1577,23 @@ p {
 		}
 		.columns.five {
 			margin-left: 2% !important;
+		}
+	}
+}
+
+/*Resize slider again.*/
+@media only screen and (max-width:653px) {
+	#onehalf {
+		#reviewslider {
+			.inner-wrap {
+				.slide.first, .slide.current {
+					width: 100%;
+					max-width: 520px;
+				}
+				.slide.wide {
+					display: none;
+				}
+			}
 		}
 	}
 }
