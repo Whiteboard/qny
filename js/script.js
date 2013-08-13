@@ -117,11 +117,13 @@ $('.circle').click(function (event) {
 //speaker bios
 $('.more').on('click',function(event){
 	event.preventDefault();
+    var name = $(this).attr('data-name');
 	var title = $(this).attr('data-title');
 	var topic = $(this).attr('data-topic');
 	var desc = $(this).attr('data-description');
 	//var speaker = $(this).attr('data-title');
 
+    $('.box').find('.speaker-name').html(name);
 	$('.box').find('.speaker-title').html(title);
 	$('.box').find('.speaker-topic').html(topic);
 	$('.box').find('.description').html(desc);

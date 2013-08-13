@@ -740,11 +740,32 @@ p {
 	background-color: #fff;
 	text-align: center;
 	height: 200px;
+	z-index: -1;
+	.profile {
+		overflow: hidden;
+		position: relative;
+		height: 130px;
+		.more {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			padding: 1px 10px;
+			color: @blue;
+			background-color: #fff;
+			z-index: 3;
+			font-size: 1.5em;
+			font-weight: 600;
+		}
+		.more:hover {
+			text-shadow: 0 3px 15px @blue, 0 0 0.2em @blue, 0 0 0.2em @blue;
+		}
+	}
 	img {
 		width: 87%;
 		max-width: 140px;
 		margin: 0 auto;
 		margin-top: 10px;
+		position: relative;
 	}
 	a {
 		font-family: @sans;
@@ -761,11 +782,19 @@ p {
 	}
 	p {
 		font-family: @serif;
-		font-size: 1em;
+		font-size: .9em;
 		color: @qblack;
 		margin: 0;
 		margin-left: 10px;
 		text-align: left;
+	}
+	p.speaker-topic {
+		font-family: @serif;
+		color: @blue;
+		font-size: 1em;
+		line-height: 1.2em;
+		font-weight: 300;
+		margin-top: 8px;
 	}
 }
 
@@ -785,6 +814,7 @@ p {
 	opacity: 1;
 	height: 100%;
 	display: block;
+	z-index: 999;
 	.box {
 		display: block;
 		.description {
@@ -812,19 +842,26 @@ p {
 	display: none;
 	overflow: scroll;
 	-webkit-overflow-scrolling: touch;
-	.speaker-title {
+	.speaker-name {
 		font-family: @serif;
-		color: @blue;
+		color: @qblack;
 		font-weight: 600;
-		font-size: 1.4em;
-		padding-bottom: 5px;
+		font-size: 1.2em;
 	}
-	.speaker-topic {
+	.speaker-title {
 		font-family: @serif;
 		color: #5e6e67;
 		font-weight: 500;
 		font-style: italic;
 		padding-bottom: 10px;
+		font-size: 1.1em;
+	}
+	.speaker-topic {
+		font-family: @serif;
+		color: @blue;
+		font-weight: 600;
+		font-size: 1.5em;
+		padding-bottom: 15px;
 	}
 	.description {
 		font-size: 1em;
@@ -845,11 +882,6 @@ p {
 	}
 	.close:hover {
 		background-color: lighten(#c63954, 15%);
-		height: 27px;
-		width: 33px;
-		padding-top: 10px;
-		top: -3px;
-		right: -3px;
 		cursor: pointer;
 	}
 }

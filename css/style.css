@@ -1803,12 +1803,36 @@ p {
 }
 
 .grid.speaker {
+  z-index: -1;
   height: 200px;
   text-align: center;
   background-color: #fff;
 }
 
+.grid.speaker .profile {
+  position: relative;
+  height: 130px;
+  overflow: hidden;
+}
+
+.grid.speaker .profile .more {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  padding: 1px 10px;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #0095cb;
+  background-color: #fff;
+}
+
+.grid.speaker .profile .more:hover {
+  text-shadow: 0 3px 15px #0095cb, 0 0 0.2em #0095cb, 0 0 0.2em #0095cb;
+}
+
 .grid.speaker img {
+  position: relative;
   width: 87%;
   max-width: 140px;
   margin: 0 auto;
@@ -1834,9 +1858,18 @@ p {
   margin: 0;
   margin-left: 10px;
   font-family: 'Adelle', serif;
-  font-size: 1em;
+  font-size: .9em;
   color: #040808;
   text-align: left;
+}
+
+.grid.speaker p.speaker-topic {
+  margin-top: 8px;
+  font-family: 'Adelle', serif;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.2em;
+  color: #0095cb;
 }
 
 /*Speaker Bios*/
@@ -1854,6 +1887,7 @@ p {
 }
 
 .box-wrap.visible {
+  z-index: 999;
   display: block;
   height: 100%;
   opacity: 1;
@@ -1889,20 +1923,28 @@ p {
   -webkit-overflow-scrolling: touch;
 }
 
-.box .speaker-title {
-  padding-bottom: 5px;
+.box .speaker-name {
   font-family: 'Adelle', serif;
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-weight: 600;
-  color: #0095cb;
+  color: #040808;
 }
 
-.box .speaker-topic {
+.box .speaker-title {
   padding-bottom: 10px;
   font-family: 'Adelle', serif;
+  font-size: 1.1em;
   font-style: italic;
   font-weight: 500;
   color: #5e6e67;
+}
+
+.box .speaker-topic {
+  padding-bottom: 15px;
+  font-family: 'Adelle', serif;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #0095cb;
 }
 
 .box .description {
@@ -1925,11 +1967,6 @@ p {
 }
 
 .box .close:hover {
-  top: -3px;
-  right: -3px;
-  width: 33px;
-  height: 27px;
-  padding-top: 10px;
   cursor: pointer;
   background-color: #d77487;
 }
