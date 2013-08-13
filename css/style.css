@@ -1190,7 +1190,8 @@ p {
 }
 
 .navigation .brand .date h3 {
-  font-size: 1.3em;
+  font-size: 1.1em;
+  font-weight: 500;
   letter-spacing: .01em;
   color: #0095cb;
 }
@@ -1292,11 +1293,6 @@ p {
   border: 4px solid #fff;
 }
 
-.center p {
-  line-height: 1.8em;
-  text-align: center;
-}
-
 #one {
   min-height: 700px;
   background-attachment: fixed;
@@ -1307,7 +1303,8 @@ p {
 
 #one .bottom-half {
   min-height: 400px;
-  margin-top: 80px;
+  padding-top: 20px;
+  margin-top: 0;
   background: -webkit-linear-gradient(bottom, #000000 0%, rgba(0, 0, 0, 0) 100%);
   background: -moz-linear-gradient(bottom, #000000 0%, rgba(0, 0, 0, 0) 100%);
   background: -ms-linear-gradient(bottom, #000000 0%, rgba(0, 0, 0, 0) 100%);
@@ -1332,6 +1329,16 @@ p {
 #one .bottom-half p {
   margin-top: 0;
   line-height: 1.7em;
+}
+
+#one .bottom-half p.center {
+  width: 80%;
+  max-width: 380px;
+  min-width: 360px;
+  padding-top: 20px;
+  margin: 0 auto;
+  line-height: 1.8em;
+  text-align: center;
 }
 
 /*End First Section*/
@@ -1462,6 +1469,10 @@ p {
   padding-top: 50px;
   color: #040808;
   background-color: #fff;
+}
+
+#two .row {
+  padding-bottom: 50px;
 }
 
 #two .row h3 {
@@ -1783,17 +1794,18 @@ p {
   height: 100%;
   max-width: 1000px;
   min-height: 600px;
+  margin-bottom: 50px;
 }
 
 #presenter-grid .grid-wrap .speaker-row {
-  height: 200px;
+  height: 220px;
 }
 
 .grid {
   display: inline-block;
   float: left;
   width: 20%;
-  height: 180px;
+  height: 200px;
   max-width: 150px;
   margin-bottom: 0;
 }
@@ -1804,14 +1816,14 @@ p {
 
 .grid.speaker {
   z-index: -1;
-  height: 200px;
+  height: 220px;
   text-align: center;
   background-color: #fff;
 }
 
 .grid.speaker .profile {
   position: relative;
-  height: 130px;
+  min-height: 130px;
   overflow: hidden;
 }
 
@@ -1864,10 +1876,11 @@ p {
 }
 
 .grid.speaker p.speaker-topic {
-  margin-top: 8px;
+  padding-right: 6px;
+  margin-top: 10px;
   font-family: 'Adelle', serif;
   font-size: 1em;
-  font-weight: 300;
+  font-weight: 600;
   line-height: 1.2em;
   color: #0095cb;
 }
@@ -1878,12 +1891,11 @@ p {
   position: fixed;
   top: 0;
   left: 0;
-  display: none;
   width: 100%;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.3);
   opacity: 0;
-  transition: all 0.2s ease-in-out;
+  transition: opacity .7s ease;
 }
 
 .box-wrap.visible {
@@ -1942,7 +1954,7 @@ p {
 .box .speaker-topic {
   padding-bottom: 15px;
   font-family: 'Adelle', serif;
-  font-size: 1.5em;
+  font-size: 1.6em;
   font-weight: 600;
   color: #0095cb;
 }
@@ -2371,6 +2383,9 @@ p {
 /*  >800px  */
 
 @media only screen and (min-width: 801px) {
+  .profile {
+    min-height: 130px;
+  }
   #signup-form {
     position: relative;
     width: 100%;
@@ -2692,11 +2707,24 @@ p {
   #two .columns.five {
     width: 60% !important;
   }
-  #four .speaker.grid p,
-  #four .speaker.grid a {
+  #four .speaker.grid p {
     width: 87%;
     font-size: .9em;
     text-align: left;
+  }
+  #four .speaker.grid .more {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    padding: 1px 10px;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #0095cb;
+    background-color: #fff;
+  }
+  #four .speaker.grid .more:hover {
+    text-shadow: 0 3px 15px #0095cb, 0 0 0.2em #0095cb;
   }
   #five .center {
     width: 90%;
