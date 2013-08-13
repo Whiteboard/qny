@@ -1828,7 +1828,7 @@ p {
 }
 
 .grid.speaker .profile .more:hover {
-  text-shadow: 0 3px 15px #0095cb, 0 0 0.2em #0095cb, 0 0 0.2em #0095cb;
+  text-shadow: 0 3px 15px #0095cb, 0 0 0.2em #0095cb;
 }
 
 .grid.speaker img {
