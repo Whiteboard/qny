@@ -36,6 +36,33 @@ $(".navigation div a:not(.out)").on("click", function(e) {
 	$("body,html").animate({scrollTop: new_scroll.top-"60"+"px"}, 1000);
 });
 
+//parallax for background images
+    //for hero div
+    var topBG = $("#one").css('background-position','center -10px');
+
+    if (topBG.length){
+        $(window).on("scroll", function(){
+            topBG.css({
+                "background-position" : "center "+ ($(window).scrollTop()/15 - 20) + "px"
+            });
+            //$(".home-header-inner").css("top", ($(window).scrollTop()/2 - 75) + "px");
+            //console.log($(".home-header-inner").css("top"));
+        });
+    }
+
+    //for newyork div
+    var bottomBG = $("#newyork").css('background-position','center -20px');
+
+    if (bottomBG.length){
+        $(window).on("scroll", function(){
+            bottomBG.css({
+                "background-position" : "center "+ ($(window).scrollTop()/15 - 220) + "px"
+            });
+            //$(".home-header-inner").css("top", ($(window).scrollTop()/2 - 75) + "px");
+            //console.log($(".home-header-inner").css("top"));
+        });
+    }
+
 //desktop event details interaction
 $('.circle').click(function (event) {
 	if($('.circle').hasClass('open'))

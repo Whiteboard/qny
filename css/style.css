@@ -1566,12 +1566,12 @@ p {
 }
 
 #two #photo-ribbon {
-  height: 120px;
+  height: 80px;
   margin-bottom: 0;
   overflow: hidden;
   background-attachment: scroll;
   background-image: url('../img/ribbon.jpg');
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-size: cover;
 }
 
