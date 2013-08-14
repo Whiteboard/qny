@@ -189,15 +189,25 @@ p {
 	}
 }
 
-		#nav-static {
+		#nav {
 			position: absolute;
 			top: 0;
 			right: 0;
+
 		}
-		
-		#nav-sticky {
-			display: none;
+		#nav.sticky {
 			position: fixed;
+			height: 50px;
+			z-index: 10000;
+			ul {
+				margin-top: 15px;
+
+			}
+			.brand {
+				.oval {
+					margin-top: -70px;
+				}
+			}
 		}
 
 	/*Mobile Nav*/
@@ -694,6 +704,7 @@ p {
 		width: 90%;
 		max-width: 1200px;
 		margin: 0 auto;
+		padding-top: 20px;
 		h2 {
 			font-size: 1.8em;
 			font-weight: 300;
@@ -960,6 +971,7 @@ p {
 
 /*Section 5*/
 #five {
+	padding-top: 20px;
 	h2 {
 		font-weight: 300;
 		font-size: 2.3em;

@@ -1196,15 +1196,24 @@ p {
   color: #0095cb;
 }
 
-#nav-static {
+#nav {
   position: absolute;
   top: 0;
   right: 0;
 }
 
-#nav-sticky {
+#nav.sticky {
   position: fixed;
-  display: none;
+  z-index: 10000;
+  height: 50px;
+}
+
+#nav.sticky ul {
+  margin-top: 15px;
+}
+
+#nav.sticky .brand .oval {
+  margin-top: -70px;
 }
 
 /*Mobile Nav*/
@@ -1758,6 +1767,7 @@ p {
 #four .inner-wrap {
   width: 90%;
   max-width: 1200px;
+  padding-top: 20px;
   margin: 0 auto;
 }
 
@@ -2049,6 +2059,10 @@ p {
 }
 
 /*Section 5*/
+
+#five {
+  padding-top: 20px;
+}
 
 #five h2 {
   margin-top: 70px;

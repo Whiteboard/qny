@@ -17,12 +17,23 @@ $('.nav-button').click(function (event) {
 	else($('#nav-mobile')).addClass('active');
 });
 
+//sticky nav
+$(window).on("scroll", function(){
+    var windowScroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (windowScroll > (windowHeight - 630)) {
+        $("#nav").addClass('sticky');
+    } else {
+        $("#nav").removeClass('sticky');
+    }
+});
+
 //scrollTo animation
 $(".navigation div a:not(.out)").on("click", function(e) {
 	e.preventDefault();
 	var target_id = $(this).attr("href");
 	var new_scroll = $(target_id).offset();
-	$("body,html").animate({scrollTop: new_scroll.top+"px"}, 1000);
+	$("body,html").animate({scrollTop: new_scroll.top-"60"+"px"}, 1000);
 });
 
 //desktop event details interaction
