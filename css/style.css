@@ -1206,6 +1206,7 @@ p {
   position: fixed;
   z-index: 10000;
   height: 50px;
+  box-shadow: 0 0 15px #000;
 }
 
 #nav.sticky ul {
@@ -1214,6 +1215,7 @@ p {
 
 #nav.sticky .brand .oval {
   margin-top: -70px;
+  box-shadow: 0 0 15px #000;
 }
 
 /*Mobile Nav*/
