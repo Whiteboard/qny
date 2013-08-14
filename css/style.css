@@ -1074,6 +1074,10 @@ p {
   line-height: 1.8em;
 }
 
+.small-margin {
+  margin-top: 2px !important;
+}
+
 .italic {
   font-style: italic;
 }
@@ -2186,6 +2190,7 @@ p {
 }
 
 #five .center {
+  max-width: 440px;
   padding-top: 0;
   margin-top: 50px;
   line-height: 1.8em;
@@ -2319,6 +2324,7 @@ p {
   #four #presenter-grid .tagline h5 {
     padding-top: 20px;
     padding-right: 0;
+    font-size: 1.4em;
     text-align: center;
   }
   #four #presenter-grid .grid-wrap {
