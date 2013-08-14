@@ -1004,6 +1004,54 @@ Some rules and guidelines:
 
 /*Color Pallete*/
 
+@-webkit-keyframes wander {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 8px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+@-moz-keyframes wander {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 8px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+@-o-keyframes wander {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 8px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+@keyframes wander {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 8px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
 body {
   margin: 0;
   font-family: 'Helvetica', sans-serif;
@@ -1560,6 +1608,10 @@ p {
   height: 40px;
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 50%;
+  -webkit-animation: wander 4s infinite;
+     -moz-animation: wander 4s infinite;
+       -o-animation: wander 4s infinite;
+          animation: wander 4s infinite;
   transition: all 0.2s ease-in-out;
 }
 

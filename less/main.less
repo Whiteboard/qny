@@ -19,6 +19,33 @@ Some rules and guidelines:
 @qblack: #040808;
 @blue: #0095cb;
 
+
+//keyframed animations
+	//circle migration
+		@-webkit-keyframes wander {
+  		0%   { margin-top: +0px; }
+  		50% { margin-top: +8px; }
+  		100% { margin-top: +0px; }
+		}
+		@-moz-keyframes wander {
+  		0%   { margin-top: +0px; }
+  		50% { margin-top: +8px; }
+  		100% { margin-top: +0px; }
+		}
+		@-o-keyframes wander {
+  		0%   { margin-top: +0px; }
+  		50% { margin-top: +8px; }
+  		100% { margin-top: +0px; }
+		}
+		@keyframes wander {
+  		0%   { margin-top: +0px; }
+  		50% { margin-top: +8px; }
+  		100% { margin-top: +0px; }
+		}
+
+
+
+
 body {
 	font-family: @sans;
 	font-size: 14px;
@@ -536,6 +563,10 @@ p {
 				margin-top: 0;
 			}
 		}
+			-webkit-animation: wander 4s infinite; /* Safari 4+ */
+  			-moz-animation:    wander 4s infinite; /* Fx 5+ */
+  			-o-animation:      wander 4s infinite; /* Opera 12+ */
+  			animation:         wander 4s infinite; /* IE 10+ */
 	}
 	.circle:hover {
 		background-color: rgba(255,255,255,1);
