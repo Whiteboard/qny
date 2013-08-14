@@ -1067,15 +1067,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'museo-slab', 'Museo Slab', serif;
+  font-family: 'museo-slab', 'Museo Slab', 'Adelle', serif;
 }
 
 p {
   line-height: 1.8em;
-}
-
-.small-margin {
-  margin-top: 2px !important;
 }
 
 .italic {
@@ -1617,16 +1613,19 @@ p {
   height: 40px;
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 50%;
-  -webkit-animation: wander 4s infinite;
+  -webkit-animation: wander 1.2s infinite;
      -moz-animation: none;
-       -o-animation: wander 4s infinite;
-          animation: wander 4s infinite;
+       -o-animation: wander 1.2s infinite;
+          animation: wander 1.2s infinite;
+  -webkit-animation-timing-function: ease-in;
+       -o-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
   transition: all 0.2s ease-in-out;
 }
 
 #three .circle .title {
   position: absolute;
-  font-family: 'museo-slab', 'Museo Slab', serif;
+  font-family: 'museo-slab', 'Museo Slab', 'Adelle', serif;
   font-size: .7em;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.4);
@@ -1648,6 +1647,10 @@ p {
 #three .circle:hover {
   background-color: #ffffff;
   box-shadow: 0 0 15px #fff;
+  -webkit-transition: none !important;
+     -moz-transition: none !important;
+       -o-transition: color 0 ease-in !important;
+          transition: none !important;
 }
 
 #three .circle:hover .title {
@@ -1658,6 +1661,13 @@ p {
 #three .circle.open {
   overflow: visible;
   background-color: rgba(255, 255, 255, 0.1);
+  -webkit-animation: none;
+     -moz-animation: none;
+       -o-animation: wander 1.2s infinite;
+          animation: wander 1.2s infinite;
+  -webkit-animation-timing-function: ease-in;
+       -o-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
 }
 
 #three .circle.open .title {
@@ -1691,6 +1701,13 @@ p {
   left: 250px;
   width: 60px;
   height: 60px;
+  -webkit-animation: wander 1.7s infinite;
+     -moz-animation: none;
+       -o-animation: wander 1.7s infinite;
+          animation: wander 1.7s infinite;
+  -webkit-animation-timing-function: ease-in;
+       -o-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
 }
 
 #three #city .title {
@@ -1707,6 +1724,13 @@ p {
   right: 200px;
   width: 80px;
   height: 80px;
+  -webkit-animation: wander 2s infinite;
+     -moz-animation: none;
+       -o-animation: wander 2s infinite;
+          animation: wander 2s infinite;
+  -webkit-animation-timing-function: ease-in;
+       -o-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
 }
 
 #three #thought .title {
@@ -1722,6 +1746,13 @@ p {
 #three #expert {
   top: 2470px;
   left: 200px;
+  -webkit-animation: wander 1.5s infinite;
+     -moz-animation: none;
+       -o-animation: wander 1.5s infinite;
+          animation: wander 1.5s infinite;
+  -webkit-animation-timing-function: ease-in;
+       -o-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
 }
 
 #three #expert .title {
@@ -1741,6 +1772,13 @@ p {
 #three #influencers {
   top: 2400px;
   right: 260px;
+  -webkit-animation: wander 1.9s infinite;
+     -moz-animation: none;
+       -o-animation: wander 1.9s infinite;
+          animation: wander 1.9s infinite;
+  -webkit-animation-timing-function: ease-in;
+       -o-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
 }
 
 #three #influencers .title {
@@ -1755,13 +1793,20 @@ p {
 }
 
 #three #influencers:hover .title {
-  right: -220px;
+  right: -230px;
   width: 220px;
 }
 
 #three #venue {
   top: 2220px;
   left: 150px;
+  -webkit-animation: wander 2.2s infinite;
+     -moz-animation: none;
+       -o-animation: wander 2.2s infinite;
+          animation: wander 2.2s infinite;
+  -webkit-animation-timing-function: ease-in;
+       -o-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
 }
 
 #three #venue .title {
@@ -1777,6 +1822,13 @@ p {
   right: 190px;
   width: 50px;
   height: 50px;
+  -webkit-animation: wander 1.4s infinite;
+     -moz-animation: none;
+       -o-animation: wander 1.4s infinite;
+          animation: wander 1.4s infinite;
+  -webkit-animation-timing-function: ease-in;
+       -o-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
 }
 
 #three #fill1:hover {
@@ -1789,6 +1841,13 @@ p {
   right: 140px;
   width: 30px;
   height: 30px;
+  -webkit-animation: wander 2.5s infinite;
+     -moz-animation: none;
+       -o-animation: wander 2.5s infinite;
+          animation: wander 2.5s infinite;
+  -webkit-animation-timing-function: ease-in;
+       -o-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
 }
 
 #three #fill2:hover {
@@ -1801,6 +1860,13 @@ p {
   left: 270px;
   width: 40px;
   height: 40px;
+  -webkit-animation: wander 1.2s infinite;
+     -moz-animation: none;
+       -o-animation: wander 1.2s infinite;
+          animation: wander 1.2s infinite;
+  -webkit-animation-timing-function: ease-in;
+       -o-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
 }
 
 #three #fill3:hover {
@@ -1950,7 +2016,7 @@ p {
 
 .grid.speaker .prs-detail p.speaker-position {
   display: none;
-  font-family: 'museo-slab', 'Museo Slab', serif;
+  font-family: 'museo-slab', 'Museo Slab', 'Adelle', serif;
   font-style: italic;
   color: #264c4c;
 }
@@ -1995,7 +2061,7 @@ p {
 .grid.speaker p {
   margin: 0;
   margin-left: 10px;
-  font-family: 'museo-slab', 'Museo Slab', serif;
+  font-family: 'museo-slab', 'Museo Slab', 'Adelle', serif;
   font-size: .9em;
   color: #040808;
   text-align: left;
@@ -2004,7 +2070,7 @@ p {
 .grid.speaker p.speaker-topic {
   padding-right: 6px;
   margin-top: 10px;
-  font-family: 'museo-slab', 'Museo Slab', serif;
+  font-family: 'museo-slab', 'Museo Slab', 'Adelle', serif;
   font-size: 1em;
   font-weight: 600;
   line-height: 1.2em;
@@ -2062,7 +2128,7 @@ p {
 }
 
 .box .speaker-name {
-  font-family: 'museo-slab', 'Museo Slab', serif;
+  font-family: 'museo-slab', 'Museo Slab', 'Adelle', serif;
   font-size: 1.2em;
   font-weight: 600;
   color: #040808;
@@ -2070,7 +2136,7 @@ p {
 
 .box .speaker-title {
   padding-bottom: 10px;
-  font-family: 'museo-slab', 'Museo Slab', serif;
+  font-family: 'museo-slab', 'Museo Slab', 'Adelle', serif;
   font-size: 1.1em;
   font-style: italic;
   font-weight: 500;
@@ -2079,7 +2145,7 @@ p {
 
 .box .speaker-topic {
   padding-bottom: 15px;
-  font-family: 'museo-slab', 'Museo Slab', serif;
+  font-family: 'museo-slab', 'Museo Slab', 'Adelle', serif;
   font-size: 1.6em;
   font-weight: 600;
   color: #0095cb;
@@ -2163,7 +2229,7 @@ p {
   width: 19.25%;
   min-height: 51px;
   margin: 0;
-  font-family: 'museo-slab', 'Museo Slab', serif;
+  font-family: 'museo-slab', 'Museo Slab', 'Adelle', serif;
   color: #fff;
   background-color: #0095cb;
   border: none;
@@ -2227,7 +2293,7 @@ p {
 }
 
 #six h3 {
-  font-family: 'museo-slab', 'Museo Slab', serif;
+  font-family: 'museo-slab', 'Museo Slab', 'Adelle', serif;
   font-size: 1.7em;
   color: #5e6e67;
   text-transform: uppercase;
@@ -2478,7 +2544,7 @@ p {
   }
   #three .accordion-wrap .accordion dt a {
     display: block;
-    font-family: 'museo-slab', 'Museo Slab', serif;
+    font-family: 'museo-slab', 'Museo Slab', 'Adelle', serif;
     font-size: 1.3em;
     color: #040808;
     text-decoration: none;
