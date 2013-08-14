@@ -63,6 +63,7 @@ $(".navigation div a:not(.out)").on("click", function(e) {
         });
     }
 
+
 //desktop event details interaction
 $('.circle').click(function (event) {
 	if($('.circle').hasClass('open'))
