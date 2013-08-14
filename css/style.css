@@ -1218,7 +1218,7 @@ p {
 }
 
 .navigation .brand .ny h3 {
-  width: 115px;
+  width: 117px;
   padding: 0;
   padding-top: 4px;
   font-size: 1.4em;
@@ -1242,6 +1242,7 @@ p {
   font-weight: 500;
   letter-spacing: .01em;
   color: #0095cb;
+  text-transform: uppercase;
 }
 
 #nav {
@@ -1398,6 +1399,10 @@ p {
   margin: 0 auto;
   line-height: 1.8em;
   text-align: center;
+}
+
+#one .five-columns {
+  padding-left: 10px;
 }
 
 /*End First Section*/
@@ -1609,7 +1614,7 @@ p {
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 50%;
   -webkit-animation: wander 4s infinite;
-     -moz-animation: wander 4s infinite;
+     -moz-animation: none;
        -o-animation: wander 4s infinite;
           animation: wander 4s infinite;
   transition: all 0.2s ease-in-out;
@@ -1735,9 +1740,10 @@ p {
 }
 
 #three #influencers .title {
-  left: -70px;
+  top: -10px;
+  right: -70px;
   width: 60px;
-  text-align: right;
+  text-align: left;
 }
 
 #three #influencers .detail {
@@ -1745,7 +1751,7 @@ p {
 }
 
 #three #influencers:hover .title {
-  left: -220px;
+  right: -220px;
   width: 220px;
 }
 
@@ -1904,11 +1910,20 @@ p {
   overflow: hidden;
 }
 
+.grid.speaker .profile img {
+  position: relative;
+  z-index: 0;
+  width: 87%;
+  max-width: 140px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
 .grid.speaker .profile .more {
   position: absolute;
   right: 0;
   bottom: 0;
-  z-index: 3;
+  z-index: 4;
   padding: 1px 10px;
   font-size: 1.5em;
   font-weight: 600;
@@ -1920,15 +1935,45 @@ p {
   text-shadow: 0 3px 15px #0095cb, 0 0 0.2em #0095cb;
 }
 
-.grid.speaker img {
+.grid.speaker .prs-detail {
   position: relative;
-  width: 87%;
-  max-width: 140px;
-  margin: 0 auto;
-  margin-top: 10px;
+  z-index: 3;
+  display: block;
+  height: 50px;
+  margin-top: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.grid.speaker .prs-detail p.speaker-position {
+  display: none;
+  font-family: 'Adelle', serif;
+  font-style: italic;
+  color: #264c4c;
+}
+
+.grid.speaker .prs-detail:hover {
+  display: block;
+  height: 200px;
+  padding-top: 5px;
+  margin-top: -145px;
+  background-color: #fff;
+}
+
+.grid.speaker .prs-detail:hover .speaker-name {
+  font-size: 1.1em;
+}
+
+.grid.speaker .prs-detail:hover .speaker-position {
+  display: block;
+  padding-right: 10px;
+}
+
+.grid.speaker .prs-detail:hover .speaker-topic {
+  padding-bottom: 10px;
 }
 
 .grid.speaker a {
+  z-index: 4;
   float: left;
   margin: 0;
   margin-left: 10px;
@@ -2003,7 +2048,7 @@ p {
   min-height: 200px;
   padding: 30px;
   margin: 0 auto;
-  margin-top: 60px;
+  margin-top: 80px;
   overflow: scroll;
   text-align: left;
   background-color: #fff;
@@ -2114,6 +2159,7 @@ p {
   width: 19.25%;
   min-height: 51px;
   margin: 0;
+  font-family: 'Adelle', serif;
   color: #fff;
   background-color: #0095cb;
   border: none;
@@ -2187,10 +2233,14 @@ p {
 }
 
 #six #faq-wrap h3 {
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-weight: 600;
   color: #0095cb;
   text-transform: none;
+}
+
+#six #faq-wrap p {
+  line-height: 1.4em;
 }
 
 /*Section 7*/
