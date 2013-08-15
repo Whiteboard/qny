@@ -1619,13 +1619,14 @@ p {
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 50%;
   -webkit-animation: wander 1.2s infinite;
-     -moz-animation: none;
+     -moz-animation: wander 1.2s infinite;
        -o-animation: wander 1.2s infinite;
-          animation: none;
+          animation: wander 1.2s infinite;
   -webkit-animation-timing-function: ease-in;
        -o-animation-timing-function: ease-in;
           animation-timing-function: ease-in;
   transition: all 0.2s ease-in-out;
+  -moz-anmiation-timing-function: ease-in;
 }
 
 #three .circle .title {
@@ -1652,10 +1653,6 @@ p {
 #three .circle:hover {
   background-color: #ffffff;
   box-shadow: 0 0 15px #fff;
-  -webkit-transition: none !important;
-     -moz-transition: none !important;
-       -o-transition: color 0 ease-in !important;
-          transition: none !important;
 }
 
 #three .circle:hover .title {
@@ -1666,13 +1663,6 @@ p {
 #three .circle.open {
   overflow: visible;
   background-color: rgba(255, 255, 255, 0.1);
-  -webkit-animation: none;
-     -moz-animation: none;
-       -o-animation: wander 1.2s infinite;
-          animation: wander 1.2s infinite;
-  -webkit-animation-timing-function: ease-in;
-       -o-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
 }
 
 #three .circle.open .title {
@@ -1707,10 +1697,11 @@ p {
   width: 60px;
   height: 60px;
   -webkit-animation: wander 1.7s infinite;
-     -moz-animation: none;
+     -moz-animation: wander 1.7s infinite;
        -o-animation: wander 1.7s infinite;
           animation: wander 1.7s infinite;
   -webkit-animation-timing-function: ease-in;
+     -moz-animation-timing-function: ease-in;
        -o-animation-timing-function: ease-in;
           animation-timing-function: ease-in;
 }
@@ -1724,18 +1715,22 @@ p {
   margin-top: -40px;
 }
 
+#three #city:hover,
+#three #city.open {
+  -webkit-animation: none;
+     -moz-animation: none;
+       -o-animation: none;
+          animation: none;
+  -webkit-animation-timing-function: ease-in;
+       -o-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
 #three #thought {
   top: 2220px;
   right: 200px;
   width: 80px;
   height: 80px;
-  -webkit-animation: wander 2s infinite;
-     -moz-animation: none;
-       -o-animation: wander 2s infinite;
-          animation: wander 2s infinite;
-  -webkit-animation-timing-function: ease-in;
-       -o-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
 }
 
 #three #thought .title {
@@ -1744,7 +1739,19 @@ p {
   width: 140px;
 }
 
-#three #thought:hover .title {
+#three #thought:hover,
+#three #thought.open {
+  -webkit-animation: none;
+     -moz-animation: none;
+       -o-animation: none;
+          animation: none;
+  -webkit-animation-timing-function: ease-in;
+       -o-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+#three #thought:hover .title,
+#three #thought.open .title {
   top: 75px;
 }
 
@@ -1752,10 +1759,11 @@ p {
   top: 2470px;
   left: 200px;
   -webkit-animation: wander 1.5s infinite;
-     -moz-animation: none;
+     -moz-animation: wander 1.5s infinite;
        -o-animation: wander 1.5s infinite;
           animation: wander 1.5s infinite;
   -webkit-animation-timing-function: ease-in;
+     -moz-animation-timing-function: ease-in;
        -o-animation-timing-function: ease-in;
           animation-timing-function: ease-in;
 }
@@ -1770,7 +1778,19 @@ p {
   margin-top: -220px;
 }
 
-#three #expert:hover .title {
+#three #expert:hover,
+#three #expert.open {
+  -webkit-animation: none;
+     -moz-animation: none;
+       -o-animation: none;
+          animation: none;
+  -webkit-animation-timing-function: ease-in;
+       -o-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+#three #expert:hover .title,
+#three #expert.open .title {
   top: -30px;
 }
 
@@ -1778,10 +1798,11 @@ p {
   top: 2400px;
   right: 260px;
   -webkit-animation: wander 1.9s infinite;
-     -moz-animation: none;
+     -moz-animation: wander 1.9s infinite;
        -o-animation: wander 1.9s infinite;
           animation: wander 1.9s infinite;
   -webkit-animation-timing-function: ease-in;
+     -moz-animation-timing-function: ease-in;
        -o-animation-timing-function: ease-in;
           animation-timing-function: ease-in;
 }
@@ -1797,7 +1818,19 @@ p {
   margin-top: -110px;
 }
 
-#three #influencers:hover .title {
+#three #influencers:hover,
+#three #influencers.open {
+  -webkit-animation: none;
+     -moz-animation: none;
+       -o-animation: none;
+          animation: none;
+  -webkit-animation-timing-function: ease-in;
+       -o-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+#three #influencers:hover .title,
+#three #influencers.open .title {
   right: -230px;
   width: 220px;
 }
@@ -1806,10 +1839,11 @@ p {
   top: 2220px;
   left: 150px;
   -webkit-animation: wander 2.2s infinite;
-     -moz-animation: none;
+     -moz-animation: wander 2.2s infinite;
        -o-animation: wander 2.2s infinite;
           animation: wander 2.2s infinite;
   -webkit-animation-timing-function: ease-in;
+     -moz-animation-timing-function: ease-in;
        -o-animation-timing-function: ease-in;
           animation-timing-function: ease-in;
 }
@@ -1818,7 +1852,19 @@ p {
   top: 28px;
 }
 
-#three #venue:hover .title {
+#three #venue:hover,
+#three #influencers.open {
+  -webkit-animation: none;
+     -moz-animation: none;
+       -o-animation: none;
+          animation: none;
+  -webkit-animation-timing-function: ease-in;
+       -o-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+#three #venue:hover .title,
+#three #influencers.open .title {
   top: 30px;
 }
 
@@ -1828,10 +1874,11 @@ p {
   width: 50px;
   height: 50px;
   -webkit-animation: wander 1.4s infinite;
-     -moz-animation: none;
+     -moz-animation: wander 1.4s infinite;
        -o-animation: wander 1.4s infinite;
           animation: wander 1.4s infinite;
   -webkit-animation-timing-function: ease-in;
+     -moz-animation-timing-function: ease-in;
        -o-animation-timing-function: ease-in;
           animation-timing-function: ease-in;
 }
@@ -1847,10 +1894,11 @@ p {
   width: 30px;
   height: 30px;
   -webkit-animation: wander 2.5s infinite;
-     -moz-animation: none;
+     -moz-animation: wander 2.5s infinite;
        -o-animation: wander 2.5s infinite;
           animation: wander 2.5s infinite;
   -webkit-animation-timing-function: ease-in;
+     -moz-animation-timing-function: ease-in;
        -o-animation-timing-function: ease-in;
           animation-timing-function: ease-in;
 }
@@ -1866,10 +1914,11 @@ p {
   width: 40px;
   height: 40px;
   -webkit-animation: wander 1.2s infinite;
-     -moz-animation: none;
+     -moz-animation: wander 1.2s infinite;
        -o-animation: wander 1.2s infinite;
           animation: wander 1.2s infinite;
   -webkit-animation-timing-function: ease-in;
+     -moz-animation-timing-function: ease-in;
        -o-animation-timing-function: ease-in;
           animation-timing-function: ease-in;
 }
@@ -2020,10 +2069,13 @@ p {
 }
 
 .grid.speaker .prs-detail p.speaker-position {
-  display: none;
   font-family: 'museo-slab', 'Museo Slab', 'Adelle', serif;
   font-style: italic;
   color: #264c4c;
+}
+
+.grid.speaker .prs-detail .speaker-topic {
+  display: none;
 }
 
 .grid.speaker .prs-detail:hover {
@@ -2039,13 +2091,17 @@ p {
 }
 
 .grid.speaker .prs-detail:hover .speaker-position {
-  display: block;
   padding-right: 10px;
 }
 
 .grid.speaker .prs-detail:hover .speaker-topic {
+  display: block;
   padding-right: 6px;
   padding-bottom: 10px;
+}
+
+.grid.speaker .prs-detail:hover .speaker-topic.small-margin {
+  margin-top: 10px !important;
 }
 
 .grid.speaker a {

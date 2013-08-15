@@ -574,10 +574,11 @@ p {
 		}
 			-webkit-animation: wander 1.2s infinite; /* Safari 4+ */
 			-webkit-animation-timing-function: ease-in;
-  			-moz-animation:    none; /* Fx 5+ */
+  			-moz-animation:    wander 1.2s infinite; /* Fx 5+ */
+  			-moz-anmiation-timing-function: ease-in;
   			-o-animation:      wander 1.2s infinite; /* Opera 12+ */
   			-o-animation-timing-function: ease-in;
-  			animation:         none; /* IE 10+ */
+  			animation:         wander 1.2s infinite; /* IE 10+ */
   			animation-timing-function: ease-in;
 	}
 	.circle:hover {
@@ -587,10 +588,6 @@ p {
 			color: rgba(255,255,255,1);
 			font-size: 1.2em;
 		}
-		 	-moz-transition: none !important;
-    		-webkit-transition: none !important;
-    		-o-transition: color 0 ease-in !important;
-    		transition: none !important;
 	}
 	.circle.open {
 		overflow: visible;
@@ -617,13 +614,6 @@ p {
 				margin-bottom: 5px;
 			}
 		}
-			-webkit-animation: none; /* Safari 4+ */
-			-webkit-animation-timing-function: ease-in;
-  			-moz-animation:    none; /* Fx 5+ */
-  			-o-animation:      wander 1.2s infinite; /* Opera 12+ */
-  			-o-animation-timing-function: ease-in;
-  			animation:         wander 1.2s infinite; /* IE 10+ */
-  			animation-timing-function: ease-in;
 	}
 	#city {
 			width: 60px;
@@ -639,12 +629,22 @@ p {
 			}
 			-webkit-animation: wander 1.7s infinite; /* Safari 4+ */
 			-webkit-animation-timing-function: ease-in;
-  			-moz-animation:    none; /* Fx 5+ */
+  			-moz-animation:    wander 1.7s infinite; /* Fx 5+ */
+  			-moz-animation-timing-function: ease-in;
   			-o-animation:      wander 1.7s infinite; /* Opera 12+ */
   			-o-animation-timing-function: ease-in;
   			animation:         wander 1.7s infinite; /* IE 10+ */
   			animation-timing-function: ease-in;
 		}
+	#city:hover, #city.open {
+			-webkit-animation: none; /* Safari 4+ */
+			-webkit-animation-timing-function: ease-in;
+  			-moz-animation:    none; /* Fx 5+ */
+  			-o-animation:      none; /* Opera 12+ */
+  			-o-animation-timing-function: ease-in;
+  			animation:         none; /* IE 10+ */
+  			animation-timing-function: ease-in;
+	}
 	#thought {
 		width: 80px;
 		height: 80px;
@@ -655,18 +655,18 @@ p {
 			top: 70px;
 			width: 140px;
 		}
-			-webkit-animation: wander 2s infinite; /* Safari 4+ */
-			-webkit-animation-timing-function: ease-in;
-  			-moz-animation:    none; /* Fx 5+ */
-  			-o-animation:      wander 2s infinite; /* Opera 12+ */
-  			-o-animation-timing-function: ease-in;
-  			animation:         wander 2s infinite; /* IE 10+ */
-  			animation-timing-function: ease-in;
 	}
-	#thought:hover {
+	#thought:hover, #thought.open {
 		.title {
 			top: 75px;
 		}
+			-webkit-animation: none; /* Safari 4+ */
+			-webkit-animation-timing-function: ease-in;
+  			-moz-animation:    none; /* Fx 5+ */
+  			-o-animation:      none; /* Opera 12+ */
+  			-o-animation-timing-function: ease-in;
+  			animation:         none; /* IE 10+ */
+  			animation-timing-function: ease-in;
 	}
 	#expert {
 		top: 2470px;
@@ -681,16 +681,24 @@ p {
 		}
 			-webkit-animation: wander 1.5s infinite; /* Safari 4+ */
 			-webkit-animation-timing-function: ease-in;
-  			-moz-animation:    none; /* Fx 5+ */
+  			-moz-animation:    wander 1.5s infinite; /* Fx 5+ */
+  			-moz-animation-timing-function: ease-in;
   			-o-animation:      wander 1.5s infinite; /* Opera 12+ */
   			-o-animation-timing-function: ease-in;
   			animation:         wander 1.5s infinite; /* IE 10+ */
   			animation-timing-function: ease-in;
 	}
-	#expert:hover {
+	#expert:hover, #expert.open {
 		.title {
 			top: -30px;
 		}
+			-webkit-animation: none; /* Safari 4+ */
+			-webkit-animation-timing-function: ease-in;
+  			-moz-animation:    none; /* Fx 5+ */
+  			-o-animation:      none; /* Opera 12+ */
+  			-o-animation-timing-function: ease-in;
+  			animation:         none; /* IE 10+ */
+  			animation-timing-function: ease-in;
 	}
 	#influencers {
 		top: 2400px;
@@ -706,17 +714,25 @@ p {
 		}
 			-webkit-animation: wander 1.9s infinite; /* Safari 4+ */
 			-webkit-animation-timing-function: ease-in;
-  			-moz-animation:    none; /* Fx 5+ */
+  			-moz-animation:    wander 1.9s infinite; /* Fx 5+ */
+  			-moz-animation-timing-function: ease-in;
   			-o-animation:      wander 1.9s infinite; /* Opera 12+ */
   			-o-animation-timing-function: ease-in;
   			animation:         wander 1.9s infinite; /* IE 10+ */
   			animation-timing-function: ease-in;
 	}
-	#influencers:hover {
+	#influencers:hover, #influencers.open {
 		.title {
 			right: -230px;
 			width: 220px;
 		}
+			-webkit-animation: none; /* Safari 4+ */
+			-webkit-animation-timing-function: ease-in;
+  			-moz-animation:    none; /* Fx 5+ */
+  			-o-animation:      none; /* Opera 12+ */
+  			-o-animation-timing-function: ease-in;
+  			animation:         none; /* IE 10+ */
+  			animation-timing-function: ease-in;
 	}
 	#venue {
 		top: 2220px;
@@ -726,16 +742,24 @@ p {
 		}
 			-webkit-animation: wander 2.2s infinite; /* Safari 4+ */
 			-webkit-animation-timing-function: ease-in;
-  			-moz-animation:    none; /* Fx 5+ */
+  			-moz-animation:    wander 2.2s infinite; /* Fx 5+ */
+  			-moz-animation-timing-function: ease-in;
   			-o-animation:      wander 2.2s infinite; /* Opera 12+ */
   			-o-animation-timing-function: ease-in;
   			animation:         wander 2.2s infinite; /* IE 10+ */
   			animation-timing-function: ease-in;
 	}
-	#venue:hover {
+	#venue:hover, #influencers.open {
 		.title {
 			top: 30px;
 		}
+			-webkit-animation: none; /* Safari 4+ */
+			-webkit-animation-timing-function: ease-in;
+  			-moz-animation:    none; /* Fx 5+ */
+  			-o-animation:      none; /* Opera 12+ */
+  			-o-animation-timing-function: ease-in;
+  			animation:         none; /* IE 10+ */
+  			animation-timing-function: ease-in;
 	}
 	#fill1 {
 		width: 50px;
@@ -744,7 +768,8 @@ p {
 		right: 190px;	
 			-webkit-animation: wander 1.4s infinite; /* Safari 4+ */
 			-webkit-animation-timing-function: ease-in;
-  			-moz-animation:    none; /* Fx 5+ */
+  			-moz-animation:    wander 1.4s infinite; /* Fx 5+ */
+  			-moz-animation-timing-function: ease-in;
   			-o-animation:      wander 1.4s infinite; /* Opera 12+ */
   			-o-animation-timing-function: ease-in;
   			animation:         wander 1.4s infinite; /* IE 10+ */
@@ -761,7 +786,8 @@ p {
 		right: 140px;
 			-webkit-animation: wander 2.5s infinite; /* Safari 4+ */
 			-webkit-animation-timing-function: ease-in;
-  			-moz-animation:    none; /* Fx 5+ */
+  			-moz-animation:    wander 2.5s infinite; /* Fx 5+ */
+  			-moz-animation-timing-function: ease-in;
   			-o-animation:      wander 2.5s infinite; /* Opera 12+ */
   			-o-animation-timing-function: ease-in;
   			animation:         wander 2.5s infinite; /* IE 10+ */
@@ -778,7 +804,8 @@ p {
 		left: 270px;
 			-webkit-animation: wander 1.2s infinite; /* Safari 4+ */
 			-webkit-animation-timing-function: ease-in;
-  			-moz-animation:    none; /* Fx 5+ */
+  			-moz-animation:    wander 1.2s infinite; /* Fx 5+ */
+  			-moz-animation-timing-function: ease-in;
   			-o-animation:      wander 1.2s infinite; /* Opera 12+ */
   			-o-animation-timing-function: ease-in;
   			animation:         wander 1.2s infinite; /* IE 10+ */
@@ -919,10 +946,12 @@ p {
 		position: relative;
 		z-index: 3;
 		p.speaker-position {
-			display: none;
 			color: lighten(@qblack, 20%);
 			font-style: italic;
 			font-family: @serif;
+		}
+		.speaker-topic {
+			display: none;
 		}
 	}
 	.prs-detail:hover {
@@ -935,12 +964,15 @@ p {
 			font-size: 1.1em;
 		}
 		.speaker-position {
-			display: block;
 			padding-right: 10px;
 		}
 		.speaker-topic {
+			display: block;
 			padding-bottom: 10px;
 			padding-right: 6px;
+		}
+		.speaker-topic.small-margin {
+			margin-top: 10px !important;
 		}
 	}
 	a {
