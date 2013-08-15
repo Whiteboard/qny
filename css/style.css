@@ -1397,7 +1397,7 @@ p {
 
 #one .bottom-half p.center {
   width: 80%;
-  max-width: 380px;
+  max-width: 370px;
   min-width: 360px;
   padding-top: 20px;
   margin: 0 auto;
@@ -1621,7 +1621,7 @@ p {
   -webkit-animation: wander 1.2s infinite;
      -moz-animation: none;
        -o-animation: wander 1.2s infinite;
-          animation: wander 1.2s infinite;
+          animation: none;
   -webkit-animation-timing-function: ease-in;
        -o-animation-timing-function: ease-in;
           animation-timing-function: ease-in;
