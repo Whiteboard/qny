@@ -78,7 +78,8 @@ $(".navigation div a:not(.out)").on("click", function(e) {
     
     function startSlider(){
         clearTimeout(tO);
-        tO = setTimeout(goToSlide, delay);
+        //tO = setTimeout(goToSlide, delay);
+        tO = setTimeout(goToSlide);
     }
     
     function setupControls(){

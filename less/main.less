@@ -551,7 +551,7 @@ p {
 		z-index: 1;
 		height: 40px;
 		width: 40px;
-		background-color: rgba(255,255,255,0.7);
+		background-color: rgba(255,255,255,0.4);
 		border-radius: 50%;
 		transition: all .2s ease-in-out;
 		.title {
@@ -591,7 +591,8 @@ p {
 	}
 	.circle.open {
 		overflow: visible;
-		background-color: rgba(255,255,255,0.1);
+		background-color: rgba(255,255,255,1);
+		z-index: 10000;
 		.title {
 			display: none;
 		}
@@ -602,7 +603,7 @@ p {
 			display: block;
 			opacity: 1;
 			border-top: 8px solid @blue;
-			margin-left: -80px;
+			margin-left: 20px;
 			z-index: 999;
 			img {
 				display: block;
@@ -612,6 +613,22 @@ p {
 			}
 			h4 {
 				margin-bottom: 5px;
+				margin-top: -20px;
+			}
+			.detail-close {
+				display: block;
+				background-color: @blue;
+				padding: 7px;
+				position: relative;
+				text-align: center;
+				width: 20px;
+				top: -28px;
+				right: -286px;
+				transition: all .13s ease;
+				cursor: pointer;
+			}
+			.detail-close:hover {
+				background-color: darken(@blue, 20%);
 			}
 		}
 	}
@@ -657,6 +674,10 @@ p {
 		}
 	}
 	#thought:hover, #thought.open {
+		.detail {
+			margin-top: -20px;
+			margin-left: -300px;
+		}
 		.title {
 			top: 75px;
 		}
@@ -711,6 +732,7 @@ p {
 		}
 		.detail {
 			margin-top: -110px;
+			margin-left: -320px;
 		}
 			-webkit-animation: wander 1.9s infinite; /* Safari 4+ */
 			-webkit-animation-timing-function: ease-in;
@@ -737,6 +759,9 @@ p {
 	#venue {
 		top: 2220px;
 		left: 150px;
+		.detail {
+			margin-top: -20px;
+		}
 		.title {
 			top: 28px;
 		}
@@ -749,7 +774,7 @@ p {
   			animation:         wander 2.2s infinite; /* IE 10+ */
   			animation-timing-function: ease-in;
 	}
-	#venue:hover, #influencers.open {
+	#venue:hover, #venue.open {
 		.title {
 			top: 30px;
 		}
@@ -777,25 +802,20 @@ p {
 	}
 	#fill1:hover {
 		box-shadow: none;
-		background-color: rgba(255,255,255,0.7);
 	}
 	#fill2 {
 		width: 30px;
 		height: 30px;
 		top: 2440px;
 		right: 140px;
-			-webkit-animation: wander 2.5s infinite; /* Safari 4+ */
+			-webkit-animation: wander 1.5s infinite; /* Safari 4+ */
 			-webkit-animation-timing-function: ease-in;
-  			-moz-animation:    wander 2.5s infinite; /* Fx 5+ */
+  			-moz-animation:    wander 1.5s infinite; /* Fx 5+ */
   			-moz-animation-timing-function: ease-in;
-  			-o-animation:      wander 2.5s infinite; /* Opera 12+ */
+  			-o-animation:      wander 1.5s infinite; /* Opera 12+ */
   			-o-animation-timing-function: ease-in;
-  			animation:         wander 2.5s infinite; /* IE 10+ */
+  			animation:         wander 1.5s infinite; /* IE 10+ */
   			animation-timing-function: ease-in;
-	}
-	#fill2:hover {
-		box-shadow: none;
-		background-color: rgba(255,255,255,0.7);
 	}
 	#fill3 {
 		width: 40px;
@@ -813,7 +833,64 @@ p {
 	}
 	#fill3:hover {
 		box-shadow: none;
-		background-color: rgba(255,255,255,0.7);
+	}
+
+	#fill4 {
+		width: 30px;
+		height: 30px;
+		top: 2270px;
+		left: 370px;
+	}
+
+	#fill5 {
+		width: 20px;
+		height: 20px;
+		top: 2170px;
+		right: 270px;
+	}
+
+	#fill6 {
+		width: 25px;
+		height: 25px;
+		top: 2270px;
+		left: 230px;
+	}
+
+	#fill7 {
+		width: 20px;
+		height: 20px;
+		top: 2400px;
+		left: 170px;
+	}
+
+	#fill8 {
+		width: 25px;
+		height: 25px;
+		top: 2350px;
+		right: 230px;
+	}
+
+	#fill9 {
+		width: 30px;
+		height: 30px;
+		top: 2160px;
+		left: 180px;
+	}
+
+	.bg {
+		background-color: rgba(255,255,255,0.15);
+		box-shadow: 0 0 25px rgba(255,255,255,0.15);
+			-webkit-animation: wander 6.2s infinite; /* Safari 4+ */
+			-webkit-animation-timing-function: ease-in;
+  			-moz-animation:    wander 6.2s infinite; /* Fx 5+ */
+  			-moz-animation-timing-function: ease-in;
+  			-o-animation:      wander 6.2s infinite; /* Opera 12+ */
+  			-o-animation-timing-function: ease-in;
+  			animation:         wander 6.2s infinite; /* IE 10+ */
+  			animation-timing-function: ease-in;
+	}
+	.bg:hover {
+		background-color: rgba(255,255,255,0.2);
 	}
 
 	.detail.open {

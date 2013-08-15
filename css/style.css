@@ -1616,7 +1616,7 @@ p {
   z-index: 1;
   width: 40px;
   height: 40px;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.4);
   border-radius: 50%;
   -webkit-animation: wander 1.2s infinite;
      -moz-animation: wander 1.2s infinite;
@@ -1661,8 +1661,9 @@ p {
 }
 
 #three .circle.open {
+  z-index: 10000;
   overflow: visible;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #ffffff;
 }
 
 #three .circle.open .title {
@@ -1675,7 +1676,7 @@ p {
   width: 70%;
   min-width: 300px;
   padding: 20px;
-  margin-left: -80px;
+  margin-left: 20px;
   border-top: 8px solid #0095cb;
   opacity: 1;
 }
@@ -1688,7 +1689,25 @@ p {
 }
 
 #three .circle.open .detail h4 {
+  margin-top: -20px;
   margin-bottom: 5px;
+}
+
+#three .circle.open .detail .detail-close {
+  position: relative;
+  top: -28px;
+  right: -286px;
+  display: block;
+  width: 20px;
+  padding: 7px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #0095cb;
+  transition: all .13s ease;
+}
+
+#three .circle.open .detail .detail-close:hover {
+  background-color: #004a65;
 }
 
 #three #city {
@@ -1748,6 +1767,12 @@ p {
   -webkit-animation-timing-function: ease-in;
        -o-animation-timing-function: ease-in;
           animation-timing-function: ease-in;
+}
+
+#three #thought:hover .detail,
+#three #thought.open .detail {
+  margin-top: -20px;
+  margin-left: -300px;
 }
 
 #three #thought:hover .title,
@@ -1816,6 +1841,7 @@ p {
 
 #three #influencers .detail {
   margin-top: -110px;
+  margin-left: -320px;
 }
 
 #three #influencers:hover,
@@ -1848,12 +1874,16 @@ p {
           animation-timing-function: ease-in;
 }
 
+#three #venue .detail {
+  margin-top: -20px;
+}
+
 #three #venue .title {
   top: 28px;
 }
 
 #three #venue:hover,
-#three #influencers.open {
+#three #venue.open {
   -webkit-animation: none;
      -moz-animation: none;
        -o-animation: none;
@@ -1864,7 +1894,7 @@ p {
 }
 
 #three #venue:hover .title,
-#three #influencers.open .title {
+#three #venue.open .title {
   top: 30px;
 }
 
@@ -1884,7 +1914,6 @@ p {
 }
 
 #three #fill1:hover {
-  background-color: rgba(255, 255, 255, 0.7);
   box-shadow: none;
 }
 
@@ -1893,19 +1922,14 @@ p {
   right: 140px;
   width: 30px;
   height: 30px;
-  -webkit-animation: wander 2.5s infinite;
-     -moz-animation: wander 2.5s infinite;
-       -o-animation: wander 2.5s infinite;
-          animation: wander 2.5s infinite;
+  -webkit-animation: wander 1.5s infinite;
+     -moz-animation: wander 1.5s infinite;
+       -o-animation: wander 1.5s infinite;
+          animation: wander 1.5s infinite;
   -webkit-animation-timing-function: ease-in;
      -moz-animation-timing-function: ease-in;
        -o-animation-timing-function: ease-in;
           animation-timing-function: ease-in;
-}
-
-#three #fill2:hover {
-  background-color: rgba(255, 255, 255, 0.7);
-  box-shadow: none;
 }
 
 #three #fill3 {
@@ -1924,8 +1948,66 @@ p {
 }
 
 #three #fill3:hover {
-  background-color: rgba(255, 255, 255, 0.7);
   box-shadow: none;
+}
+
+#three #fill4 {
+  top: 2270px;
+  left: 370px;
+  width: 30px;
+  height: 30px;
+}
+
+#three #fill5 {
+  top: 2170px;
+  right: 270px;
+  width: 20px;
+  height: 20px;
+}
+
+#three #fill6 {
+  top: 2270px;
+  left: 230px;
+  width: 25px;
+  height: 25px;
+}
+
+#three #fill7 {
+  top: 2400px;
+  left: 170px;
+  width: 20px;
+  height: 20px;
+}
+
+#three #fill8 {
+  top: 2350px;
+  right: 230px;
+  width: 25px;
+  height: 25px;
+}
+
+#three #fill9 {
+  top: 2160px;
+  left: 180px;
+  width: 30px;
+  height: 30px;
+}
+
+#three .bg {
+  background-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.15);
+  -webkit-animation: wander 6.2s infinite;
+     -moz-animation: wander 6.2s infinite;
+       -o-animation: wander 6.2s infinite;
+          animation: wander 6.2s infinite;
+  -webkit-animation-timing-function: ease-in;
+     -moz-animation-timing-function: ease-in;
+       -o-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+#three .bg:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 #three .detail.open {
