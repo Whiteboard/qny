@@ -65,7 +65,7 @@ $(".navigation div a:not(.out)").on("click", function(e) {
 
 
 //desktop event details interaction
-$('.circle').click(function (event) {
+    $('.circle').click(function (event) {
 	if($('.circle').hasClass('open'))
 	   $('.circle').removeClass('open');
 	else($(this)).addClass('open');
