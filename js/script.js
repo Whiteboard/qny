@@ -17,7 +17,15 @@ $('.nav-button').click(function (event) {
 	else($('#nav-mobile')).addClass('active');
 });
 
-//sticky nav
+
+
+//set responsive variable
+var responsive_viewport = $(window).width();
+
+// if viewport is larger than 481px
+    if (responsive_viewport > 481) {
+
+        //sticky nav
 $(window).on("scroll", function(){
     var windowScroll = $(window).scrollTop();
     var windowHeight = $(window).height();
@@ -30,10 +38,10 @@ $(window).on("scroll", function(){
 
 //scrollTo animation
 $(".navigation div a:not(.out)").on("click", function(e) {
-	e.preventDefault();
-	var target_id = $(this).attr("href");
-	var new_scroll = $(target_id).offset();
-	$("body,html").animate({scrollTop: new_scroll.top-"60"+"px"}, 1000);
+    e.preventDefault();
+    var target_id = $(this).attr("href");
+    var new_scroll = $(target_id).offset();
+    $("body,html").animate({scrollTop: new_scroll.top-"60"+"px"}, 1000);
 });
 
 //parallax for background images
@@ -66,20 +74,21 @@ $(".navigation div a:not(.out)").on("click", function(e) {
 
 //desktop event details interaction
     $('.circle').click(function (event) {
-	if($('.circle').hasClass('open'))
-	   $('.circle').removeClass('open');
-	else($(this)).addClass('open');
+    if($('.circle').hasClass('open'))
+       $('.circle').removeClass('open');
+    else($(this)).addClass('open');
 });
+        
+    } //
 
 
 //review slider
-    var delay = 4000,
+    var delay = 2000,
         tO; // timeout
     
     function startSlider(){
         clearTimeout(tO);
-        //tO = setTimeout(goToSlide, delay);
-        tO = setTimeout(goToSlide);
+        tO = setTimeout(goToSlide, delay);
     }
     
     function setupControls(){

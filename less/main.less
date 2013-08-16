@@ -440,25 +440,19 @@ p {
 		.slide {
 			width: 32% !important;
 			max-width: 260px;
-			margin-left: 15px;
+			margin: 0 .2% !important;
+			text-align: center;
 			p {
         	max-width: 230px;
         	margin: 0 auto;
-        	padding-left: 30px;
-        	padding-right: 30px;
       		}
       		h5 {
-      			padding-left: 20px;
-      			padding-right: 20px;
       		}
 		}
     	.slide.first {
-      		margin-left:0px;
       		p {
-      			padding-left: 20px;
       		}
       		h5 {
-      			padding-left: 20px;
       		}
     	}
 
@@ -820,8 +814,8 @@ p {
 	#fill3 {
 		width: 40px;
 		height: 40px;
-		top: 2170px;
-		left: 270px;
+		top: 2320px;
+		left: 120px;
 			-webkit-animation: wander 1.2s infinite; /* Safari 4+ */
 			-webkit-animation-timing-function: ease-in;
   			-moz-animation:    wander 1.2s infinite; /* Fx 5+ */
@@ -1191,7 +1185,7 @@ p {
 		width: 98.5%;
 		position: absolute;
 		right: 5px;
-		top: 6px;
+		top: 5px;
 		margin-left: 10px;
 	}
 	h4, input {
@@ -1207,7 +1201,6 @@ p {
 		color: #fff;
 	}
 	.email {
-		width: 80%;
 		min-height: 47px;
 		opacity: 0.7;
 		transition: all .2s ease-in-out;
@@ -1707,14 +1700,14 @@ p {
 		padding-top: 14px;
 	}
 	.email {
-		width: 61%;
+		width: 61.8%;
 		min-height: 44px;
 		background-color: transparent;
 		opacity: 0.3;
 		transition: all .2s ease-in-out;
 		position: absolute;
-		right: 19.25%;
-		top: 6px;
+		right: 19.35%;
+		top: 5px;
 		transition: all .2s ease-in-out;
 	}
 	.email:focus {
@@ -1732,7 +1725,7 @@ p {
 		margin: 0;
 		position: absolute;
 		right: 4px;
-		top: 6px;
+		top: 5px;
 	}
 	.submit:hover {
 		background-color: darken(@blue, 20%);
@@ -1776,7 +1769,7 @@ p {
 		width: 98.5%;
 		position: absolute;
 		right: 5px;
-		top: 6px;
+		top: 2.5px;
 		margin-left: 10px;
 	}
 	h4, input {
@@ -2117,6 +2110,28 @@ p {
 
 /* <400px */
 @media @tiny {
+	#one {
+		.bottomhalf {
+		}
+		.center {
+			width: 90%;
+			min-width: 250px;
+		}
+		.ny {
+			width: 100%;
+			h1 {
+				text-align: center;
+				font-size: 2.5em;
+				letter-spacing: .01em;
+				text-transform: uppercase;
+				font-weight: 700;
+				border: 3px solid #fff;
+				padding: 0;
+				padding-top: 7px;
+				}
+		}
+	}
+
 	#onehalf {
 		#reviewslider {
 			.slide {
