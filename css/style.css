@@ -1053,6 +1053,7 @@ Some rules and guidelines:
 }
 
 body {
+  padding: 0;
   margin: 0;
   font-family: 'Helvetica', sans-serif;
   font-size: 14px;
@@ -2931,6 +2932,7 @@ p {
 
 @media only screen and (max-width: 834px) {
   #four #presenter-grid {
+    width: 80%;
     max-width: 768px;
     min-height: 800px;
     padding-bottom: 80px;
@@ -3140,6 +3142,10 @@ p {
   }
   #four {
     padding-bottom: 20px;
+  }
+  #four #presenter-grid .grid-wrap {
+    width: 30%;
+    max-width: 300px;
   }
   #four .speaker-row {
     width: 70%;
