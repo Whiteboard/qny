@@ -1569,10 +1569,10 @@ p {
 			display: none;
 		}
 		.columns.five {
-			width: 70% !important;
+			width: 40% !important;
 			margin: 0 auto !important;
 			padding-left: 60px;
-			max-width: 400px;
+			max-width: 550px;
 			p {
 				width: 100%;
 				padding-bottom: 20px;
@@ -1994,14 +1994,19 @@ p {
 /* <600px */
 @media @small {
 	#one {
-		.inner-wrap {
-			.five.columns {
-				width: 100% !important;
-			}
-			#image-grid {
-				width: 100% !important;
-				img {
-					margin: 0 auto;
+		.bottom-half {
+			.inner-wrap {
+				.columns.five {
+					width: 80% !important;
+				}
+				.offset-by-one {
+					
+				}
+				#image-grid {
+					width: 100% !important;
+					img {
+						margin: 0 auto;
+					}
 				}
 			}
 		}
@@ -2145,8 +2150,6 @@ p {
 /* <400px */
 @media @tiny {
 	#one {
-		.bottomhalf {
-		}
 		.center {
 			width: 90%;
 			min-width: 250px;
