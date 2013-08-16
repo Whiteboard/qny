@@ -35,9 +35,9 @@
 # enable-cors.org
 # code.google.com/p/html5security/wiki/CrossOriginRequestSecurity
 
-  <IfModule mod_headers.c>
-    Header set Access-Control-Allow-Origin "*"
-  </IfModule>
+#  <IfModule mod_headers.c>
+#    Header set Access-Control-Allow-Origin "*"
+#  </IfModule>
 
 
 # ----------------------------------------------------------------------
@@ -75,6 +75,11 @@
   </FilesMatch>
 </IfModule>
 
+<FilesMatch "\.(ttf|otf|eot|woff)$">
+  <IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+  </IfModule>
+</FilesMatch>
 
 # ----------------------------------------------------------------------
 # Proper MIME type for all files
