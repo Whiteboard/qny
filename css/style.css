@@ -1361,6 +1361,7 @@ p {
   min-height: 700px;
   background-attachment: fixed;
   background-image: url('../img/bg_empire.jpg');
+  background-position: fixed;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1427,7 +1428,7 @@ p {
 }
 
 #onehalf {
-  height: 350px;
+  height: 300px;
   margin-top: 90px;
 }
 
@@ -1587,6 +1588,7 @@ p {
   margin-top: -10px;
   background-attachment: fixed;
   background-image: url('../img/bg_ny.jpg');
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -2380,8 +2382,8 @@ p {
   text-align: center;
 }
 
-#five .center {
-  max-width: 440px;
+#five .inner-wrap .center {
+  max-width: 380px;
   padding-top: 0;
   margin-top: 50px;
   line-height: 1.8em;
@@ -2493,6 +2495,9 @@ p {
   #one .bottom-half .inner-wrap .five.columns {
     margin-left: 4% !important;
   }
+  #onehalf {
+    height: 300px;
+  }
   #two {
     margin-top: 0;
   }
@@ -2551,6 +2556,9 @@ p {
   #one .columns.five p {
     width: 100%;
   }
+  #one .offset-by-one {
+    padding-left: 20px;
+  }
   #onehalf #reviewslider .inner-wrap .five.columns.slide p {
     padding-right: 10px;
     padding-left: 10px;
@@ -2561,7 +2569,7 @@ p {
   }
   #two .columns.eleven.offset-by-one,
   #two .columns.five.offset-by-one {
-    padding-left: 20px;
+    padding-left: 0 !important;
   }
   #two .columns.eleven {
     width: 70% !important;
@@ -2646,15 +2654,24 @@ p {
   .navigation .right {
     right: 30px;
   }
-  #one #image-grid {
+  #one .bottom-half .inner-wrap #image-grid {
     display: none;
   }
-  #one .columns.five {
-    width: 47% !important;
-    margin-left: 1% !important;
+  #one .bottom-half .inner-wrap .columns.five {
+    width: 70% !important;
+    max-width: 400px;
+    padding-left: 60px;
+    margin: 0 auto !important;
   }
-  #one .columns.five p {
+  #one .bottom-half .inner-wrap .columns.five p {
     width: 100%;
+    padding-bottom: 20px;
+  }
+  #one .bottom-half .inner-wrap .offset-by-one {
+    padding-left: 60px;
+  }
+  #onehalf {
+    height: 350px;
   }
   #onehalf .slidecontrol {
     position: absolute;
@@ -2819,7 +2836,7 @@ p {
 
 @media only screen and (max-width: 800px) {
   #onehalf {
-    height: 250px;
+    height: 350px;
   }
   #two {
     margin-top: 50px;
@@ -2900,6 +2917,9 @@ p {
 /*Fix reviewslider breakpoint mixup*/
 
 @media only screen and (max-width: 822px) {
+  #onehalf {
+    height: 350px;
+  }
   #onehalf #reviewslider .slide {
     width: 97% !important;
     margin-top: 30px;
@@ -3048,7 +3068,7 @@ p {
     margin: 0 auto;
   }
   #onehalf {
-    height: 250px;
+    height: 350px;
   }
   #two .columns.four {
     min-width: 185px !important;
@@ -3099,7 +3119,11 @@ p {
     min-width: 280px;
   }
   #onehalf {
-    height: 300px;
+    height: 450px;
+    margin-top: 20px;
+  }
+  #onehalf #reviews {
+    padding-top: 250px;
   }
   #onehalf #reviewslider {
     height: 300px;
@@ -3175,6 +3199,14 @@ p {
   }
   #onehalf #reviewslider .slide {
     width: 97% !important;
+  }
+  #four .speaker-row {
+    width: 70%;
+    height: auto !important;
+    margin: 0 auto;
+  }
+  #four .speaker-row .speaker-grid {
+    margin: 0 auto !important;
   }
 }
 

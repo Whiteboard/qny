@@ -325,6 +325,7 @@ p {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
+	background-position: fixed;
 	.bottom-half {
 		margin-top: 0px;
 		padding-top: 20px;
@@ -379,7 +380,7 @@ p {
 }
 #onehalf {
 	margin-top: 90px;
-	height: 350px;
+	height: 300px;
 	#reviews {
 		max-width: 1000px;
 		margin: 0 auto;
@@ -532,6 +533,7 @@ p {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
+	background-position: center;
 	min-height: 1500px;
 	margin-top: -10px;
 }
@@ -1239,12 +1241,14 @@ p {
 		text-align: center;
 		margin-top: 70px;
 	}
-	.center {
-		padding-top: 0;
-		margin-top: 50px;
-		text-align: center;
-		line-height: 1.8em;
-		max-width: 440px;
+	.inner-wrap {
+		.center {
+			padding-top: 0;
+			margin-top: 50px;
+			text-align: center;
+			line-height: 1.8em;
+			max-width: 380px;
+		}
 	}
 	#eventbrite {
 		margin: 0 auto;
@@ -1363,6 +1367,9 @@ p {
 			}
 		}
 	}
+	#onehalf {
+		height: 300px;
+	}
 	#two {
 		margin-top: 0px;
 	}
@@ -1428,6 +1435,9 @@ p {
 				width: 100%;
 			}
 		}
+		.offset-by-one {
+			padding-left: 20px;
+		}
 	}
 
 	#onehalf {
@@ -1449,7 +1459,7 @@ p {
 
 	#two {
 		.columns.eleven.offset-by-one, .columns.five.offset-by-one {
-			padding-left: 20px;
+			padding-left: 0px !important;
 		}
 		.columns.eleven {
 			width: 70% !important;
@@ -1552,20 +1562,31 @@ p {
 		}
 	}
 	#one {
+		.bottom-half {
+			.inner-wrap {
 		#image-grid {
 			display: none;
 		}
 		.columns.five {
-			width: 47% !important;
-			margin-left: 1% !important;
+			width: 70% !important;
+			margin: 0 auto !important;
+			padding-left: 60px;
+			max-width: 400px;
 			p {
 				width: 100%;
+				padding-bottom: 20px;
 			}
 		}
+		.offset-by-one {
+			padding-left: 60px;
+		}
+	}
+	}
 	}
 
 
 	#onehalf {
+		height: 350px;
 		.slidecontrol {
 			position: absolute;
 			width: 32px;
@@ -1736,7 +1757,7 @@ p {
 /* <800px */
 @media @medium {
 	#onehalf {
-		height: 250px;
+		height: 350px;
 	}
 	#two {
 		margin-top: 50px;
@@ -1820,6 +1841,7 @@ p {
 /*Fix reviewslider breakpoint mixup*/
 @media only screen and (max-width:822px) {
 	#onehalf {
+		height: 350px;
 		#reviewslider {
 			.slide {
 				width: 97% !important;
@@ -1984,7 +2006,7 @@ p {
 	}
 
 	#onehalf {
-		height: 250px;
+		height: 350px;
 	}
 
 	#two {
@@ -2047,7 +2069,11 @@ p {
 		min-width: 280px;
 	}
 	#onehalf {
-		height: 300px;
+		height: 450px;
+		margin-top: 20px;
+		#reviews {
+			padding-top: 250px;
+		}
 		#reviewslider {
 			height: 300px;
 		}
@@ -2072,6 +2098,7 @@ p {
 			max-width: 300px;
 			margin: 0 auto;
 			.speaker.grid {
+
 				width: 100% !important;
 				min-width: 250px;
 				height: 300px;
@@ -2136,6 +2163,17 @@ p {
 		#reviewslider {
 			.slide {
 				width: 97% !important;
+			}
+		}
+	}
+
+	#four {
+		.speaker-row {
+			height: auto !important;
+			width: 70%;
+			margin: 0 auto;
+			.speaker-grid {
+				margin: 0 auto !important;
 			}
 		}
 	}

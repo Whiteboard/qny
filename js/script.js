@@ -30,9 +30,9 @@ $(window).on("scroll", function(){
     var windowScroll = $(window).scrollTop();
     var windowHeight = $(window).height();
     if (windowScroll > (windowHeight - 630)) {
-        $("#nav").addClass('sticky');
+        $("#nav, #nav-mobile").addClass('sticky');
     } else {
-        $("#nav").removeClass('sticky');
+        $("#nav, #nav-mobile").removeClass('sticky');
     }
 });
 
