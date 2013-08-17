@@ -69,11 +69,11 @@
 # Alternatively you could only whitelist your
 # subdomains like "subdomain.example.com".
 
- <IfModule mod_headers.c>
-  <FilesMatch "\.(eot|font.css|otf|ttc|ttf|woff)$">
-    Header set Access-Control-Allow-Origin "whiteboard.is"
-  </FilesMatch>
-</IfModule>
+# <IfModule mod_headers.c>
+#  <FilesMatch "\.(eot|font.css|otf|ttc|ttf|woff)$">
+#    Header set Access-Control-Allow-Origin "http://whiteboard.is"
+#  </FilesMatch>
+#</IfModule>
 
 # ----------------------------------------------------------------------
 # Proper MIME type for all files
