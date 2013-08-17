@@ -69,17 +69,15 @@
 # Alternatively you could only whitelist your
 # subdomains like "subdomain.example.com".
 
-# <IfModule mod_headers.c>
-#  <FilesMatch "\.(eot|font.css|otf|ttc|ttf|woff)$">
-#    Header set Access-Control-Allow-Origin "http://whiteboard.is"
-#  </FilesMatch>
-#</IfModule>
-
-<FilesMatch "\.(ttf|otf|eot|woff)$">
-  <IfModule mod_headers.c>
-    Header set Access-Control-Allow-Origin "*"
-  </IfModule>
+# Apache config
+<FilesMatch ".(eot|ttf|otf|woff)">
+  Header set Access-Control-Allow-Origin "*"
 </FilesMatch>
+
+# nginx config
+if ($filename ~* ^.*?\.(eot)|(ttf)|(woff)$){
+  add_header Access-Control-Allow-Origin *;
+}
 
 # ----------------------------------------------------------------------
 # Proper MIME type for all files
