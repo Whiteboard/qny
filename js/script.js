@@ -96,7 +96,6 @@ $(".navigation div a:not(.out)").on("click", function(e) {
         $(".slidecontrol").on("click", ".slide-control", function(e){
             e.preventDefault();
             
-            // You may want to do this as well, although you could do this in the actual goToSlide function for portability.
             $(this).addClass("current").siblings().removeClass("current");
 
             goToSlide(theIndex);
@@ -108,7 +107,6 @@ $(".navigation div a:not(.out)").on("click", function(e) {
         var allslides = $(".slide"),
             currslide = allslides.filter(".current");        
         if (i){
-            // if you pass in an i to goToSlide(), go to that slide. Useful for slide button controls.
             var nextslide = allslides.eq(i);
         } else {
             // let's go to the next slide by default
@@ -133,16 +131,15 @@ $(".navigation div a:not(.out)").on("click", function(e) {
         startSlider();
     }
     function animateSlides(toslide){
-        // animate to that guy.
+
         var strip = $(".slidewrap-inner");
         var dist = $('.slide').width();
-        // here is where you could do some Modernizr magic to see if CSS transitions are available, but eff that for now.
         strip.css({
           marginLeft : toslide.index() * - dist + "px"
         });
     }
 
-    // let's kick this pig
+    // boom boom boom.
     startSlider();
 
 

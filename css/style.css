@@ -2166,7 +2166,7 @@ p {
 
 .grid.speaker .prs-detail:hover .speaker-topic {
   display: block;
-  padding-right: 6px;
+  padding-right: 15px;
   padding-bottom: 10px;
 }
 
