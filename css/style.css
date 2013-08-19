@@ -251,204 +251,11 @@ Less version credit: https://github.com/thatericsmith/Skeleton
 /* Note: Design for a width of 768px */
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-  .container {
-    width: 768px;
-  }
-  .container.plusfour {
-    width: 768px;
-  }
-  .container.pluseight {
-    width: 768px;
-  }
-  .container .column,
-  .container .columns {
-    margin-right: 10px !important;
-    margin-left: 10px !important;
-  }
-  .column.alpha,
-  .columns.alpha {
-    margin-right: 10px !important;
-    margin-left: 0!important;
-  }
-  .column.omega,
-  .columns.omega {
-    margin-right: 0!important;
-    margin-left: 10px !important;
-  }
-  .container {
-    /* Base Grid */
   
-    /* Offsets */
-  
-  }
-  .container .one.column {
-    width: 28px;
-  }
-  .container .columns.two {
-    width: 76px;
-  }
-  .container .columns.three {
-    width: 124px;
-  }
-  .container .columns.four {
-    width: 172px;
-  }
-  .container .columns.five {
-    width: 220px;
-  }
-  .container .columns.six {
-    width: 268px;
-  }
-  .container .columns.seven {
-    width: 316px;
-  }
-  .container .columns.eight {
-    width: 364px;
-  }
-  .container .columns.nine {
-    width: 412px;
-  }
-  .container .columns.ten {
-    width: 460px;
-  }
-  .container .columns.eleven {
-    width: 508px;
-  }
-  .container .columns.twelve {
-    width: 556px;
-  }
-  .container .columns.thirteen {
-    width: 604px;
-  }
-  .container .columns.fourteen {
-    width: 652px;
-  }
-  .container .columns.fifteen {
-    width: 700px;
-  }
-  .container .columns.sixteen {
-    width: 748px;
-  }
-  .container .columns.twenty {
-    width: 748px;
-  }
-  .container .columns.twentyfour {
-    width: 748px;
-  }
-  .container .one-third.column {
-    width: 236px;
-  }
-  .container .two-thirds.column {
-    width: 492px;
-  }
-  .container .offset-by-one {
-    padding-left: 48px;
-  }
-  .container .offset-by-two {
-    padding-left: 96px;
-  }
-  .container .offset-by-three {
-    padding-left: 144px;
-  }
-  .container .offset-by-four {
-    padding-left: 192px;
-  }
-  .container .offset-by-five {
-    padding-left: 240px;
-  }
-  .container .offset-by-six {
-    padding-left: 288px;
-  }
-  .container .offset-by-seven {
-    padding-left: 336px;
-  }
-  .container .offset-by-eight {
-    padding-left: 384px;
-  }
-  .container .offset-by-nine {
-    padding-left: 432px;
-  }
-  .container .offset-by-ten {
-    padding-left: 480px;
-  }
-  .container .offset-by-eleven {
-    padding-left: 528px;
-  }
-  .container .offset-by-twelve {
-    padding-left: 576px;
-  }
-  .container .offset-by-thirteen {
-    padding-left: 624px;
-  }
-  .container .offset-by-fourteen {
-    padding-left: 672px;
-  }
-  .container .offset-by-fifteen {
-    padding-left: 720px;
-  }
 }
 
 /*  #Mobile (Portrait)
 ================================================== */
-
-@media only screen and (max-width: 767px) {
-  {
-    /* Offsets */
-  
-  }
-  .columns,
-  .column {
-    margin: 0!important;
-  }
-  .container {
-    width: 300px;
-  }
-  .container.plusfour,
-  .container.pluseight {
-    width: 300px;
-  }
-  .container .column.one-third,
-  .container .column.two-thirds,
-  .container .column.one {
-    width: 300px;
-  }
-  .container .columns.two,
-  .container .columns.three,
-  .container .columns.four,
-  .container .columns.five,
-  .container .columns.six,
-  .container .columns.seven,
-  .container .columns.eight,
-  .container .columns.nine,
-  .container .columns.ten,
-  .container .columns.eleven,
-  .container .columns.twelve,
-  .container .columns.thirteen,
-  .container .columns.fourteen,
-  .container .columns.fifteen,
-  .container .columns.sixteen,
-  .container .columns.twenty,
-  .container .columns.twentyfour {
-    width: 300px;
-  }
-  .container .offset-by-one,
-  .container .offset-by-two,
-  .container .offset-by-three,
-  .container .offset-by-four,
-  .container .offset-by-five,
-  .container .offset-by-six,
-  .container .offset-by-seven,
-  .container .offset-by-eight,
-  .container .offset-by-nine,
-  .container .offset-by-ten,
-  .container .offset-by-eleven,
-  .container .offset-by-twelve,
-  .container .offset-by-thirteen,
-  .container .offset-by-fourteen,
-  .container .offset-by-fifteen {
-    padding-left: 0;
-  }
-}
 
 /* #Mobile (Landscape)
 ================================================== */
@@ -456,37 +263,7 @@ Less version credit: https://github.com/thatericsmith/Skeleton
 /* Note: Design for a width of 480px */
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .container {
-    width: 420px;
-  }
-  .container.plusfour,
-  .container.pluseight {
-    width: 420px;
-  }
-  .container .column.one-third,
-  .container .column.two-thirds,
-  .container .column.one {
-    width: 420px;
-  }
-  .container .columns.two,
-  .container .columns.three,
-  .container .columns.four,
-  .container .columns.five,
-  .container .columns.six,
-  .container .columns.seven,
-  .container .columns.eight,
-  .container .columns.nine,
-  .container .columns.ten,
-  .container .columns.eleven,
-  .container .columns.twelve,
-  .container .columns.thirteen,
-  .container .columns.fourteen,
-  .container .columns.fifteen,
-  .container .columns.sixteen,
-  .container .columns.twenty,
-  .container .columns.twentyfour {
-    width: 420px;
-  }
+  
 }
 
 /* #Clearing
@@ -1085,9 +862,15 @@ p {
 
 /*Base Structure Styles*/
 
+.body-wrap {
+  width: 100%;
+}
+
 .container {
   position: relative;
   width: 100%;
+  min-width: 1115px;
+  margin: 0 auto;
   overflow: hidden;
 }
 
@@ -1136,6 +919,7 @@ p {
 .navigation .inner-wrap {
   position: relative;
   width: 100%;
+  min-width: 960px;
   min-height: 50px;
 }
 
@@ -1161,7 +945,7 @@ p {
 
 .navigation .left {
   position: absolute;
-  left: 30px;
+  left: 50px;
   z-index: 999;
   width: 40%;
   margin: 0;
@@ -1175,7 +959,7 @@ p {
 .navigation .right {
   position: absolute;
   top: 0;
-  right: 10px;
+  right: 50px;
   z-index: 999;
   width: 40%;
   margin: 0;
@@ -1340,7 +1124,7 @@ p {
   width: 80%;
   max-width: 380px;
   min-width: 360px;
-  padding-top: 140px;
+  padding-top: 200px;
   margin: 0 auto;
 }
 
@@ -1415,7 +1199,7 @@ p {
   margin-top: 60px;
 }
 
-#one .bottom-half .inner-wrap .columns.five {
+#one .bottom-half .inner-wrap .five.columns {
   max-width: 280px;
   margin-left: 4%;
 }
@@ -1529,6 +1313,7 @@ p {
 
 #two {
   padding-top: 50px;
+  margin-top: 0;
   color: #040808;
   background-color: #fff;
 }
@@ -1638,6 +1423,7 @@ p {
 #three .circle .detail h4 {
   margin-top: 0;
   font-size: 1.3em;
+  color: #0095cb;
 }
 
 #three .circle:hover {
@@ -1667,6 +1453,7 @@ p {
   min-width: 300px;
   padding: 20px;
   margin-left: 20px;
+  color: #040808;
   border-top: 8px solid #0095cb;
   opacity: 1;
 }
@@ -1690,6 +1477,7 @@ p {
   display: block;
   width: 20px;
   padding: 7px;
+  color: #fff;
   text-align: center;
   cursor: pointer;
   background-color: #0095cb;
@@ -2056,7 +1844,7 @@ p {
   float: left;
   width: 25%;
   height: 100%;
-  max-width: 300px;
+  min-width: 200px;
   min-height: 400px;
 }
 
@@ -2072,6 +1860,7 @@ p {
   width: 75%;
   height: 100%;
   max-width: 1000px;
+  min-width: 696px;
   min-height: 600px;
   margin-bottom: 50px;
 }
@@ -2317,8 +2106,7 @@ p {
   position: relative;
   width: 100%;
   height: 50px;
-  max-width: 1000px;
-  min-height: 50px;
+  max-width: 825px;
   padding: 6px;
   margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.7);
@@ -2327,10 +2115,10 @@ p {
 
 #signup-form .form-wrap {
   position: absolute;
-  top: 5px;
+  top: 2.5px;
   right: 5px;
   width: 98.5%;
-  min-height: 50px;
+  height: 50px;
   margin-left: 10px;
 }
 
@@ -2341,32 +2129,57 @@ p {
 }
 
 #signup-form h4 {
-  width: 40%;
-  padding-left: 12px;
+  position: absolute;
+  top: 6px;
+  left: 13px;
+  width: 20%;
+  padding-left: 2px;
   margin-top: 14px;
-  margin-left: 10px;
+  margin-left: 5px;
   font-size: 1.2em;
   color: #fff;
 }
 
+#signup-form h5 {
+  position: absolute;
+  top: -18px;
+  right: 19.25%;
+  display: block;
+  width: 60%;
+  min-height: 33px;
+  padding-top: 14px;
+  padding-left: 10px;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 300;
+  color: #000;
+  background-color: #fff;
+}
+
 #signup-form .email {
-  min-height: 47px;
-  opacity: 0.7;
+  position: absolute;
+  top: 2px;
+  right: 19.05%;
+  width: 61.8%;
+  min-height: 44px;
+  background-color: transparent;
+  opacity: 0.3;
   transition: all 0.2s ease-in-out;
 }
 
 #signup-form .email:focus {
+  background-color: #fff;
   opacity: 1;
 }
 
 #signup-form .submit {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 2px;
+  right: -2px;
   width: 19.25%;
-  min-height: 51px;
+  min-height: 48px;
   margin: 0;
-  font-family: 'museo-slab', 'Museo Slab', 'Adelle', serif;
   color: #fff;
   background-color: #0095cb;
   border: none;
@@ -2484,750 +2297,8 @@ p {
 
 /*********** Media Queries ****************/
 
-/* >1130px */
-
-@media only screen and (min-width: 1130px) {
-  #one .bottom-half .inner-wrap .five.columns {
-    margin-left: 4% !important;
-  }
-  .accordion-wrap {
-    display: none;
-  }
-  #three .detail {
-    display: none;
-    color: #040808;
-    background-color: rgba(255, 255, 255, 0.9);
-  }
-  #three .detail h4 {
-    color: #0095cb;
-  }
-}
-
-/* <1130px */
-
-@media only screen and (max-width: 1130px) {
-  #one .bottom-half .inner-wrap .five.columns {
-    margin-left: 4% !important;
-  }
-  #onehalf {
-    height: 300px;
-  }
-  #two {
-    margin-top: 0;
-  }
-  #three .accordion-wrap {
-    display: none;
-  }
-  #three .detail {
-    display: none;
-    color: #040808;
-    background-color: rgba(255, 255, 255, 0.9);
-  }
-  #three .detail h4 {
-    color: #0095cb;
-  }
-  #four #presenter-grid {
-    max-width: 755px;
-    min-height: 800px;
-    margin: 0 auto;
-  }
-  #four #presenter-grid .tagline {
-    float: none;
-    width: 100%;
-    max-width: 700px;
-    min-height: 100px;
-  }
-  #four #presenter-grid .tagline h5 {
-    padding-top: 20px;
-    padding-right: 0;
-    font-size: 1.4em;
-    text-align: center;
-  }
-  #four #presenter-grid .grid-wrap {
-    width: 100%;
-    height: auto;
-    max-width: 755px;
-    min-height: 600px;
-  }
-  .navigation .inner-wrap {
-    width: 100%;
-  }
-  .navigation .inner-wrap .left {
-    left: 20px;
-  }
-  .navigation .inner-wrap .right {
-    right: 20px;
-  }
-}
-
-/* <1069px */
-
-@media only screen and (max-width: 1069px) {
-  #one .columns.five {
-    width: 30% !important;
-    margin-left: 4% !important;
-  }
-  #one .columns.five p {
-    width: 100%;
-  }
-  #one .offset-by-one {
-    padding-left: 20px;
-  }
-  #onehalf #reviewslider .inner-wrap .five.columns.slide p {
-    padding-right: 10px;
-    padding-left: 10px;
-  }
-  #onehalf #reviewslider .inner-wrap .five.columns.slide h5 {
-    padding-right: 10px;
-    padding-left: 10px;
-  }
-  #two .columns.eleven.offset-by-one,
-  #two .columns.five.offset-by-one {
-    padding-left: 0 !important;
-  }
-  #two .columns.eleven {
-    width: 70% !important;
-  }
-  #two .columns.five {
-    width: 30% !important;
-  }
-  .slidewrap-inner {
-    width: 90%;
-    margin: 0 auto;
-  }
-  #three .detail {
-    display: none;
-    color: #040808;
-    background-color: rgba(255, 255, 255, 0.9);
-  }
-  #three .detail h4 {
-    color: #0095cb;
-  }
-  #faq-wrap .row {
-    width: 85%;
-    margin: 0 auto;
-  }
-  #faq-wrap .row .offset-by-one {
-    padding-left: 0 !important;
-  }
-}
-
-/*Review Slider 1000-1030*/
-
-@media only screen and (min-width: 1000px) and (max-width: 1030px) {
-  #reviewslider .inner-wrap .five.columns.slide {
-    margin-right: .01% !important;
-  }
-  #reviewslider .inner-wrap .five.columns.slide p {
-    padding-right: 10px;
-    padding-left: 10px;
-  }
-  #reviewslider .inner-wrap .five.columns.slide h5 {
-    padding-right: 10px;
-    padding-left: 10px;
-  }
-}
-
-@media only screen and (max-width: 1000px) {
-  #onehalf #reviewslider .inner-wrap {
-    max-width: 560px;
-  }
-  #onehalf #reviewslider .inner-wrap .slide {
-    transition: all 0.13s ease-in-out;
-  }
-  #onehalf #reviewslider .inner-wrap .slide.first,
-  #onehalf #reviewslider .inner-wrap .slide.current {
-    max-width: 280px;
-    padding-right: 0 !important;
-    padding-left: 0 !important;
-    margin-left: 0 !important;
-  }
-  #onehalf #reviewslider .inner-wrap .slide.first p,
-  #onehalf #reviewslider .inner-wrap .slide.current p,
-  #onehalf #reviewslider .inner-wrap .slide.first h5,
-  #onehalf #reviewslider .inner-wrap .slide.current h5 {
-    padding-left: 0 !important;
-  }
-}
-
-@media only screen and (min-width: 960px) {
-  .navigation .left {
-    left: 60px;
-  }
-  .navigation .right {
-    right: 60px;
-  }
-}
-
-/* <960px */
-
-@media only screen and (max-width: 960px) {
-  .navigation .left {
-    left: 30px;
-  }
-  .navigation .right {
-    right: 30px;
-  }
-  #one .bottom-half .inner-wrap #image-grid {
-    display: none;
-  }
-  #one .bottom-half .inner-wrap .columns.five {
-    width: 40% !important;
-    max-width: 550px;
-    padding-left: 60px;
-    margin: 0 auto !important;
-  }
-  #one .bottom-half .inner-wrap .columns.five p {
-    width: 100%;
-    padding-bottom: 20px;
-  }
-  #one .bottom-half .inner-wrap .offset-by-one {
-    padding-left: 60px;
-  }
-  #onehalf {
-    height: 350px;
-  }
-  #onehalf .slidecontrol {
-    position: absolute;
-    width: 32px;
-    height: 67px;
-  }
-  #onehalf .slidecontrol.left {
-    left: 20px;
-  }
-  #onehalf .slidecontrol.right {
-    right: 20px;
-  }
-  #three #event-details {
-    display: none;
-  }
-  #three .accordion-wrap {
-    display: block;
-    background-color: rgba(255, 255, 255, 0.7);
-  }
-  #three .accordion-wrap .accordion {
-    padding: 20px;
-    padding-left: 10px;
-    color: #040808;
-  }
-  #three .accordion-wrap .accordion dt {
-    padding: 20px;
-    padding-top: 24px;
-    transition: all 0.2s ease-in-out;
-  }
-  #three .accordion-wrap .accordion dt:hover {
-    color: #0095cb;
-    background-color: #ffffff;
-  }
-  #three .accordion-wrap .accordion dt a {
-    display: block;
-    font-family: 'museo-slab', 'Museo Slab', 'Adelle', serif;
-    font-size: 1.3em;
-    color: #040808;
-    text-decoration: none;
-  }
-  #three .accordion-wrap .accordion dd {
-    padding-bottom: 20px;
-    margin-left: 32px;
-    line-height: 1.6em;
-  }
-  #three .accordion-wrap .accordion dd h4 {
-    color: #0095cb;
-  }
-  #four #presenter-grid {
-    max-width: 755px;
-    min-height: 800px;
-    margin: 0 auto;
-  }
-  #four #presenter-grid .tagline {
-    float: none;
-    width: 100%;
-    max-width: 700px;
-    min-height: 100px;
-  }
-  #four #presenter-grid .tagline h5 {
-    padding-top: 20px;
-    padding-right: 0;
-    text-align: center;
-  }
-  #four #presenter-grid .grid-wrap {
-    width: 100%;
-    height: auto;
-    max-width: 755px;
-    min-height: 600px;
-  }
-}
-
-/*Signup Form*/
-
-/*  >800px  */
-
-@media only screen and (min-width: 801px) {
-  .profile {
-    min-height: 130px;
-  }
-  #signup-form {
-    position: relative;
-    width: 100%;
-    height: 50px;
-    max-width: 825px;
-    padding: 6px;
-    margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.7);
-    border: 1px solid #0095cb;
-  }
-  #signup-form .form-wrap {
-    position: absolute;
-    top: 1px;
-    right: 0;
-    min-height: 50px;
-  }
-  #signup-form h4,
-  #signup-form input {
-    padding: 0;
-    margin: 0;
-  }
-  #signup-form h4 {
-    position: absolute;
-    top: 6px;
-    left: 13px;
-    width: 20%;
-    padding-left: 2px;
-    margin-top: 14px;
-    margin-left: 5px;
-    font-size: 1.2em;
-    color: #fff;
-  }
-  #signup-form h5 {
-    position: absolute;
-    top: -17px;
-    right: 19.25%;
-    display: block;
-    width: 60%;
-    min-height: 33px;
-    padding-top: 14px;
-    padding-left: 10px;
-    font-family: 'Helvetica', sans-serif;
-    font-size: 1em;
-    font-style: italic;
-    font-weight: 300;
-    color: #000;
-    background-color: #fff;
-  }
-  #signup-form .email {
-    position: absolute;
-    top: 5px;
-    right: 19.35%;
-    width: 61.8%;
-    min-height: 44px;
-    background-color: transparent;
-    opacity: 0.3;
-    transition: all 0.2s ease-in-out;
-  }
-  #signup-form .email:focus {
-    background-color: #fff;
-    opacity: 1;
-  }
-  #signup-form .submit {
-    position: absolute;
-    top: 5px;
-    right: 4px;
-    width: 19.25%;
-    min-height: 48px;
-    margin: 0;
-    color: #fff;
-    background-color: #0095cb;
-    border: none;
-    border-left: 5px solid #040808;
-    transition: background-color 0.13s ease-in-out;
-  }
-  #signup-form .submit:hover {
-    background-color: #004a65;
-  }
-}
-
-/* <800px */
-
-@media only screen and (max-width: 800px) {
-  #onehalf {
-    height: 350px;
-  }
-  #two {
-    margin-top: 50px;
-  }
-  #two .row h3 {
-    display: block;
-  }
-  #two .row .offset-by-one {
-    padding-left: 0 !important;
-  }
-  #two .columns.eleven h3 {
-    display: none;
-  }
-  #signup-form {
-    position: relative;
-    width: 100%;
-    height: 50px;
-    max-width: 1000px;
-    min-height: 50px;
-    padding: 6px;
-    margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.7);
-    border: 1px solid #0095cb;
-  }
-  #signup-form .form-wrap {
-    position: absolute;
-    top: 2.5px;
-    right: 5px;
-    width: 98.5%;
-    height: 50px;
-    margin-left: 10px;
-  }
-  #signup-form h4,
-  #signup-form input {
-    padding: 0;
-    margin: 0;
-  }
-  #signup-form h4 {
-    width: 40%;
-    padding-left: 12px;
-    margin-top: 14px;
-    margin-left: 10px;
-    font-size: 1.2em;
-    color: #fff;
-  }
-  #signup-form h5 {
-    display: none;
-  }
-  #signup-form .email {
-    position: absolute;
-    top: 0;
-    width: 80%;
-    min-height: 47px;
-    opacity: 0.7;
-    transition: all 0.2s ease-in-out;
-  }
-  #signup-form .email:focus {
-    opacity: 1;
-  }
-  #signup-form .submit {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 19.25%;
-    min-height: 51px;
-    margin: 0;
-    color: #fff;
-    background-color: #0095cb;
-    border: none;
-    border-left: 3px solid #040808;
-    transition: background-color 0.13s ease-in-out;
-  }
-  #signup-form .submit:hover {
-    background-color: #004a65;
-  }
-}
-
-/*Fix reviewslider breakpoint mixup*/
-
-@media only screen and (max-width: 822px) {
-  #onehalf {
-    height: 350px;
-  }
-  #onehalf #reviewslider .slide {
-    width: 97% !important;
-    margin-top: 30px;
-  }
-  #four #signup-form {
-    margin-top: 50px;
-  }
-}
-
-@media only screen and (max-width: 834px) {
-  #four #presenter-grid {
-    width: 80%;
-    max-width: 768px;
-    min-height: 800px;
-    padding-bottom: 80px;
-    margin: 0 auto;
-  }
-  #four #presenter-grid .tagline {
-    float: none;
-    width: 100%;
-    max-width: 700px;
-    min-height: 100px;
-  }
-  #four #presenter-grid .tagline h5 {
-    padding-top: 20px;
-    padding-right: 0;
-    text-align: center;
-  }
-  #four #presenter-grid .grid-wrap {
-    width: 100%;
-    height: auto;
-    max-width: 768px;
-    min-height: 600px;
-  }
-  #four .speaker-row {
-    margin-top: 20px;
-  }
-  #four .grid {
-    width: 25%;
-    margin-left: 8%;
-  }
-  #four .blank {
-    display: none;
-  }
-  #four .grid.speaker {
-    margin-left: 6%;
-  }
-  #four .grid.speaker p {
-    margin-left: 8px;
-  }
-  #four .grid.speaker a {
-    margin-left: 8px;
-  }
-  #four .speaker-row.two {
-    width: 60%;
-    margin: 0 auto;
-    margin-top: 20px;
-  }
-  #four .speaker-row.two .grid {
-    width: 40%;
-    margin-left: 5%;
-  }
-}
-
-/*Fix .five.columns problems in #two*/
-
-@media only screen and (max-width: 785px) {
-  #two .columns.eleven {
-    display: none;
-  }
-}
-
-/*Hide conventional nav, fix some bugs*/
-
-@media only screen and (max-width: 768px) {
-  {
-    /*Mobile Nav*/
-  
-  }
-  .navigation {
-    height: 80px;
-  }
-  .navigation .brand .oval {
-    margin-top: -30px;
-    margin-left: -75px;
-  }
-  .navigation .brand .q-cities {
-    bottom: -55px;
-  }
-  .navigation .ny,
-  .navigation .date {
-    display: none;
-  }
-  .navigation .right,
-  .navigation .left {
-    display: none;
-  }
-  #nav-mobile .mobile.active {
-    z-index: 999;
-    display: block;
-    height: 600px;
-    margin-top: 100px;
-    text-align: center;
-  }
-  #nav-mobile .nav-button {
-    display: block;
-  }
-  #two .columns.four {
-    width: 30% !important;
-  }
-  #two .columns.five {
-    margin-left: 2% !important;
-  }
-}
-
-/*Resize slider again.*/
-
-@media only screen and (max-width: 653px) {
-  #onehalf #reviewslider .inner-wrap .slide.first,
-  #onehalf #reviewslider .inner-wrap .slide.current {
-    width: 100%;
-    max-width: 520px;
-  }
-  #onehalf #reviewslider .inner-wrap .slide.wide {
-    display: none;
-  }
-}
-
-/*Hide slide controls*/
-
-@media only screen and (max-width: 610px) {
-  .slidecontrol {
-    display: none;
-  }
-}
-
-/* <600px */
-
-@media only screen and (max-width: 600px) {
-  #one .bottom-half .inner-wrap .columns.five {
-    width: 80% !important;
-  }
-  #one .bottom-half .inner-wrap #image-grid {
-    width: 100% !important;
-  }
-  #one .bottom-half .inner-wrap #image-grid img {
-    margin: 0 auto;
-  }
-  #onehalf {
-    height: 350px;
-  }
-  #two .columns.four {
-    min-width: 185px !important;
-  }
-  #two .columns.five {
-    width: 60% !important;
-  }
-  #four .speaker.grid p {
-    width: 87%;
-    font-size: .9em;
-    text-align: left;
-  }
-  #four .speaker.grid .more {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: 3;
-    padding: 1px 10px;
-    font-size: 1.5em;
-    font-weight: 600;
-    color: #0095cb;
-    background-color: #fff;
-  }
-  #four .speaker.grid .more:hover {
-    text-shadow: 0 3px 15px #0095cb, 0 0 0.2em #0095cb;
-  }
-  #five .center {
-    width: 90%;
-  }
-  #five #eventbrite {
-    width: 100%;
-  }
-}
-
-/*Fix that photo of Gabe*/
-
-@media only screen and (max-width: 585px) {
-  #two .columns.four {
-    width: 40% !important;
-  }
-  #two .columns.five {
-    width: 50% !important;
-  }
-}
-
-@media only screen and (max-width: 428px) {
-  .center {
-    min-width: 280px;
-  }
-  #onehalf {
-    height: 450px;
-    margin-top: 20px;
-  }
-  #onehalf #reviews {
-    padding-top: 250px;
-  }
-  #onehalf #reviewslider {
-    height: 300px;
-  }
-  #two .columns.four {
-    width: 100% !important;
-  }
-  #two #gabe {
-    min-height: 300px;
-  }
-  #two .columns.five {
-    width: 100% !important;
-    margin-left: 0 !important;
-  }
-  #four {
-    padding-bottom: 20px;
-  }
-  #four #presenter-grid .grid-wrap {
-    width: 30%;
-    max-width: 300px;
-  }
-  #four .speaker-row {
-    width: 70%;
-    max-width: 300px;
-    margin: 0 auto;
-  }
-  #four .speaker-row .speaker.grid {
-    width: 100% !important;
-    height: 300px;
-    min-width: 250px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
-  #four .speaker-row .speaker.grid .profile img {
-    max-width: 240px;
-    padding-top: 7px;
-  }
-  #four .speaker-row .speaker.grid p,
-  #four .speaker-row .speaker.grid a {
-    margin-left: 15px;
-  }
-  #four .speaker-row.two {
-    width: 70%;
-  }
-  #four .box {
-    width: 80%;
-    max-height: 500px;
-    overflow: scroll;
-  }
-  #signup-form .form-wrap {
-    width: 97%;
-  }
-  #signup-form h4 {
-    width: 70%;
-  }
-}
-
-/* <400px */
-
-@media only screen and (max-width: 400px) {
-  #one .center {
-    width: 90%;
-    min-width: 250px;
-  }
-  #one .ny {
-    width: 100%;
-  }
-  #one .ny h1 {
-    padding: 0;
-    padding-top: 7px;
-    font-size: 2.5em;
-    font-weight: 700;
-    letter-spacing: .01em;
-    text-align: center;
-    text-transform: uppercase;
-    border: 3px solid #fff;
-  }
-  #onehalf #reviewslider .slide {
-    width: 97% !important;
-    max-width: 320px;
-  }
-  #four .speaker-row {
-    width: 70%;
-    height: auto !important;
-    margin: 0 auto;
-  }
-  #four .speaker-row .speaker-grid {
-    margin: 0 auto !important;
-  }
+#one .bottom-half .inner-wrap .five.columns {
+  margin-left: 4% !important;
 }
 
 /*
