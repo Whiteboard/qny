@@ -83,7 +83,7 @@ $(".navigation div a:not(.out)").on("click", function(e) {
 
 
 //review slider
-    var delay = 2000,
+    var delay = 5000,
         tO; // timeout
     
     function startSlider(){
