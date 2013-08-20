@@ -1,10 +1,6 @@
 /*
 	depends on:
 		jQuery
-
-		if($('.circle').hasClass('.open'))
-		$('.circle').removeclass('.open');
-	else($('circle')).addClass('.open');
 */
 (function($,w,undefined){
 
@@ -53,8 +49,6 @@ $(".navigation div a:not(.out)").on("click", function(e) {
             topBG.css({
                 "background-position" : "center "+ ($(window).scrollTop()/15 - 20) + "px"
             });
-            //$(".home-header-inner").css("top", ($(window).scrollTop()/2 - 75) + "px");
-            //console.log($(".home-header-inner").css("top"));
         });
     }
 
@@ -66,8 +60,6 @@ $(".navigation div a:not(.out)").on("click", function(e) {
             bottomBG.css({
                 "background-position" : "center "+ ($(window).scrollTop()/15 - 220) + "px"
             });
-            //$(".home-header-inner").css("top", ($(window).scrollTop()/2 - 75) + "px");
-            //console.log($(".home-header-inner").css("top"));
         });
     }
 
@@ -93,10 +85,10 @@ $(".navigation div a:not(.out)").on("click", function(e) {
     
     function setupControls(){
         
-        $(".slidecontrol").on("click", ".slide-control", function(e){
+        $(".slidecontrol").on("click", ".slidecontrol", function(e){
             e.preventDefault();
             
-            $(this).addClass("current").siblings().removeClass("current");
+            //$(this).addClass("current").siblings().removeClass("current");
 
             goToSlide(theIndex);
         });
@@ -107,7 +99,9 @@ $(".navigation div a:not(.out)").on("click", function(e) {
         var allslides = $(".slide"),
             currslide = allslides.filter(".current");        
         if (i){
-            var nextslide = allslides.eq(i);
+            var nextslide = currslide.eq(i);
+
+            });
         } else {
             // let's go to the next slide by default
             var nextslideIndex = (function(){
@@ -124,7 +118,7 @@ $(".navigation div a:not(.out)").on("click", function(e) {
         }
         
         // now, go.
-        $(".slidecontrol").eq(nextslideIndex).addClass("current").siblings().removeClass("current");
+        $(".slide").eq(nextslideIndex).addClass("current").siblings().removeClass("current");
         nextslide.addClass("current").siblings().removeClass("current");
 
         animateSlides(nextslide);
@@ -144,19 +138,19 @@ $(".navigation div a:not(.out)").on("click", function(e) {
 
 
 //mobile event details accordion
-  var allPanels = $('.accordion > dd').hide();
-    
-  $('.accordion > dt > a').click(function() {
-      $this = $(this);
-      $target =  $this.parent().next();
-
-      if(!$target.hasClass('active')){
-         allPanels.removeClass('active').slideUp();
-         $target.addClass('active').slideDown();
-      }
-      
-    return false;
-  });
+  //var allPanels = $('.accordion > dd').hide();
+//    
+  //$('.accordion > dt > a').click(function() {
+      //$this = $(this);
+      //$target =  $this.parent().next();
+//
+      //if(!$target.hasClass('active')){
+         //allPanels.removeClass('active').slideUp();
+         //$target.addClass('active').slideDown();
+      //}
+//      
+    //return false;
+  //});
 
 
 
