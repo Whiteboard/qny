@@ -100,8 +100,6 @@ $(".navigation div a:not(.out)").on("click", function(e) {
             currslide = allslides.filter(".current");        
         if (i){
             var nextslide = currslide.eq(i);
-
-            });
         } else {
             // let's go to the next slide by default
             var nextslideIndex = (function(){
@@ -127,7 +125,8 @@ $(".navigation div a:not(.out)").on("click", function(e) {
     function animateSlides(toslide){
 
         var strip = $(".slidewrap-inner");
-        var dist = $('.slide').width();
+        var dist = $('.slide').outerWidth() + parseInt($('.slide').css('margin-left'),10) + parseInt($('.slide').css('margin-right'),10);
+        console.log(dist);
         strip.css({
           marginLeft : toslide.index() * - dist + "px"
         });
@@ -161,12 +160,13 @@ $('.more').on('click',function(event){
 	var title = $(this).attr('data-title');
 	var topic = $(this).attr('data-topic');
 	var desc = $(this).attr('data-description');
+    var img = $(this).find('img').attr('src');
 	//var speaker = $(this).attr('data-title');
 
     $('.box').find('.speaker-name').html(name);
 	$('.box').find('.speaker-title').html(title);
 	$('.box').find('.speaker-topic').html(topic);
-	$('.box').find('.description').html(desc);
+	$('.box').find('.description').html('<img src="'+img+'"/>' + desc);
 
 	$('.box-wrap').addClass('visible');
 });

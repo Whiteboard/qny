@@ -25,23 +25,23 @@ Less version credit: https://github.com/thatericsmith/Skeleton
 }
 
 .container.plusfour {
-  width: 1200px;
+  width: 1280px;
 }
 
 .container.pluseight {
-  width: 1440px;
+  width: 1600px;
 }
 
 .column,
 .columns {
   display: inline;
   float: left;
-  margin-right: 10px !important;
-  margin-left: 10px !important;
+  margin-right: 14px !important;
+  margin-left: 14px !important;
 }
 
 .row {
-  margin-bottom: 20px;
+  margin-bottom: 28px;
 }
 
 /* Nested Column Classes */
@@ -69,201 +69,143 @@ Less version credit: https://github.com/thatericsmith/Skeleton
 }
 
 .container .one.column {
-  width: 40px;
+  width: 52px;
 }
 
 .container .columns.two {
-  width: 100px;
+  width: 132px;
 }
 
 .container .columns.three {
-  width: 160px;
+  width: 212px;
 }
 
 .container .columns.four {
-  width: 220px;
+  width: 292px;
 }
 
 .container .columns.five {
-  width: 280px;
+  width: 372px;
 }
 
 .container .columns.six {
-  width: 340px;
+  width: 452px;
 }
 
 .container .columns.seven {
-  width: 400px;
+  width: 532px;
 }
 
 .container .columns.eight {
-  width: 460px;
+  width: 612px;
 }
 
 .container .columns.nine {
-  width: 520px;
+  width: 692px;
 }
 
 .container .columns.ten {
-  width: 580px;
+  width: 772px;
 }
 
 .container .columns.eleven {
-  width: 640px;
+  width: 852px;
 }
 
 .container .columns.twelve {
-  width: 700px;
+  width: 932px;
 }
 
 .container .columns.thirteen {
-  width: 760px;
+  width: 1012px;
 }
 
 .container .columns.fourteen {
-  width: 820px;
+  width: 1092px;
 }
 
 .container .columns.fifteen {
-  width: 880px;
+  width: 1172px;
 }
 
 .container .columns.sixteen {
-  width: 940px;
+  width: 1252px;
 }
 
 .container .columns.twenty {
-  width: 1200px;
+  width: 1600px;
 }
 
 .container .columns.twentyfour {
-  width: 1420px;
+  width: 1892px;
 }
 
 .container .one-third.column {
-  width: 300px;
+  width: 293.3333333333333px;
 }
 
 .container .two-thirds.column {
-  width: 620px;
+  width: 614.6666666666666px;
 }
 
 .container .offset-by-one {
-  padding-left: 60px;
+  padding-left: 80px;
 }
 
 .container .offset-by-two {
-  padding-left: 120px;
+  padding-left: 160px;
 }
 
 .container .offset-by-three {
-  padding-left: 180px;
-}
-
-.container .offset-by-four {
   padding-left: 240px;
 }
 
+.container .offset-by-four {
+  padding-left: 320px;
+}
+
 .container .offset-by-five {
-  padding-left: 300px;
+  padding-left: 400px;
 }
 
 .container .offset-by-six {
-  padding-left: 360px;
-}
-
-.container .offset-by-seven {
-  padding-left: 420px;
-}
-
-.container .offset-by-eight {
   padding-left: 480px;
 }
 
+.container .offset-by-seven {
+  padding-left: 560px;
+}
+
+.container .offset-by-eight {
+  padding-left: 640px;
+}
+
 .container .offset-by-nine {
-  padding-left: 540px;
-}
-
-.container .offset-by-ten {
-  padding-left: 600px;
-}
-
-.container .offset-by-eleven {
-  padding-left: 660px;
-}
-
-.container .offset-by-twelve {
   padding-left: 720px;
 }
 
+.container .offset-by-ten {
+  padding-left: 800px;
+}
+
+.container .offset-by-eleven {
+  padding-left: 880px;
+}
+
+.container .offset-by-twelve {
+  padding-left: 960px;
+}
+
 .container .offset-by-thirteen {
-  padding-left: 780px;
+  padding-left: 1040px;
 }
 
 .container .offset-by-fourteen {
-  padding-left: 840px;
+  padding-left: 1120px;
 }
 
 .container .offset-by-fifteen {
-  padding-left: 900px;
-}
-
-/*  Skeleton Continued  - paste this code before the "Clearing" code in the 
-"skeleton.css" document if you wish to have a responsive document  */
-
-/* FIX FOR PLUS SIZES
-================================================== */
-
-@media only screen and (min-width: 960px) and (max-width: 1199px) {
-  .container.plusfour,
-  .container.pluseight {
-    position: relative;
-    width: 960px;
-    padding: 0;
-    margin: 0 auto;
-  }
-  .container .twenty.columns {
-    width: 940px;
-  }
-  .container .twentyfour.columns {
-    width: 940px;
-  }
-}
-
-@media only screen and (min-width: 1200px) and (max-width: 1439px) {
-  .container.pluseight {
-    position: relative;
-    width: 1200px;
-    padding: 0;
-    margin: 0 auto;
-  }
-  .container .twenty.columns {
-    width: 1180px;
-  }
-  .container .twentyfour.columns {
-    width: 1180px;
-  }
-}
-
-/* #Tablet (Portrait)
-================================================== */
-
-/* Note: Design for a width of 768px */
-
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  
-}
-
-/*  #Mobile (Portrait)
-================================================== */
-
-/* #Mobile (Landscape)
-================================================== */
-
-/* Note: Design for a width of 480px */
-
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  
+  padding-left: 1200px;
 }
 
 /* #Clearing
@@ -875,7 +817,6 @@ p {
 }
 
 .inner-wrap {
-  width: 90%;
   max-width: 960px;
   margin: 0 auto;
 }
@@ -945,7 +886,6 @@ p {
 
 .navigation .left {
   position: absolute;
-  left: 50px;
   z-index: 999;
   width: 40%;
   margin: 0;
@@ -953,13 +893,13 @@ p {
 
 .navigation .left li {
   float: left;
-  margin-right: 25px;
+  margin-right: 60px;
 }
 
 .navigation .right {
   position: absolute;
   top: 0;
-  right: 50px;
+  right: 0;
   z-index: 999;
   width: 40%;
   margin: 0;
@@ -967,7 +907,7 @@ p {
 
 .navigation .right li {
   float: right;
-  margin-left: 25px;
+  margin-left: 57px;
 }
 
 .navigation .brand {
@@ -1007,18 +947,16 @@ p {
 }
 
 .navigation .brand .ny h3 {
-  width: 117px;
-  padding: 0;
-  padding-top: 4px;
-  padding-bottom: 2px;
-  font-size: 1.4em;
+  padding: 5px 0;
+  font-size: 1.2em;
   font-weight: 700;
   line-height: 1em;
   letter-spacing: .01em;
   color: #e6e6e6;
+  color: #E6E6E6;
   text-align: center;
   text-transform: uppercase;
-  border: 1px solid #fff;
+  border: 1px solid #FFF;
 }
 
 .navigation .brand .date {
@@ -1124,7 +1062,7 @@ p {
   width: 80%;
   max-width: 380px;
   min-width: 360px;
-  padding-top: 200px;
+  padding-top: 250px;
   margin: 0 auto;
 }
 
@@ -1133,10 +1071,11 @@ p {
 }
 
 .center .ny h1 {
-  padding: 0;
-  padding-top: 10px;
+  padding: 15px;
+  margin-bottom: 0;
   font-size: 4em;
   font-weight: 700;
+  line-height: 1em;
   letter-spacing: .01em;
   text-align: center;
   text-transform: uppercase;
@@ -1224,7 +1163,7 @@ p {
 
 #onehalf #reviews {
   z-index: 999;
-  max-width: 1000px;
+  max-width: 947px;
   margin: 0 auto;
 }
 
@@ -1248,9 +1187,23 @@ p {
 }
 
 #onehalf #reviewslider {
-  width: 90%;
-  max-width: 940px;
+  position: relative;
+  max-width: 960px;
   margin: 0 auto;
+}
+
+#onehalf #reviewslider .slidecontrol {
+  cursor: pointer;
+}
+
+#onehalf #reviewslider .slidecontrol.left {
+  position: absolute;
+  left: -50px;
+}
+
+#onehalf #reviewslider .slidecontrol.right {
+  position: absolute;
+  right: -50px;
 }
 
 #onehalf #reviewslider i {
@@ -1266,8 +1219,8 @@ p {
 }
 
 #onehalf #reviewslider .inner-wrap {
+  width: 100%;
   height: 200px;
-  max-width: 940px;
   margin: 0 auto;
   margin-top: 20px;
   overflow: hidden;
@@ -1291,15 +1244,7 @@ p {
 }
 
 #onehalf #reviewslider .slide {
-  width: 32% !important;
-  max-width: 260px;
-  margin: 0 .2% !important;
   text-align: center;
-}
-
-#onehalf #reviewslider .slide p {
-  max-width: 230px;
-  margin: 0 auto;
 }
 
 #onehalf #reviewslider .slidewrap-inner {
@@ -1329,10 +1274,22 @@ p {
   color: #0095cb;
 }
 
+#two .row h3:before {
+  position: relative;
+  margin-left: -8px;
+  content: '"';
+}
+
+#two .row h3:after {
+  position: relative;
+  content: '"';
+}
+
 #two #gabe {
-  width: 100%;
+  width: 80%;
   height: auto;
   min-height: 200px;
+  margin: 0 auto;
   background-image: url('../img/gabe.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -1342,7 +1299,7 @@ p {
   font-size: .9em;
 }
 
-#two .eleven.columns h3 {
+#two .columns h3 {
   display: block;
   margin-top: 0;
   font-size: 1.3em;
@@ -1391,6 +1348,7 @@ p {
   z-index: 1;
   width: 40px;
   height: 40px;
+  cursor: pointer;
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 50%;
   -webkit-animation: wander 1.2s infinite;
@@ -1772,6 +1730,7 @@ p {
 }
 
 #three .bg {
+  cursor: default;
   background-color: rgba(255, 255, 255, 0.15);
   box-shadow: 0 0 25px rgba(255, 255, 255, 0.15);
   -webkit-animation: wander 6.2s infinite;
@@ -1866,14 +1825,14 @@ p {
 }
 
 #presenter-grid .grid-wrap .speaker-row {
-  height: 220px;
+  height: 239px;
 }
 
 .grid {
   display: inline-block;
   float: left;
   width: 20%;
-  height: 200px;
+  height: 239px;
   max-width: 150px;
   margin-bottom: 0;
 }
@@ -1884,8 +1843,10 @@ p {
 
 .grid.speaker {
   z-index: -1;
-  height: 220px;
+  height: 239px;
   text-align: center;
+  text-decoration: none !important;
+  cursor: pointer;
   background-color: #fff;
 }
 
@@ -1904,20 +1865,15 @@ p {
   margin-top: 10px;
 }
 
-.grid.speaker .profile .more {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: 4;
-  padding: 1px 10px;
-  font-size: 1.5em;
-  font-weight: 600;
-  color: #0095cb;
-  background-color: #fff;
+.grid.speaker:hover {
+  background-color: #efefef;
 }
 
-.grid.speaker .profile .more:hover {
-  text-shadow: 0 3px 15px #0095cb, 0 0 0.2em #0095cb;
+.grid.speaker p.speaker-position {
+  font-family: 'museo-slab', 'Museo Slab', 'Adelle', serif;
+  font-size: 0.8em;
+  font-style: italic;
+  color: #264c4c;
 }
 
 .grid.speaker .prs-detail {
@@ -1927,58 +1883,6 @@ p {
   height: 50px;
   margin-top: 0;
   transition: all 0.3s ease-in-out;
-}
-
-.grid.speaker .prs-detail p.speaker-position {
-  font-family: 'museo-slab', 'Museo Slab', 'Adelle', serif;
-  font-style: italic;
-  color: #264c4c;
-}
-
-.grid.speaker .prs-detail .speaker-topic {
-  display: none;
-}
-
-.grid.speaker .prs-detail:hover {
-  display: block;
-  height: 200px;
-  padding-top: 5px;
-  margin-top: -145px;
-  background-color: #fff;
-}
-
-.grid.speaker .prs-detail:hover .speaker-name {
-  font-size: 1.1em;
-}
-
-.grid.speaker .prs-detail:hover .speaker-position {
-  padding-right: 10px;
-}
-
-.grid.speaker .prs-detail:hover .speaker-topic {
-  display: block;
-  padding-right: 15px;
-  padding-bottom: 10px;
-}
-
-.grid.speaker .prs-detail:hover .speaker-topic.small-margin {
-  margin-top: 10px !important;
-}
-
-.grid.speaker a {
-  z-index: 4;
-  float: left;
-  margin: 0;
-  margin-left: 10px;
-  font-family: 'Helvetica', sans-serif;
-  color: #0095cb;
-  text-decoration: none;
-  transition: all 0.13s ease-in-out;
-}
-
-.grid.speaker a:hover {
-  margin-left: 13px;
-  color: #32c8ff;
 }
 
 .grid.speaker p {
@@ -2018,6 +1922,11 @@ p {
   display: block;
   height: 100%;
   opacity: 1;
+}
+
+.box-wrap.visible img {
+  float: right;
+  margin: 0 0 20px 20px;
 }
 
 .box-wrap.visible .box {
@@ -2272,6 +2181,7 @@ p {
 
 #seven {
   color: #5e6e66;
+  background-color: #000;
 }
 
 #seven .imageborder {
@@ -2287,7 +2197,8 @@ p {
 }
 
 #seven #sponsors {
-  padding-bottom: 100px;
+  padding: 50px 0;
+  overflow: auto;
 }
 
 #seven #sponsors img {
