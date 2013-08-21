@@ -13,10 +13,9 @@ $('.nav-button').click(function (event) {
 	else($('#nav-mobile')).addClass('active');
 });
 
-
-
 //set responsive variable
 var responsive_viewport = $(window).width();
+var currentSlide;
 
 // if viewport is larger than 481px
     if (responsive_viewport > 481) {
@@ -40,8 +39,9 @@ $(".navigation div a:not(.out)").on("click", function(e) {
     $("body,html").animate({scrollTop: new_scroll.top-"60"+"px"}, 1000);
 });
 
-//parallax for background images
+    //parallax for background images
     //for hero div
+
     var topBG = $("#one").css('background-position','center -10px');
 
     if (topBG.length){
@@ -85,54 +85,80 @@ $(".navigation div a:not(.out)").on("click", function(e) {
     
     function setupControls(){
         
-        $(".slidecontrol").on("click", ".slidecontrol", function(e){
+        $("body").on("click", ".slidecontrol", function(e){
             e.preventDefault();
-            
-            //$(this).addClass("current").siblings().removeClass("current");
-
-            goToSlide(theIndex);
+            currentSlide = $('.slide.current').index();
+            if ($(this).hasClass('left')) {
+                goToSlide('prev');
+            } else {
+                goToSlide();
+            }
         });
         
     }
     
-    function goToSlide(i){
+    function goToSlide(d){
+        // d = direction
+
         var allslides = $(".slide"),
-            currslide = allslides.filter(".current");        
-        if (i){
-            var nextslide = currslide.eq(i);
-        } else {
-            // let's go to the next slide by default
-            var nextslideIndex = (function(){
+            currslide = allslides.filter(".current"),
+            nextslideIndex,
+            nextSlide;
+
+        function changeSlide() {
+            $(".slide").eq(nextslideIndex).addClass("current").siblings().removeClass("current");
+            nextslide.addClass("current").siblings().removeClass("current");
+            animateSlides(nextslide);
+        }
+
+        function prevSlide() {
+            nextslideIndex = (function(){
+                if (currslide.index() == 0){
+                    // loop the loop the loop the loop
+                    return 0;
+                } else {
+                    return currslide.index()-1;
+                }
+            }());
             
+        }
+
+        function nextSlide() {
+            nextslideIndex = (function(){
                 if (currslide.index() == allslides.length -3){
                     // loop the loop the loop the loop
                     return 0;
                 } else {
                     return currslide.index()+1;
                 }
-            
             }());
-            var nextslide = allslides.eq(nextslideIndex);
+            // nextslide = allslides.eq(nextslideIndex);
+            // changeSlide();
         }
-        
-        // now, go.
-        $(".slide").eq(nextslideIndex).addClass("current").siblings().removeClass("current");
-        nextslide.addClass("current").siblings().removeClass("current");
 
-        animateSlides(nextslide);
+        if (d == 'previous') {
+            prevSlide();
+        } else {
+            nextSlide();
+        }
+
+        nextslide = allslides.eq(nextslideIndex);
+        
+        changeSlide();
+
         startSlider();
     }
-    function animateSlides(toslide){
 
+    function animateSlides(toslide){
         var strip = $(".slidewrap-inner");
         var dist = $('.slide').outerWidth() + parseInt($('.slide').css('margin-left'),10) + parseInt($('.slide').css('margin-right'),10);
-        console.log(dist);
         strip.css({
           marginLeft : toslide.index() * - dist + "px"
         });
     }
 
     // boom boom boom.
+    setupControls();
     startSlider();
 
 
